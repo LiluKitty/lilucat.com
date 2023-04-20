@@ -1,0 +1,34 @@
+title: LiluCat
+description: >- # this means to ignore newlines until "baseurl:"
+  Our team of experienced developers is dedicated to creating high-quality, user-friendly apps that are optimized for Apple's ecosystem.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://lilucat.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+email: support@lilucat.com
+support_mail: mailto:support@lilucat.com
+github_username: LiluKitty
+twitter_username: NewLiluKitty
+app_id_ai_chat: 6447686784
+app_id_app_lock: 6446116245
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-last-modified-at
+
+sass:
+style: compressed
+
+exclude:
+  - package.json
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - gulpfile.js
