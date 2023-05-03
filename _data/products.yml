@@ -12,7 +12,7 @@ data:
           url: https://chat.lilucat.com/legal/terms
 
   - name: App Lock
-    url: https://apps.apple.com/app/id6446116245
+    url: https://apps.apple.com/app/id6448239603
     description: App Lock is a privacy app designed to help keep your sensitive apps hidden and secure. With App Lock, you can easily lock and hide any app you want, ensuring that you remain private and out of sight from prying eyes.
     icon: /assets/img/applock/Icon-1024.png
     badge: https://one-badge.com/b/apple/appstore.svg 

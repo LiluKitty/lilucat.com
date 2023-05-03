@@ -16,8 +16,10 @@ data:
       option:
         - name: AI Chat
           url: https://apps.apple.com/app/id6447686784
+        - name: AI PDF Scanner
+          url: https://apps.apple.com/app/id6448180124
         - name: App Lock
-          url: https://apps.apple.com/app/id6446116245
+          url: https://apps.apple.com/app/id6448239603
 
 social:
   - social: Social
