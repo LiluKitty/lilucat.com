@@ -25,9 +25,12 @@ social:
   - social: Social
     links:
       option:
-        - name: Twitter
-          url: https://twitter.com/NewLiluCat
-          image: bi-twitter
+        - name: TikTok
+          url: https://www.tiktok.com/@lilucatapps/
+          image: bi-tiktok
+        - name: YouTube
+          url: https://www.youtube.com/@lilucatapps/shorts
+          image: bi-youtube
 
 url: https://lilucat.com
 copyright: © LiluCat.

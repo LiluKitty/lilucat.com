@@ -7,6 +7,10 @@
           <span class="fw-semibold fs-5 text-dark">{{ site.title }}</span>
         </a>
         <p class="fs-6 pb-2 pb-sm-3 opacity-60">{{ site.description }}</p>
+        {% for item in site.data.footer.social %}
+          {% for link in item.links.option %}
+          <a class="btn-social me-3 mb-2" href="{{ link.url }}" target="_blank" rel="noopener"><i class="text-dark h4 {{ link.image }}"></i></a>{% endfor %}
+        {% endfor %}
       </div>
       {% for item in site.data.footer.data %}
       <div class="col-md-2 col-sm-4 col mb-4">
