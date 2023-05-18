@@ -5,11 +5,29 @@ description: Our team of experienced developers is dedicated to creating high-qu
 image: /assets/img/1024.png
 ---
 <div class="container pb-md-5 pb-4 mt-3">
-    <div class="p-5 mb-4 bg-light rounded-3 border">
-        <div class="container-fluid py-5">
-          <h1 class="display-5 fw-bold">Welcome to Lilucat</h1>
-          <p class="col-md-8 fs-4">Our team of experienced developers is dedicated to creating high-quality, user-friendly apps that are optimized for Apple's ecosystem.</p>
-        </div>
-      </div>
-      {%- include products.html -%}
+  <div class="p-5 mb-4 bg-light rounded-3 border">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">Welcome to Lilucat</h1>
+      <p class="col-md-8 fs-4">Our team of experienced developers is dedicated to creating high-quality, user-friendly apps that are optimized for Apple's ecosystem.</p>
+    </div>
+  </div>
+	{%- include products.html -%}
+	<div id="country"></div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+    $.ajax({
+      url: "https://geolocation-db.com/jsonp",
+      jsonpCallback: "callback",
+      dataType: "jsonp",
+      success: function( location ) {
+				var products = "success";
+        if (location.country_code == "US" ) {
+					document.getElementById("country").innerHTML = products;
+					
+        } else {
+            $('#country').html("other country");
+        }
+      }
+    });
+	</script>
 </div>

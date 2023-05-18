@@ -1,0 +1,36 @@
+data:
+  - name: AI Chat
+    url: https://apps.apple.com/app/id6448948718
+    description: AI Chat by LiluCat. The ultimate AI-powered chat assistant to satisfy all your needs! Say goodbye to tedious web searches and hello to instantaneous solutions with this innovative app.
+    icon: /assets/img/aichat/Icon-1024.png
+    badge: https://one-badge.com/b/apple/appstore.svg
+    legal:
+      option:
+        - name: Privacy Policy
+          url: https://chat.lilucat.com/legal/privacy
+        - name: Terms Of Use
+          url: https://chat.lilucat.com/legal/terms
+
+  - name: App Lock
+    url: https://apps.apple.com/app/idtest
+    description: App Lock is a privacy app designed to help keep your sensitive apps hidden and secure. With App Lock, you can easily lock and hide any app you want, ensuring that you remain private and out of sight from prying eyes.
+    icon: /assets/img/applock/Icon-1024.png
+    badge: https://one-badge.com/b/apple/appstore.svg 
+    legal:
+      option:
+        - name: Privacy Policy
+          url: https://applock.lilucat.com/legal/privacy
+        - name: Terms Of Use
+          url: https://applock.lilucat.com/legal/terms
+
+  - name: AI PDF Scanner
+    url: https://apps.apple.com/app/id6448180124
+    description: With AI PDF Scanner, you can effortlessly comprehend textbooks, handouts, and presentations in no time. But that's not all. AI PDF Scanner also helps you efficiently analyze all types of documents - from financial and sales reports to project and business proposals, invoices, slides and legal contracts. With AI PDF Scanner, you can quickly access the information you need, saving you valuable time and effort.
+    icon: /assets/img/aipdfscanner/Icon-1024.png
+    badge: https://one-badge.com/b/apple/appstore.svg 
+    legal:
+      option:
+        - name: Privacy Policy
+          url: https://aipdf.lilucat.com/legal/privacy
+        - name: Terms Of Use
+          url: https://aipdf.lilucat.com/legal/terms
