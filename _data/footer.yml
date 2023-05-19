@@ -13,6 +13,7 @@ data:
           url: /blog/
   - name: Products
     links:
+      option:
         - name: AI PDF Scanner
           url: https://apps.apple.com/app/id6448180124
         - name: App Lock
