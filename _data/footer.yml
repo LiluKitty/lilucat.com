@@ -18,6 +18,8 @@ data:
           url: https://apps.apple.com/app/id6448180124
         - name: App Lock
           url: https://apps.apple.com/app/id6448239603
+        - name: AI Math Solver
+          url: https://apps.apple.com/app/id6449217479
 
 social:
   - social: Social
