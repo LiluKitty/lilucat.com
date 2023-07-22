@@ -1,4 +1,4 @@
-title: LiluCat
+title: Lilucat
 description: >- # this means to ignore newlines until "baseurl:"
   Our team of experienced developers is dedicated to creating high-quality, user-friendly apps that are optimized for Apple's ecosystem.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -10,6 +10,7 @@ github_username: LiluKitty
 twitter_username: NewLiluKitty
 app_id_app_lock: 6448239603
 app_id_ai_pdf_scanner: 6448180124
+app_id_ai_math_solver: 6449217479
 
 plugins:
   - jekyll-sitemap

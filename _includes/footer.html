@@ -21,7 +21,7 @@
               {% if link.url == # %}
               <li class="m-0">{{ link.name }} <span class="badge bg-warning">soon</span></li>
               {% else %}
-              <li class="py-1"><a class="p-2 nav-hover text-secondary" href="{{ link.url }}" rel="noopener">{{ link.name }}</a></li>
+              <li class="py-1"><a class="py-2 footer-hover text-secondary" href="{{ link.url }}" rel="noopener">{{ link.name }}</a></li>
               {% endif %}
             {% endfor %}
           </ul>          
@@ -31,7 +31,7 @@
     </div>
     <div class="row align-items-center pb-3">
       <div class="col-md-4 order-2 order-md-1 mb-2">
-        <p class="m-0"><a class="nav-link-style" href="{{ site.data.footer.url }}" rel="noopener">{{ site.data.footer.copyright }}</a><span class="opacity-60 me-1"> {{ site.data.footer.message }}</span></p>
+        <p class="m-0"><a class="footer-hover text-secondary" href="{{ site.data.footer.url }}" rel="noopener">{{ site.data.footer.copyright }}</a><span class="opacity-60 me-1"> {{ site.data.footer.message }}</span></p>
       </div>
     </div>
   </div>

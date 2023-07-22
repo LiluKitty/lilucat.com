@@ -1,12 +1,22 @@
 <div class="row align-items-md-stretch">
     {% for product in site.data.products.data %}
     <div class="col-md-6 mb-4">
-      <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-        <img src="{{ product.icon }}" width="76" class="rounded-3 shadow-sm mb-3" alt="">
-        <h2>{{ product.name }}</h2>
-        <p>{{ product.description }}</p>
+      <div class="h-100 p-md-5 pb-md-3 p-4 bg-body-tertiary rounded-img">
+        <div class="d-flex align-items-center mb-3 mb-md-4">
+          <img src="{{ product.icon }}" width="76" class="me-3 rounded-img shadow-sm" alt="App Icon">
+          <div>
+            <h3 class="pb-0">{{ product.name }}</h3>
+            <i class="text-warning h6 bi-star-fill"></i>
+            <i class="text-warning h6 bi-star-fill"></i>
+            <i class="text-warning h6 bi-star-fill"></i>
+            <i class="text-warning h6 bi-star-fill"></i>
+            <i class="text-warning h6 bi-star-fill"></i>
+            <strong class="ms-2 text-body-secondary">{{ product.rating }}</strong><span class="px-1 text-secondary">·</span><span class="small text-body-secondary">{{ product.ratings }} Ratings</span>
+          </div>
+        </div>
+        <p class="pb-2">{{ product.description }}</p>
         <a href="{{ product.url }}" target="_blank">
-          <img class="p-0" src="{{ product.badge }}" alt="{{ product.alt }}" height="48">
+          <img class="mb-md-2" src="{{ product.badge }}" alt="{{ product.alt }}" height="48">
         </a>
         <p class="mt-3 small">
           {% for legal in product.legal.option %}

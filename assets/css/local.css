@@ -326,6 +326,16 @@ ul {
   color: rgb(8, 110, 253) !important;
 }
 
+.footer-hover {
+  /* color: rgb(8, 110, 253) !important; */
+  border-radius: 0.3rem;
+  transition: color 0.25s ease-in-out,  background-color 0.25s ease-in-out,box-shadow 0.25s ease-in-out,border-color 0.25s ease-in-out,transform 0.25s ease-in-out
+}
+
+.footer-hover:hover {
+  color: rgb(8, 110, 253) !important;
+}
+
 .users-reviews {
   background-color: #f8f8f8; 
   border-radius: 0.5rem;
@@ -346,5 +356,5 @@ ul {
 }
 
 .rounded-img {
-  border-radius: 1.6rem !important;
+  border-radius: 1rem !important;
 }
