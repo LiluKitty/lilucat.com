@@ -1,4 +1,18 @@
 data:
+  - name: Screenfree
+    url: https://apps.apple.com/app/apple-store/id6449741551?pt=126142472&ct=fromWebsite&mt=8
+    description: Screenfree is the ultimate solution to help you regain control over your digital life and reduce screen time. With Screenfree, you can break free from the addictive grip of your devices and cultivate healthier habits, allowing you to reclaim your time and focus on what truly matters.
+    icon: /assets/img/screenfree/Icon-1024.png
+    badge: https://one-badge.com/b/apple/appstore.svg 
+    rating: 5.0
+    ratings: 10
+    legal:
+      option:
+        - name: Privacy Policy
+          url: https://screenfree.lilucat.com/legal/privacy
+        - name: Terms Of Use
+          url: https://screenfree.lilucat.com/legal/terms
+
   - name: App Lock
     url: https://apps.apple.com/app/id6448239603?pt=126142472&ct=fromWebsite&mt=8
     description: App Lock is a privacy app designed to help keep your sensitive apps hidden and secure. With App Lock, you can easily lock and hide any app you want, ensuring that you remain private and out of sight from prying eyes.
@@ -40,17 +54,3 @@ data:
           url: https://mathsolver.lilucat.com/legal/privacy
         - name: Terms Of Use
           url: https://mathsolver.lilucat.com/legal/terms
-
-  - name: Screenfree
-    url: https://apps.apple.com/app/apple-store/id6449741551?pt=126142472&ct=fromWebsite&mt=8
-    description: Screenfree is the ultimate solution to help you regain control over your digital life and reduce screen time. With Screenfree, you can break free from the addictive grip of your devices and cultivate healthier habits, allowing you to reclaim your time and focus on what truly matters.
-    icon: /assets/img/screenfree/Icon-1024.png
-    badge: https://one-badge.com/b/apple/appstore.svg 
-    rating: 5.0
-    ratings: 10
-    legal:
-      option:
-        - name: Privacy Policy
-          url: https://screenfree.lilucat.com/legal/privacy
-        - name: Terms Of Use
-          url: https://screenfree.lilucat.com/legal/terms
