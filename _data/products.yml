@@ -1,6 +1,6 @@
 data:
   - name: Screenfree
-    url: https://apps.apple.com/app/apple-store/id6449741551?pt=126142472&ct=fromWebsite&mt=8
+    url: https://apps.apple.com/app/id6449741551?pt=126142472&ct=fromWebsite&mt=8
     description: Screenfree is the ultimate solution to help you regain control over your digital life and reduce screen time. With Screenfree, you can break free from the addictive grip of your devices and cultivate healthier habits, allowing you to reclaim your time and focus on what truly matters.
     icon: /assets/img/screenfree/Icon-1024.png
     badge: https://one-badge.com/b/apple/appstore.svg 
@@ -42,7 +42,7 @@ data:
           url: https://aipdf.lilucat.com/legal/terms
 
   - name: AI Math Solver
-    url: https://apps.apple.com/app/apple-store/id6449217479?pt=126142472&ct=fromWebsite&mt=8
+    url: https://apps.apple.com/app/id6449217479?pt=126142472&ct=fromWebsite&mt=8
     description: The ultimate app for solving all your math problems with ease! Whether you're a student struggling with homework or just someone who wants to sharpen their math skills, our app is here to help you.
     icon: /assets/img/aimath/Icon-1024.png
     badge: https://one-badge.com/b/apple/appstore.svg 
