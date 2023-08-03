@@ -5,13 +5,11 @@
         <div class="d-flex align-items-center mb-3 mb-md-4">
           <img src="{{ product.icon }}" width="76" class="me-3 rounded-img shadow-sm" alt="App Icon">
           <div>
-            <h3 class="pb-0">{{ product.name }}</h3>
+            <h3 class="pb-0 m-0">{{ product.name }}</h3>
+            <p class="mb-0 text-body-secondary">{{ product.subtitle }}</p>
+            <strong class="text-body-secondary">{{ product.rating }}</strong>
             <i class="text-warning h6 bi-star-fill"></i>
-            <i class="text-warning h6 bi-star-fill"></i>
-            <i class="text-warning h6 bi-star-fill"></i>
-            <i class="text-warning h6 bi-star-fill"></i>
-            <i class="text-warning h6 bi-star-fill"></i>
-            <strong class="ms-2 text-body-secondary">{{ product.rating }}</strong><span class="px-1 text-secondary">·</span><span class="small text-body-secondary">{{ product.ratings }} Ratings</span>
+            <span class="px-1 text-secondary fw-bold">·</span><span class="small text-body-secondary">{{ product.ratings }} Ratings</span>
           </div>
         </div>
         <p class="pb-2">{{ product.description }}</p>
