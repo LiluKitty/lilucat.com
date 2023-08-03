@@ -21,6 +21,10 @@ plugins:
 sass:
 style: compressed
 
+collections:
+  legal:
+    output: true
+
 exclude:
   - package.json
   - .sass-cache/

@@ -1,3 +1,9 @@
+---
+layout: markdown
+title: Privacy Policy
+description: Lilucat privacy and policy description
+---
+
 # Terms of Service
 Your Acceptance By using or visiting the Lilucat website or any Lilucat products, software, data feeds, and services provided to you on, from, or through the Lilucat website, you signify your agreement to these terms and conditions. If you do not agree to any of these terms please do not use the Service. This Service is provided by Lilucat on an “AS IS” and “AS AVAILABLE” basis and Lilucat reserves the right to modify, suspend or discontinue the Service, in its sole discretion, at any time and without notice. You agree to be bound by such modifications. Lilucat is and will not be liable to you for any modification, suspension, or discontinuance of the Service.
 
