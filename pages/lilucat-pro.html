@@ -5,15 +5,20 @@ description: Subscribe once and unlock the full experience.
 permalink: /lilucat-pro/
 ---
 <div class="container pb-md-5 pb-4 mt-3">
-  <div class="p-md-5 pb-md-3 p-4 mb-4 bg-light rounded-img">
+  <div class="p-md-5 pb-md-3 p-4 mb-4 bg-light rounded-img mx-auto text-center">
     <div class="container-fluid py-5">
       <h1 class="display-5 fw-bold">{{ page.title }}</h1>
-      <p class="fs-4 text-body-secondary">{{ page.description }}</p>
-      <p class="col-md-8 fs-5">
-        <br>
-        Coming soon...
-      </p>
-      <br>
+      <p class="fs-4 text-body-secondary mb-md-5">{{ page.description }}</p>
+      <div class="col-md-8 mx-auto text-center mb-5">
+        <div class="d-flex flex-wrap align-items-center justify-content-center gap-4 mt-4">
+          {% for product in site.data.products.data %}
+          <a class="d-flex flex-column align-items-center text-decoration-none animate-img" href="{{ product.url }}" rel="noopener" target="_blank">
+            <img class="d-block rounded-img shadow-sm" src="{{ product.icon }}" alt="{{ product.name }} Icon" width="72" height="72" loading="lazy">
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+      <p class="fs-5">Coming soon...</p>
     </div>
   </div>
 </div>
