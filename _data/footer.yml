@@ -11,17 +11,6 @@ data:
       option:
         - name: Blog
           url: /blog/
-  - name: Products
-    links:
-      option:
-        - name: Screenfree
-          url: https://apps.apple.com/app/id6449741551?pt=126142472&ct=fromWebsite&mt=8
-        - name: App Lock
-          url: https://apps.apple.com/app/id6448239603?pt=126142472&ct=fromWebsite&mt=8   
-        - name: PDF Scanner
-          url: https://apps.apple.com/app/id6448180124?pt=126142472&ct=fromWebsite&mt=8
-        - name: Math Solver
-          url: https://apps.apple.com/app/id6449217479?pt=126142472&ct=fromWebsite&mt=8
 
 social:
   - social: Social

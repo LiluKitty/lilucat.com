@@ -1,9 +1,10 @@
 <div class="row align-items-md-stretch">
     {% for product in site.data.products.data %}
     <div class="col-md-6 mb-4">
-      <div class="h-100 p-md-5 pb-md-3 p-4 bg-body-tertiary rounded-img">
+      <div class="h-100 p-md-5 pb-md-3 p-4 bg-body-tertiary rounded-img position-relative">
+        <a href="{{ product.page }}/" class="stretched-link"></a>
         <div class="d-flex align-items-center mb-3 mb-md-4">
-          <img src="{{ product.icon }}" width="76" class="me-3 rounded-img shadow-sm" alt="App Icon">
+          <img src="{{ product.icon }}" width="76" class="me-3 rounded-img shadow-sm" alt="{{ product.name }} App Icon">
           <div>
             <h3 class="pb-0 m-0">{{ product.name }}</h3>
             <p class="mb-0 text-body-secondary">{{ product.subtitle }}</p>
@@ -13,15 +14,19 @@
           </div>
         </div>
         <p class="pb-2">{{ product.description }}</p>
-        <a href="{{ product.url }}" target="_blank">
-          <img class="mb-md-2" src="{{ product.badge }}" alt="{{ product.alt }}" height="48">
-        </a>
-        <p class="mt-3 small">
-          {% for legal in product.legal.option %}
-          <a class="p-2 nav-hover text-secondary" href="{{ legal.url }}" rel="noopener">{{ legal.name }}</a>
-          {% endfor %}
+        <p class="mb-0">
+          <a class="stretched-link" href="{{ product.url }}" style="position: relative;" target="_blank">
+            <img class="mb-md-2" src="{{ product.badge }}" alt="{{ product.alt }}" height="48">
+          </a>
         </p>
+        <div class="d-flex gap-2">
+          {% for legal in product.legal.option %}
+          <p class="mt-3 small">
+            <a class="p-2 nav-hover text-secondary stretched-link" href="{{ legal.url }}" style="position: relative;" rel="noopener" target="_blank">{{ legal.name }}</a>
+          </p>
+          {% endfor %}
+        </div>
       </div>
     </div>
     {% endfor %}
-  </div>
+</div>

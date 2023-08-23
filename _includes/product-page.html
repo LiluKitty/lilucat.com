@@ -1,0 +1,7 @@
+{% assign product = site.data.products.data[page.index] %}
+<img class="rounded-img shadow-sm mb-md-4 mb-3" src="{{ product.icon }}" alt="{{ product.name }} Icon" width="76" height="76" loading="lazy">
+<h1 class="display-5 fw-bold">{{ page.title }}</h1>
+<p class="fs-4 text-body-secondary mb-md-5">{{ page.description }}</p>
+<p class="mt-3 h5">
+  <a class="p-2 nav-hover" href="{{ product.url }}" rel="noopener" target="_blank">Try for free <i class="h6 bi-arrow-right"></i></a>
+</p>

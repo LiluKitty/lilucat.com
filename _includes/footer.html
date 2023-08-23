@@ -28,6 +28,21 @@
         </div>
       </div>
       {% endfor %}
+      <!-- Products -->
+      <div class="col-md-2 col-sm-4 col mb-4">
+        <div class="widget">          
+          <h5 class="opacity-10">Products</h5>
+          <ul class="list-unstyled">
+            {% for product in site.data.products.data %}
+              {% if product.url == # %}
+              <li class="m-0">{{ product.name }} <span class="badge bg-warning">soon</span></li>
+              {% else %}
+              <li class="py-1"><a class="py-2 footer-hover text-secondary" href="{{ product.url }}" rel="noopener">{{ product.name }}</a></li>
+              {% endif %}
+              {% endfor %}
+          </ul>          
+        </div>
+      </div>
     </div>
     <div class="row align-items-center pb-3">
       <div class="col-md-4 order-2 order-md-1 mb-2">
