@@ -3,6 +3,7 @@ layout: bootstrap
 title: Lilucat
 description: Our team of experienced developers is dedicated to creating high-quality, user-friendly apps that are optimized for Apple's ecosystem.
 image: /assets/img/1024.png
+app_id: 6449741551
 ---
 <div class="container pb-md-5 pb-4 mt-3">
   <div class="p-md-5 p-3 mb-4 bg-light rounded-img">
@@ -12,22 +13,4 @@ image: /assets/img/1024.png
     </div>
   </div>
 	{%- include products.html -%}
-	<div id="country"></div>
-	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-	<script>
-    $.ajax({
-      url: "https://geolocation-db.com/jsonp",
-      jsonpCallback: "callback",
-      dataType: "jsonp",
-      success: function( location ) {
-				var products = "success";
-        if (location.country_code == "US" ) {
-					document.getElementById("country").innerHTML = products;
-					
-        } else {
-					console.log(location.country_code);
-        }
-      }
-    });
-	</script>
 </div>
