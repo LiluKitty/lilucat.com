@@ -22,6 +22,21 @@
   transform: scale(1.01, 1.01);
 }
 
+.product {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.1rem 0.5rem rgba(0,0,0,.05);
+  transition: 
+    background-color 0.25s ease-in-out,
+    box-shadow 0.25s ease-in-out,
+    border-color 0.25s ease-in-out, 
+    transform 0.25s ease-in-out;
+}
+.product:hover {
+  box-shadow: 0 0.1rem 0.5rem rgba(0,0,0,.05) !important;
+  border-radius: 0.5rem;
+  transform: scale(1.01, 1.01);
+}
+
 .release-note:first-of-type .timeline-decorator::before {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1) 50px);
 }
