@@ -17,7 +17,7 @@ app_id: 6449741551
     {% for feature in site.data.screenfree.data %}
     <div class="col-lg-4 mb-4">
       <div class="h-100 p-md-5 p-4 pb-0 pb-md-0 bg-body-tertiary rounded-img text-start"> 
-        <img src="{{ feature.icon }}" width="42" class="mb-3 shadow-sm" alt="{{ feature.name }} Icon">
+        <img src="{{ feature.icon }}" width="42" class="mb-3 shadow-sm rounded-3" alt="{{ feature.name }} Icon">
         <h2 class="pb-2 m-0 fw-semibold">{{ feature.name }}</h3>
         <p class="text-start lead fw-normal text-body-secondary">{{ feature.description }}</p>
         <img src="{{ feature.screenshot }}" class="w-100" alt="{{ feature.name }} Screenshot">
