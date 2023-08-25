@@ -1,0 +1,10 @@
+<div class="nav-scroller py-1 mb-3 border-bottom">
+    <nav class="nav small">
+      {% for category in site.data.blog.data %}
+        {% if category.url == page.permalink %}
+        <a class="nav-item nav-link nav-hover fw-semibold" href="{{ category.url }}">{{ category.name }}</a>{% else %}
+        <a class="nav-item nav-link nav-hover fw-semibold link-body-emphasis text-secondary" href="{{ category.url }}">{{ category.name }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+  </div>

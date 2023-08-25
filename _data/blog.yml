@@ -1,0 +1,11 @@
+data:
+  - name: All
+    url: /blog/
+  - name: Screenfree
+    url: /blog/screenfree/
+  - name: App Lock
+    url: /blog/app-lock/
+  - name: AI PDF Scanner
+    url: /blog/ai-pdf-scanner/
+  - name: AI Math Solver
+    url: /blog/ai-math-solver/

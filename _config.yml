@@ -12,6 +12,11 @@ app_id_app_lock: 6448239603
 app_id_ai_pdf_scanner: 6448180124
 app_id_ai_math_solver: 6449217479
 
+feed:
+  categories:
+    - screebfree
+    - aopp-lock
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

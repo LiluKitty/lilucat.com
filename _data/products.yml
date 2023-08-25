@@ -13,7 +13,7 @@ data:
           url: https://screenfree.lilucat.com/legal/privacy
         - name: Terms Of Use
           url: https://screenfree.lilucat.com/legal/terms
-    page: screen-free
+    page: screenfree
 
   - name: App Lock
     url: https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8
