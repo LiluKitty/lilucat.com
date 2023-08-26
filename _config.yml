@@ -14,8 +14,8 @@ app_id_ai_math_solver: 6449217479
 
 feed:
   categories:
-    - screebfree
-    - aopp-lock
+    - screenfree
+    - app-lock
 
 plugins:
   - jekyll-sitemap

@@ -8,7 +8,7 @@ last_modified_at: 2023-08-22 17:21
 image:
   path: /assets/img/blog/blog-article-2.jpg
   alt: "7 common mistakes everyone makes while traveling"
-published: true
+published: false
 author: Lilucat Team
 app_id: 6449741551
 ---
