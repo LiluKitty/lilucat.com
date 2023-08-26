@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /blog/:slugified_categories/:title/
+permalink: /blog/:categories/:title/
 title: The pros and cons of AI Math Solver
 categories: ai-math-solver
 date: 2023-08-18 14:21

@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /blog/:slugified_categories/:title/
+permalink: /blog/:categories/:title/
 title: "7 common mistakes everyone makes while traveling"
 categories: screenfree
 date: 2023-08-21 10:21

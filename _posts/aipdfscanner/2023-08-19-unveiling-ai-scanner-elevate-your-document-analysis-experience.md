@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /blog/:slugified_categories/:title/
+permalink: /blog/:categories/:title/
 title: "Unveiling AI PDF Scanner: Elevate Your Document Analysis Experience"
 categories: ai-pdf-scanner
 date: 2023-08-19 13:21

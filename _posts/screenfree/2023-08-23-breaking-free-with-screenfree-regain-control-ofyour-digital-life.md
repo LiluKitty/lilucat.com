@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /blog/:slugified_categories/:title/
+permalink: /blog/:categories/:title/
 title: "Breaking Free with Screenfree: Regain Control of Your Digital Life"
 categories: screenfree
 date: 2023-08-23 11:21
