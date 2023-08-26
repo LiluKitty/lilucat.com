@@ -4,18 +4,18 @@
   "description": "fix",
   "scripts": {
     "dev": "bundle exec jekyll serve --livereload --trace",
-    "production": "git add . -A && git commit -a -m 'up to date' && git push"
+    "production": "rm -rf _site && bundle exec jekyll build --trace && gulp && cd _site && git init && git remote add origin git@github.com:LiluKitty/lilucat.com.git && git add . -A && git commit -a -m 'update' && git push origin master --force && cd .. && git add . -A && git commit -a -m 'update' && git push"
   },
   "devDependencies": {
     "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-minify": "^3.1.0",
     "gulp-minify-selectors": "^1.1.0",
-    "minimatch": "^3.0.2",
-    "gulp-htmlmin": "^5.0.1"
+    "gulp-v3": "^3.12.1",
+    "minimatch": "^3.0.2"
   },
   "dependencies": {
     "fsevents": "^2.3.2",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-v3": "^3.12.1"
+    "gulp": "^4.0.2"
   }
 }
