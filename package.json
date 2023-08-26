@@ -4,7 +4,7 @@
   "description": "fix",
   "scripts": {
     "dev": "bundle exec jekyll serve --livereload --trace",
-    "production": "rm -rf _site && bundle exec jekyll build --trace && gulp && cd _site && git init && git remote add origin git@github.com:LiluKitty/lilucat.com.git && git add . -A && git commit -a -m 'update' && git push origin master --force && cd .. && git add . -A && git commit -a -m 'update' && git push"
+    "production": "rm -rf _site && bundle exec jekyll build --trace && gulp && git add . -A && git commit -a -m 'update' && git push origin master"
   },
   "devDependencies": {
     "gulp-clean-css": "^4.3.0",
