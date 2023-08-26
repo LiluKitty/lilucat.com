@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /blog/:categories/:title/
-title: 'Enhance Your Privacy with App Lock: Secure Your Sensitive Apps'
+title: "Enhance Your Privacy with App Lock: Secure Your Sensitive Apps"
 categories: app-lock
 date: 2023-08-22 11:21
 image:
