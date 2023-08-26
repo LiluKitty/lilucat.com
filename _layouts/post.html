@@ -25,13 +25,13 @@
 									<span class="fw-semibold">{{ page.author }}</span>
 								</a>
 								<span class="px-1 text-secondary fw-bold d-flex align-items-center">·</span>
-								<p class="d-flex m-0 align-items-center text-body-secondary">Last updated: {{ page.last_modified_at | date_to_string }}</p>
+								<p class="d-flex m-0 align-items-center text-body-secondary">{{ page.last_modified_at | date: "%b %d, %Y" }}</p>
 							</div>
             </div>
 						
 					{{ content }}
 
-					<p class="text-body-secondary mt-4"><small>Originally published on: {{ page.date | date_to_string }}</small></p>
+					<p class="text-body-secondary mt-4"><small>Originally published on: {{ page.date | date: "%b %d, %Y" }}</small></p>
         	</div>
         </main>
         <div class="mt-auto">

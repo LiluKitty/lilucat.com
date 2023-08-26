@@ -4,6 +4,7 @@ permalink: /blog/:categories/:title/
 title: "The pros and cons of AI Math Solver"
 categories: ai-math-solver
 date: 2023-08-18 14:21
+last_modified_at: 2023-08-19 14:21
 image:
   path: /assets/img/blog/the-pros-and-cons-of-ai-math-solver.jpg
   alt: "The pros and cons of AI Math Solver"
