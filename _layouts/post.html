@@ -26,6 +26,11 @@
 								</a>
 								<span class="px-1 text-secondary fw-bold d-flex align-items-center">·</span>
 								<p class="d-flex m-0 align-items-center text-body-secondary">{{ page.last_modified_at | date: "%b %d, %Y" }}</p>
+                {% if page.last_modified_at %}
+                Last updated: {{ page.last_modified_at | date: "%b %d, %Y" }}
+                {% else %}
+                Last updated: {{ page.date | date: "%b %d, %Y" }}
+                {%-endif %}
 							</div>
             </div>
 						
