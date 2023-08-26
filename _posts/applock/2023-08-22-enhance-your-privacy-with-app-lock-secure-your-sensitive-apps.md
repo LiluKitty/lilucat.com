@@ -4,6 +4,7 @@ permalink: /blog/:categories/:title/
 title: "Enhance Your Privacy with App Lock: Secure Your Sensitive Apps"
 categories: app-lock
 date: 2023-08-22 11:21
+last_modified_at: 2023-08-23 16:36
 image:
   path: /assets/img/blog/enhance-your-privacy-with-app-lock-secure-your-sensitive-apps.jpg
   alt: "Enhance Your Privacy with App Lock: Secure Your Sensitive Apps"

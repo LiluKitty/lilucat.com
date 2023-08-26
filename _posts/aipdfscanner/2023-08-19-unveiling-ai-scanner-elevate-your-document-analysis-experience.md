@@ -4,6 +4,7 @@ permalink: /blog/:categories/:title/
 title: "Unveiling AI PDF Scanner: Elevate Your Document Analysis Experience"
 categories: ai-pdf-scanner
 date: 2023-08-19 13:21
+last_modified_at: 2023-08-21 15:22
 image:
   path: /assets/img/blog/unveiling-ai-scanner-elevate-your-document-analysis-experience.jpg
   alt: "Unveiling AI PDF Scanner: Elevate Your Document Analysis Experience"
