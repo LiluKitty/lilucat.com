@@ -2,9 +2,9 @@
 <div class="col-lg-4 mb-4">
   <div class="h-100 bg-body-tertiary rounded-4 text-start position-relative product">
     <a href="{{ post.url }}" class="stretched-link"></a>
-    <div class="d-flex p-3 position-absolute">
+    <div class="position-absolute top-0 mt-3 ps-3">
       <a href="{% if page.url == '/blog/' %} {{ post.categories }}/ {% else %} {{ page.permalink }}{% endif %}" class="stretched-link" style="position: relative;">
-        <span class="mt-2 badge bg-light-subtle text-light-emphasis">{{ post.categories | replace: '-', ' ' | remove: '"]' | remove: '["' | capitalize }}</span>
+        <span class="badge bg-light-subtle text-light-emphasis">{{ post.categories | replace: '-', ' ' | remove: '"]' | remove: '["' | capitalize }}</span>
       </a>
     </div>
     <img src="{{ post.image.path }}" class="w-100 rounded-top-4" alt="{{ post.title }} Image">
