@@ -37,7 +37,7 @@
               {% if product.url == # %}
               <li class="m-0">{{ product.name }} <span class="badge bg-warning">soon</span></li>
               {% else %}
-              <li class="py-1"><a class="py-2 footer-hover text-secondary" href="{{ product.url }}" rel="noopener">{{ product.name }}</a></li>
+              <li class="py-1"><a class="py-2 footer-hover text-secondary" href="{{ product.url }}" rel="noopener" data-splitbee-event="{{ product.name }} to App Store" data-splitbee-event-destination="{{ product.name }}">{{ product.name }}</a></li>
               {% endif %}
               {% endfor %}
           </ul>          
