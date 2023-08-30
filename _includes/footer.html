@@ -9,7 +9,7 @@
         <p class="fs-6 pb-2 pb-sm-3 opacity-60">{{ site.description }}</p>
         {% for item in site.data.footer.social %}
           {% for link in item.links.option %}
-          <a class="btn-social me-3 mb-2" href="{{ link.url }}" target="_blank" rel="noopener" data-splitbee-event="Social: " data-splitbee-event-destination="{{ link.name }}"><i class="text-dark h4 {{ link.image }}"></i></a>{% endfor %}
+          <a class="btn-social me-3 mb-2" href="{{ link.url }}" target="_blank" rel="noopener" data-splitbee-event="External Link..." data-splitbee-event-type="Social" data-splitbee-event-destination="{{ link.name }}"><i class="text-dark h4 {{ link.image }}"></i></a>{% endfor %}
         {% endfor %}
       </div>
       {% for item in site.data.footer.data %}
@@ -37,7 +37,7 @@
               {% if product.url == # %}
               <li class="m-0">{{ product.name }} <span class="badge bg-warning">soon</span></li>
               {% else %}
-              <li class="py-1"><a class="py-2 footer-hover text-secondary" href="{{ product.url }}" rel="noopener" data-splitbee-event="{{ product.name }} to App Store" data-splitbee-event-destination="{{ product.name }}">{{ product.name }}</a></li>
+              <li class="py-1"><a class="py-2 footer-hover text-secondary" href="{{ product.url }}" rel="noopener" data-splitbee-event="External Link..." data-splitbee-event-type="App Store" data-splitbee-event-destination="{{ product.name }}">{{ product.name }}</a></li>
               {% endif %}
               {% endfor %}
           </ul>          
