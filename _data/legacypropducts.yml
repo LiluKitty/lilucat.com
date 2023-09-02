@@ -1,0 +1,64 @@
+data:
+  - name: Screenfree
+    url: https://apps.apple.com/app/apple-store/id6449741551?pt=126142472&ct=fromWebsite&mt=8
+    description: Screenfree is the ultimate solution to help you regain control over your digital life and reduce screen time. With Screenfree, you can break free from the addictive grip of your devices and cultivate healthier habits, allowing you to reclaim your time and focus on what truly matters.
+    subtitle: Control, block apps and focus
+    icon: /assets/img/screenfree/Icon-1024.png
+    badge: https://one-badge.com/b/apple/appstore.svg 
+    rating: 5.0
+    ratings: 10
+    legal:
+      option:
+        - name: Privacy Policy
+          url: https://screenfree.lilucat.com/legal/privacy
+        - name: Terms Of Use
+          url: https://screenfree.lilucat.com/legal/terms
+    page: screenfree
+
+  - name: App Lock
+    url: https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8
+    description: App Lock is a privacy app designed to help keep your sensitive apps hidden and secure. With App Lock, you can easily lock and hide any app you want, ensuring that you remain private and out of sight from prying eyes.
+    subtitle: Locker and Block Apps
+    icon: /assets/img/applock/Icon-1024.png
+    badge: https://one-badge.com/b/apple/appstore.svg 
+    rating: 4.6
+    ratings: 580
+    legal:
+      option:
+        - name: Privacy Policy
+          url: https://applock.lilucat.com/legal/privacy
+        - name: Terms Of Use
+          url: https://applock.lilucat.com/legal/terms
+    page: app-lock
+
+  - name: AI PDF Scanner
+    url: https://apps.apple.com/app/apple-store/id6448180124?pt=126142472&ct=fromWebsite&mt=8
+    description: With AI PDF Scanner, you can effortlessly comprehend textbooks, handouts, and presentations in no time. But that's not all. AI PDF Scanner also helps you efficiently analyze all types of documents - from financial and sales reports to project and business proposals, invoices, slides and legal contracts. With AI PDF Scanner, you can quickly access the information you need, saving you valuable time and effort.
+    subtitle: Scan, Edit, Sign and Filler
+    icon: /assets/img/aipdfscanner/Icon-1024.png
+    badge: https://one-badge.com/b/apple/appstore.svg
+    rating: 5.0
+    ratings: 20
+    legal:
+      option:
+        - name: Privacy Policy
+          url: https://aipdf.lilucat.com/legal/privacy
+        - name: Terms Of Use
+          url: https://aipdf.lilucat.com/legal/terms
+    page: ai-pdf-scanner
+
+  - name: AI Math Solver
+    url: https://apps.apple.com/app/apple-store/id6449217479?pt=126142472&ct=fromWebsite&mt=8
+    description: The ultimate app for solving all your math problems with ease! Whether you're a student struggling with homework or just someone who wants to sharpen their math skills, our app is here to help you.
+    subtitle: Solver AI Scanner Helper
+    icon: /assets/img/aimath/Icon-1024.png
+    badge: https://one-badge.com/b/apple/appstore.svg 
+    rating: 4.4
+    ratings: 31
+    legal:
+      option:
+        - name: Privacy Policy
+          url: https://mathsolver.lilucat.com/legal/privacy
+        - name: Terms Of Use
+          url: https://mathsolver.lilucat.com/legal/terms
+    page: ai-math-solver  
