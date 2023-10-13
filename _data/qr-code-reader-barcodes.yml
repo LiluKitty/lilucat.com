@@ -1,0 +1,53 @@
+data:
+  - title: Raw QR Code
+    image: /assets/img/qr-code-reader/barcodes/iconQRCode.webp
+    supported: Yes
+    details: More about <a href="https://en.wikipedia.org/wiki/QR_code" target="_blank" rel="noopener">Quick Response code</a> on Wikipedia
+  - title: Raw Aztec Code
+    image: /assets/img/qr-code-reader/barcodes/iconAztecCode.webp
+    supported: Yes
+    details: More about <a href="https://en.wikipedia.org/wiki/Aztec_Code" target="_blank" rel="noopener">Aztec Code</a> on Wikipedia
+  - title: Raw Data Matrix Code
+    image: /assets/img/qr-code-reader/barcodes/iconDataMatrix.webp
+    supported: Yes
+    details: More about <a href="https://en.wikipedia.org/wiki/Data_Matrix" target="_blank" rel="noopener">Data Matrix </a> on Wikipedia
+  - title: Raw PDF417 Code
+    image: /assets/img/qr-code-reader/barcodes/iconPdf417.webp
+    supported: Yes
+    details: More about <a href="https://en.wikipedia.org/wiki/PDF417" target="_blank" rel="noopener">PDF417</a> on Wikipedia
+  - title: Code 39
+    image: /assets/img/qr-code-reader/barcodes/iconCode39.webp
+    supported: Yes
+    details: More about <a href="https://en.wikipedia.org/wiki/Code_39" target="_blank" rel="noopener">Code 39</a> on Wikipedia
+  - title: Code 93
+    image: /assets/img/qr-code-reader/barcodes/iconCode93.webp
+    supported: Yes
+    details: More about <a href="https://en.wikipedia.org/wiki/Code_93" target="_blank" rel="noopener">Code 93</a> on Wikipedia
+  - title: Code 128
+    image: /assets/img/qr-code-reader/barcodes/iconCode128.webp
+    supported: Yes
+    details: More about <a href="https://en.wikipedia.org/wiki/Code_128" target="_blank" rel="noopener">Code 128</a> on Wikipedia
+  - title: UPC-E
+    image: /assets/img/qr-code-reader/barcodes/iconUpce.webp
+    supported: Yes
+    details: More about <a href="https://en.wikipedia.org/wiki/Universal_Product_Code#UPC-E" target="_blank" rel="noopener">Universal Product Code</a> on Wikipedia
+  - title: EAN8
+    image: /assets/img/qr-code-reader/barcodes/iconEan8.webp
+    supported: Yes
+    details: More about <a href="https://en.wikipedia.org/wiki/EAN-8" target="_blank" rel="noopener">EAN-8</a> on Wikipedia
+  - title: EAN13
+    image: /assets/img/qr-code-reader/barcodes/iconcEan13.webp
+    supported: Yes
+    details: More about <a href="https://en.wikipedia.org/wiki/International_Article_Number" target="_blank" rel="noopener">International Article Number</a> on Wikipedia
+  - title: ITF-14
+    image: /assets/img/qr-code-reader/barcodes/iconItf14.webp
+    supported: Yes
+    details: More about <a href="https://en.wikipedia.org/wiki/ITF-14" target="_blank" rel="noopener">ITF-14</a> on Wikipedia
+  - title: 2 of 5 Interleaved
+    image: /assets/img/qr-code-reader/barcodes/iconInterleaved2Of5.webp
+    supported: Yes
+    details: More about <a href="https://en.wikipedia.org/wiki/Interleaved_2_of_5" target="_blank" rel="noopener">Interleaved 2 of 5</a> on Wikipedia
+  - title: MaxiCode
+    image: /assets/img/qr-code-reader/barcodes/iconMaxiCode.webp
+    supported: No
+    details: More about <a href="https://en.wikipedia.org/wiki/MaxiCode" target="_blank" rel="noopener">MaxiCode</a> on Wikipedia

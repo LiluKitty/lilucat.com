@@ -1,11 +1,11 @@
 ---
 layout: bootstrap
-title: Focus App
-description: Control, block apps and focus
-permalink: /focus-app/
+title: QR Code Reader
+description: Smart barcode scanner
+permalink: /qr-code-reader/
 data: data
-index: 0
-app_id: 6469043032
+index: 2
+app_id: 6449741551
 ---
 <div class="container pb-md-5 pb-4 mt-3">
   <div class="px-md-5 pt-md-3 pt-2 mb-4 bg-light rounded-img mx-auto text-center">
@@ -14,7 +14,7 @@ app_id: 6469043032
     </div>
   </div>
   <div class="row align-items-md-stretch">
-    {% for feature in site.data.focus-app.data %}
+    {% for feature in site.data.qr-code-reader.data %}
     <div class="col-lg-4 mb-4">
       <div class="h-100 p-md-5 p-4 pb-0 pb-md-0 bg-body-tertiary rounded-img text-start"> 
         <img src="{{ feature.icon }}" width="42" class="mb-3 shadow-sm rounded-3" alt="{{ feature.name }} Icon">
@@ -25,4 +25,11 @@ app_id: 6469043032
     </div>
     {% endfor %}
   </div>
+  <p class="mt-md-4 h5 mb-md-0">
+    <a class="p-2 px-3 nav-hover icon-link icon-link-hover" href="/qr-code-reader/supported-barcodes/" rel="noopener">Supported Barcodes 
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </a>
+  </p>
 </div>

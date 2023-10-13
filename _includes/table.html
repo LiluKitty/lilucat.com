@@ -1,0 +1,25 @@
+<table class="table text-start">
+    <thead>
+      <tr>
+        <th scope="col" style="width: 18%;"></th>
+        <th scope="col">{{ include.2th }}</th>
+        <th scope="col" style="width: 15%;" class="text-center">{{ include.3th }}</th>
+        <th scope="col" style="width: 30%;">{{ include.4th }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in site.data.qr-code-reader-barcodes.data %}
+      <tr class="align-middle">
+        <td class="ps-0"><img class="card-img-top" src="{{ item.image }}" alt="{{ item.title }}" width=""></td>
+        <td>{{ item.title }}<br>
+        </td>
+        {% if item.supported == true %}
+        <td class="text-center"><i class="text-success h3 bi bi-check"></i></td>
+        {% else %}
+        <td class="text-center"><i class="text-danger h3 bi bi-x"></i></td>
+        {% endif %}
+        <td>{{ item.details }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>

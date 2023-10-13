@@ -30,3 +30,19 @@ data:
         - name: Terms Of Use
           url: https://applock.lilucat.com/legal/terms
     page: app-lock
+
+  - name: QR Code Reader
+    url: https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8
+    description: Use your Mac, iPhone, iPad, or iPod touch to scan a QR code & Barcodes and add them to your Apple Wallet and Widgets.
+    subtitle: Smart barcode scanner
+    icon: /assets/img/qr-code-reader/qr-code-reader-app-icon.png
+    badge: https://one-badge.com/b/apple/appstore.svg
+    rating: 4.7
+    ratings: 580
+    legal:
+      option:
+        - name: Privacy Policy
+          url: https://qrcode.lilucat.com/legal/privacy
+        - name: Terms Of Use
+          url: https://qrcode.lilucat.com/legal/terms
+    page: qr-code-reader

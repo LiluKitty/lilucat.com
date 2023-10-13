@@ -1,0 +1,15 @@
+data:
+  - name: Create QR Codes
+    description: Scan, save and edit all your QR Codes and Barcodes in one place.
+    icon: /assets/img/qr-code-reader/create-qr-codes.svg
+    screenshot: /assets/img/qr-code-reader/QR-Code-Reader-Create-Barcodes.png
+
+  - name: Widgets
+    description: QR Codes and Barcodes on your Home or Lock Screen.
+    icon: /assets/img/qr-code-reader/interactive-widgets.svg
+    screenshot: /assets/img/qr-code-reader/QR-Code-Reader-Interactive-Widget.png
+
+  - name: Apple Wallet
+    description: Add to the wallet any scanned QR Code or Barcode.
+    icon: /assets/img/qr-code-reader/apple-wallet.svg
+    screenshot: /assets/img/qr-code-reader/QR-Code-Reader-Apple-Wallet.png
