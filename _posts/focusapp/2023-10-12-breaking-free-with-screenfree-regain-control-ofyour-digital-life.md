@@ -3,7 +3,7 @@ layout: post
 permalink: /blog/:categories/:title/
 title: "Breaking Free with Focus App: Regain Control of Your Digital Life"
 categories: focus-app
-date: 2023-10-13 11:21
+date: 2023-10-12 11:21
 image:
   path: /assets/img/blog/breaking-free-with-focus-app-regain-control-ofyour-digital-life.jpg
   alt: "Breaking Free with Focus App: Regain Control of Your Digital Life"
