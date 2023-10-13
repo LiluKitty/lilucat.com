@@ -1,8 +1,8 @@
 data:
   - name: All
     url: /blog/
-  - name: Screenfree
-    url: /blog/screenfree/
+  - name: Focus App
+    url: /blog/focus-app/
   - name: App Lock
     url: /blog/app-lock/
   # - name: AI PDF Scanner

@@ -1,0 +1,28 @@
+---
+layout: bootstrap
+title: Focus App
+description: Control, block apps and focus
+permalink: /focus-app/
+data: data
+index: 0
+app_id: 6449741551
+---
+<div class="container pb-md-5 pb-4 mt-3">
+  <div class="px-md-5 pt-md-3 pt-2 mb-4 bg-light rounded-img mx-auto text-center">
+    <div class="container-fluid py-md-5 py-3">
+      {%- include product-page.html -%}
+    </div>
+  </div>
+  <div class="row align-items-md-stretch">
+    {% for feature in site.data.focus-app.data %}
+    <div class="col-lg-4 mb-4">
+      <div class="h-100 p-md-5 p-4 pb-0 pb-md-0 bg-body-tertiary rounded-img text-start"> 
+        <img src="{{ feature.icon }}" width="42" class="mb-3 shadow-sm rounded-3" alt="{{ feature.name }} Icon">
+        <h2 class="pb-2 m-0 fw-semibold">{{ feature.name }}</h3>
+        <p class="text-start lead fw-normal text-body-secondary">{{ feature.description }}</p>
+        <img src="{{ feature.screenshot }}" class="w-100" alt="{{ feature.name }} Screenshot">
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

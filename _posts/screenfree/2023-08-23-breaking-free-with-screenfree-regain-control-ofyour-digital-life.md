@@ -10,6 +10,7 @@ image:
 published: true
 author: Lilucat Team
 app_id: 6449741551
+published: false
 ---
 
 In a world brimming with technology and connectivity, our digital devices have become an integral part of our lives. While they offer convenience, entertainment, and productivity, they can also wield an addictive power that steals our time and focus. The constant notifications, endless scrolling, and compulsive app-checking can leave us feeling overwhelmed, disconnected, and drained. But fear not, for a solution is at hand. Introducing <a class="fw-semibold" href="https://lilucat.com/screenfree/">Screenfree</a> – your partner in regaining control over your digital life and embracing healthier tech habits.

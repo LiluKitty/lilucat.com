@@ -11,11 +11,12 @@ twitter_username: NewLiluKitty
 app_id_app_lock: 6448239603
 app_id_ai_pdf_scanner: 6448180124
 app_id_ai_math_solver: 6449217479
+focus-app: 6469043032
 
 feed:
   categories:
-    - screenfree
     - app-lock
+    - focus-app
 
 plugins:
   - jekyll-sitemap

@@ -1,0 +1,15 @@
+data:
+  - name: Instant Block
+    description: Instantly block apps with a tap, regain focus, boost productivity
+    icon: /assets/img/focus-app/Focus-App-Instant-Block.png
+    screenshot: /assets/img/focus-app/Focus-App-Instant-Block-Preview.png
+
+  - name: Daily Limit
+    description: Define the daily time limit you want to spend on each application
+    icon: /assets/img/focus-app/Focus-App-Daily-Limit.png
+    screenshot: /assets/img/focus-app/Focus-App-Daily-Limit-Preview.png
+
+  - name: Schedule
+    description: Set automatic app blocks on specific weekdays and times
+    icon: /assets/img/focus-app/Focus-App-Schedule.png
+    screenshot: /assets/img/focus-app/Focus-App-Schedule-Preview.png

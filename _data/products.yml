@@ -1,19 +1,19 @@
 data:
-  - name: Screenfree
-    url: https://apps.apple.com/app/apple-store/id6449741551?pt=126142472&ct=fromWebsite&mt=8
-    description: Screenfree is the ultimate solution to help you regain control over your digital life and reduce screen time. With Screenfree, you can break free from the addictive grip of your devices and cultivate healthier habits, allowing you to reclaim your time and focus on what truly matters.
+  - name: Focus App
+    url: https://apps.apple.com/app/apple-store/id6469043032?pt=126142472&ct=fromWebsite&mt=8
+    description: Focus App is the ultimate solution to help you regain control over your digital life and reduce screen time. With Focus App, you can break free from the addictive grip of your devices and cultivate healthier habits, allowing you to reclaim your time and focus on what truly matters.
     subtitle: Control, block apps and focus
-    icon: /assets/img/screenfree/Icon-1024.png
+    icon: /assets/img/focus-app/Focu-App-Icon.png
     badge: https://one-badge.com/b/apple/appstore.svg 
     rating: 5.0
     ratings: 10
     legal:
       option:
         - name: Privacy Policy
-          url: https://screenfree.lilucat.com/legal/privacy
+          url: https://focus.lilucat.com/legal/privacy
         - name: Terms Of Use
-          url: https://screenfree.lilucat.com/legal/terms
-    page: screenfree
+          url: https://focus.lilucat.com/legal/terms
+    page: focus-app
 
   - name: App Lock
     url: https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8

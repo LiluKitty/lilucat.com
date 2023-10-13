@@ -2,7 +2,7 @@
 layout: post
 permalink: /blog/:categories/:title/
 title: "7 common mistakes everyone makes while traveling"
-categories: screenfree
+categories: focus-app
 date: 2023-08-21 10:21
 last_modified_at: 2023-08-22 17:21
 image:
