@@ -4,7 +4,7 @@ permalink: /blog/:categories/:title/
 title: "How To Lock Messages App Using App Lock"
 categories: app-lock
 date: 2023-10-27 11:21
-last_modified_at: 22023-10-27 11:21
+last_modified_at: 2023-10-27 11:21
 image:
   path: /assets/img/blog/how-to-lock-messages-app-using-applock.jpg
   alt: "How To Lock Messages App Using App Lock"
