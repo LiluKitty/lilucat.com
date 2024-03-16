@@ -13,6 +13,17 @@ app_id: 6448239603
       {%- include product-page.html -%}
     </div>
   </div>
+  <div class="px-md-5 mb-4 bg-light rounded-img mx-auto justify-content-center">
+    <ul id="featured-list" class="row row-cols-2 row-cols-sm-2 row-cols-lg-4 row-cols-xl-4 list-unstyled justify-content-center gap-3">
+      <li class="col hover my-3" data-name="bgr" data-tags="bgr tech" data-categories="brand">
+        <a class="d-block text-body-emphasis text-decoration-none" href="https://bgr.com/tech/this-app-hides-iphone-apps-from-your-home-screen-so-no-one-can-spy-on-them" target="_blank" rel="noopener">
+          <div class="px-3 text-center rounded">
+            <img class="card-img-top px-2" src="/assets/img/applock/bgr.com.svg" width="172" height="56" alt="{{ source.name }}">
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
   <div class="row align-items-md-stretch">
     {% for feature in site.data.applock.data %}
     <div class="col-lg-4 mb-4">
