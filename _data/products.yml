@@ -18,7 +18,7 @@ data:
   - name: App Lock
     url: https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8
     description: App Lock is a privacy app designed to help keep your sensitive apps hidden and secure. With App Lock, you can easily lock and hide any app you want, ensuring that you remain private and out of sight from prying eyes.
-    subtitle: Locker and Block Apps
+    subtitle: Locker for iPhone and Block
     icon: /assets/img/applock/Icon-1024.png
     badge: https://one-badge.com/b/apple/appstore.svg 
     rating: 4.6
@@ -34,7 +34,7 @@ data:
   - name: QR Code Generator
     url: https://apps.apple.com/app/apple-store/id6469319539?pt=126142472&ct=fromWebsite&mt=8
     description: Use your Mac, iPhone, iPad, or iPod touch to scan a QR code & Barcodes and add them to your Apple Wallet and Widgets.
-    subtitle: Smart barcode scanner
+    subtitle: Barcode Reader & Scanner
     icon: /assets/img/qr-code-reader/qr-code-reader-app-icon.png
     badge: https://one-badge.com/b/apple/appstore.svg
     rating: 4.8
