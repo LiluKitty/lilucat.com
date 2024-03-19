@@ -1,12 +1,12 @@
 data:
-  - name: Focus App
+  - name: Screen Time
     url: https://apps.apple.com/app/apple-store/id6469043032?pt=126142472&ct=fromWebsite&mt=8
-    description: Focus App is the ultimate solution to help you regain control over your digital life and reduce screen time. With Focus App, you can break free from the addictive grip of your devices and cultivate healthier habits, allowing you to reclaim your time and focus on what truly matters.
-    subtitle: Control, block apps and focus
+    description: ScreenTime App is the ultimate solution to help you regain control over your digital life and reduce screen time. With ScreenTime App, you can break free from the addictive grip of your devices and cultivate healthier habits, allowing you to reclaim your time and focus on what truly matters.
+    subtitle: Parental & Digital Detox
     icon: /assets/img/focus-app/Focu-App-Icon.png
     badge: https://one-badge.com/b/apple/appstore.svg 
-    rating: 5.0
-    ratings: 10
+    rating: 4.9
+    ratings: 23
     legal:
       option:
         - name: Privacy Policy
@@ -21,8 +21,8 @@ data:
     subtitle: Locker and Block Apps
     icon: /assets/img/applock/Icon-1024.png
     badge: https://one-badge.com/b/apple/appstore.svg 
-    rating: 4.7
-    ratings: 580
+    rating: 4.6
+    ratings: 2700
     legal:
       option:
         - name: Privacy Policy
@@ -31,14 +31,14 @@ data:
           url: https://applock.lilucat.com/legal/terms
     page: app-lock
 
-  - name: QR Code Reader
+  - name: QR Code Generator
     url: https://apps.apple.com/app/apple-store/id6469319539?pt=126142472&ct=fromWebsite&mt=8
     description: Use your Mac, iPhone, iPad, or iPod touch to scan a QR code & Barcodes and add them to your Apple Wallet and Widgets.
     subtitle: Smart barcode scanner
     icon: /assets/img/qr-code-reader/qr-code-reader-app-icon.png
     badge: https://one-badge.com/b/apple/appstore.svg
-    rating: 4.7
-    ratings: 580
+    rating: 4.8
+    ratings: 106
     legal:
       option:
         - name: Privacy Policy
