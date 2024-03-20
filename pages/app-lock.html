@@ -14,14 +14,16 @@ app_id: 6448239603
     </div>
   </div>
   <div class="px-md-5 mb-4 bg-light rounded-img mx-auto justify-content-center">
-    <ul id="featured-list" class="row row-cols-2 row-cols-sm-2 row-cols-lg-4 row-cols-xl-4 list-unstyled justify-content-center gap-3">
-      <li class="col hover my-3" data-name="bgr" data-tags="bgr tech" data-categories="brand">
-        <a class="d-block text-body-emphasis text-decoration-none" href="https://bgr.com/tech/this-app-hides-iphone-apps-from-your-home-screen-so-no-one-can-spy-on-them" target="_blank" rel="noopener">
+    <ul id="featured-list" class="row row-cols-2 row-cols-sm-2 row-cols-lg-4 row-cols-xl-4 list-unstyled justify-content-center py-3">
+      {% for item in site.data.applock.featured %}
+      <li class="col" data-name="bgr" data-tags="bgr tech" data-categories="brand">
+        <a class="d-block text-body-emphasis text-decoration-none hover" href="{{ item.destination }}" target="_blank" rel="noopener">
           <div class="px-3 text-center rounded">
-            <img class="card-img-top px-2" src="/assets/img/applock/bgr.com.svg" width="172" height="56" alt="{{ source.name }}">
+            <img class="card-img-top px-2" src="{{ item.logo }}" width="172" height="56" alt="{{ item.name }}Logo">
           </div>
         </a>
       </li>
+      {% endfor %}
     </ul>
   </div>
   <div class="row align-items-md-stretch">

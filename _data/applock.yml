@@ -13,3 +13,12 @@ data:
     description: App Lock supports Widgets. Now, is easier to block any app you want.
     icon: /assets/img/applock/Widgets.svg
     screenshot: /assets/img/applock/App-Lock-Widgets.png
+
+featured:
+  - name: BGR
+    logo: /assets/img/applock/bgr.com.svg
+    destination: https://bgr.com/tech/this-app-hides-iphone-apps-from-your-home-screen-so-no-one-can-spy-on-them
+
+  - name: iDeviceHelp
+    logo: /assets/img/applock/idevicehelp.svg
+    destination: https://www.youtube.com/watch?v=uP_--HLJZg8
