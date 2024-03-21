@@ -11,10 +11,6 @@
                 "paths": ["/app-lock/*"]
             },
             {
-                "appID": "4FJX9NH8Q4.com.lilucat.aipdf",
-                "paths": ["/ai-pdf-scanner/*"]
-            },
-            {
                 "appID": "4FJX9NH8Q4.com.lilucat.mathsolver.new",
                 "paths": ["/ai-math-solver/*"]
             }

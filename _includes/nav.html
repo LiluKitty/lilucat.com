@@ -9,9 +9,11 @@
    </div>
      <nav class="my-2 my-md-0 me-md-3">
         {% for item in site.data.nav.data %}
-        {% if page.url == {{item.url}} %}
-        <a class="p-2 px-3 nav-hover" href="{{item.url}}" rel="noopener">{{item.name}}</a>{% else %}
-        <a class="p-2 px-3 nav-hover text-secondary" href="{{item.url}}" rel="noopener">{{item.name}}</a>{% endif %}
+         {% if page.url == {{item.url}} %}
+         <a class="p-2 px-3 nav-hover" href="{{item.url}}" rel="noopener">{{item.name}}</a>
+            {% else %}
+         <a class="p-2 px-3 nav-hover text-secondary" href="{{item.url}}" rel="noopener">{{item.name}}</a>
+         {% endif %}
         {% endfor %}
      </nav>
   </header>

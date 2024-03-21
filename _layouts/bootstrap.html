@@ -7,6 +7,18 @@
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     {%- include head-elements.html -%}
+
+    {% case page.url %}
+      {% when "/" %}
+        {%- include applicationjson-lilucat.html -%}
+      {% when "/app-lock/" %}
+        {%- include applicationjson-app-lock.html -%}
+      {% when "/focus-app/" %}
+        {%- include applicationjson-focus-app.html -%}
+      {% when "/qr-code-reader/" %}
+        {%- include applicationjson-qr-code-reader.html -%}
+    {% endcase %}
+
   </head>
   <body class="d-flex h-100">
     <div class="d-flex w-100 h-100 mx-auto flex-column">
