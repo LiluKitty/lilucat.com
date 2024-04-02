@@ -6,7 +6,7 @@ data:
     icon: /assets/img/focus-app/Focu-App-Icon.png
     badge: https://one-badge.com/b/apple/appstore.svg 
     rating: 4.9
-    ratings: 23
+    ratings: 52
     legal:
       option:
         - name: Privacy Policy
@@ -21,8 +21,8 @@ data:
     subtitle: Locker for iPhone and Block
     icon: /assets/img/applock/Icon-1024.png
     badge: https://one-badge.com/b/apple/appstore.svg 
-    rating: 4.6
-    ratings: 2839
+    rating: 4.7
+    ratings: 3156
     legal:
       option:
         - name: Privacy Policy
