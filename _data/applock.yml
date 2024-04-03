@@ -35,6 +35,11 @@ featured:
     logo: /assets/img/applock/iphoneitalia.com.svg
     destination: https://www.iphoneitalia.com/824180/app-lock-proteggere-accesso-nascondere-app
 
+  - name: MacMagazine
+    title: App Lock permite bloquear e ocultar qualquer aplicativo no iPhone
+    logo: /assets/img/applock/macmagazine.com.br.svg
+    destination: https://macmagazine.com.br/post/2024/04/01/app-lock-permite-bloquear-e-ocultar-qualquer-aplicativo-no-iphone/
+
   - name: 9to5Mac
     title: App Lock lets you protect and hide any app from the iPhone Home Screen
     logo: /assets/img/applock/9to5mac.com.svg
