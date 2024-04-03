@@ -13,27 +13,26 @@ app_id: 6448239603
       {%- include product-page.html -%}
     </div>
   </div>
-  <div class="px-md-5 mb-4 bg-light rounded-img mx-auto justify-content-center">
-    <ul id="featured-list" class="row row-cols-2 row-cols-sm-2 row-cols-lg-4 row-cols-xl-4 list-unstyled justify-content-center py-3">
+  <div class="px-md-5 pt-md-3 pt-2 mb-4 bg-light rounded-img mx-auto text-center">
+    <ul id="featured-list" class="row row-cols-lg-5 row-cols-md-4 row-cols-2 mx-auto justify-content-around g-3 mb-0 py-3">
       {% for item in site.data.applock.featured %}
-      <li class="col" data-name="bgr" data-tags="bgr tech" data-categories="brand">
+      <li class="col mt-0 py-md-0 py-2" data-name="{{ item.name }}" data-tags="{{ item.name | downcase}} tech" data-categories="online publication">
         <a class="d-block text-body-emphasis text-decoration-none hover" href="{{ item.destination }}" target="_blank" rel="noopener">
-          <div class="px-3 text-center rounded">
-            <img class="card-img-top px-2" src="{{ item.logo }}" width="172" height="56" alt="{{ item.name }}Logo">
-          </div>
+          <img class="card-img-top px-md-2" src="{{ item.logo }}" width="172" height="56" alt="{{ item.name }} Logo" title="{{ item.name }} Logo">
         </a>
       </li>
       {% endfor %}
     </ul>
   </div>
+
   <div class="row align-items-md-stretch">
     {% for feature in site.data.applock.data %}
     <div class="col-lg-4 mb-4">
       <div class="h-100 p-md-5 p-4 pb-0 pb-md-0 bg-body-tertiary rounded-img text-start"> 
-        <img src="{{ feature.icon }}" width="42" class="mb-3 shadow-sm rounded-3" alt="{{ feature.name }} Icon">
+        <img src="{{ feature.icon }}" width="42" class="mb-3 shadow-sm rounded-3" alt="{{ feature.name }} icon" title="{{ feature.name }} icon">
         <h2 class="pb-2 m-0 fw-semibold">{{ feature.name }}</h3>
         <p class="text-start lead fw-normal text-body-secondary">{{ feature.description }}</p>
-        <img src="{{ feature.screenshot }}" class="w-100" alt="{{ feature.name }} Screenshot">
+        <img src="{{ feature.screenshot }}" class="w-100" alt="{{ feature.description }} image" title="{{ feature.description }}">
       </div>
     </div>
     {% endfor %}
