@@ -4,7 +4,7 @@
     <a href="{{ post.url }}" class="stretched-link"></a>
     <div class="position-absolute top-0 mt-3 ps-3">
       <a href="{% if page.url == '/blog/' %} {{ post.categories }}/ {% else %} {{ page.permalink }}{% endif %}" class="stretched-link" style="position: relative;">
-        <span class="badge bg-light-subtle text-light-emphasis">{{ post.categories | replace: '-', ' ' | remove: '"]' | remove: '["' | capitalize }}</span>
+        <span class="badge bg-light-subtle text-light-emphasis">{{ post.categories | replace: '-', ' ' | remove: '"]' | remove: '["' | capitalizewords }}</span>
       </a>
     </div>
     <img src="{{ post.image.path }}" class="w-100 rounded-top-4" alt="{{ post.title }} Image">

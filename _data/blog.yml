@@ -5,7 +5,7 @@ data:
     url: /blog/focus-app/
   - name: App Lock
     url: /blog/app-lock/
-  # - name: AI PDF Scanner
-  #   url: /blog/ai-pdf-scanner/
+  - name: QR Code Reader
+    url: /blog/qr-code-reader/
   # - name: AI Math Solver
   #   url: /blog/ai-math-solver/

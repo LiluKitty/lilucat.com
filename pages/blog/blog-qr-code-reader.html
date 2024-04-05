@@ -1,28 +1,24 @@
 ---
 layout: bootstrap
-title: AI PDF Scanner Blog
+title: QR Code Reader Blog
 description: Explore Insights, Tips, and Inspiration for Personal Growth, Productivity, and Success. Join us on a journey of self-improvement and empowerment.
-permalink: /blog/ai-pdf-scanner/
+permalink: /blog/qr-code-reader/
 image:
   path: https://lilucat.com/assets/img/blog/cover.jpg
   alt: Lilucat Blog Page
 app_id: 6448180124
-published: false
+published: true
 ---
 <div class="container pb-md-5 pb-4 mt-3">
-  
-  {%- include blog-nav.html -%}
-  
+  {%- include blog-nav.html -%} 
   <div class="p-md-5 p-4 mb-4 bg-light rounded-img">
     <div class="container-fluid py-md-5">
       <h1 class="display-5 fw-bold">{{ page.title }}</h1>
       <p class="col-md-9 fs-4 mb-0">{{ page.description }}</p>
     </div>
   </div>
-
   <div class="row align-items-md-stretch">
-    {% assign sorted-posts = site.posts | where: "categories","ai-pdf-scanner" %}
+    {% assign sorted-posts = site.posts | where: "categories","qr-code-reader" %}
     {%- include blog-card.html -%}
   </div>
-
 </div>
