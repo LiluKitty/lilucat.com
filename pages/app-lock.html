@@ -17,7 +17,7 @@ app_id: 6448239603
     <ul id="featured-list" class="row row-cols-lg-5 row-cols-md-4 row-cols-2 mx-auto justify-content-around g-3 mb-0 py-3">
       {% for item in site.data.applock.featured %}
       <li class="col mt-0 py-md-0 py-2" data-name="{{ item.name }}" data-tags="{{ item.name | downcase}} tech" data-categories="online publication">
-        <a class="d-block text-body-emphasis text-decoration-none hover" href="{{ item.destination }}" target="_blank" rel="noopener">
+        <a class="d-block text-body-emphasis text-decoration-none hover" href="{{ item.url }}" target="_blank" rel="noopener">
           <img class="card-img-top px-md-2" src="{{ item.logo }}" width="172" height="56" alt="{{ item.name }} Logo" title="{{ item.name }} Logo">
         </a>
       </li>
