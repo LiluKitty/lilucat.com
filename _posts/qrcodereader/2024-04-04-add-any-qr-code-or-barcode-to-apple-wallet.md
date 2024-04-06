@@ -30,17 +30,16 @@ To see a comprehensive list of all the supported QR codes and barcodes by the ap
 ### Step 1: Generate Your Code
 Choose the type of QR code or barcode you want to create. Enter the required information, and the app generates a scannable code instantly.
 <figure class="text-center">
-  <img class="w-100" src="/assets/img/blog/step-1-generate-your-code.webp" alt="Step 1: Generate Your Code" loading="lazy" />
+  <img class="w-100" src="/assets/img/blog/step-1-generate-your-code.webp" srcset="/assets/img/blog/step-1-generate-your-code.webp 1x, /assets/img/blog/step-1-generate-your-code@2x.webp 2x" alt="Step 1: Generate Your Code" loading="lazy" />
   <figcaption class="text-muted small">Step 1: Generate Your Code</figcaption>
 </figure>
-
 
 <br>
 
 ### Step 2: Add to Apple Wallet or Display as a Widget
 After creation, add your code to Apple Wallet with a simple tap, integrating it seamlessly with your digital wallet. Or, opt to display it as a widget on your home screen for quick access.
 <figure class="text-center">
-  <img class="w-100" src="/assets/img/blog/step-2-add-to-apple-wallet-or-display-as-a-widget.webp" alt="Step 2: Add to Apple Wallet or Display as a Widget" loading="lazy" />
+  <img class="w-100" src="/assets/img/blog/step-2-add-to-apple-wallet-or-display-as-a-widget.webp" srcset="/assets/img/blog/step-2-add-to-apple-wallet-or-display-as-a-widget.webp 1x, /assets/img/blog/step-2-add-to-apple-wallet-or-display-as-a-widget@2x.webp 2x" alt="Step 2: Add to Apple Wallet or Display as a Widget" loading="lazy" />
   <figcaption class="text-muted small">Step 2: Add to Apple Wallet or Display as a Widget</figcaption>
 </figure>
 

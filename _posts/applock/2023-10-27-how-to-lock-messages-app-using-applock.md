@@ -27,7 +27,12 @@ I you preffer video format, watch this short video <a class="fw-semibold" href="
 
 To be able to Lock Messages App, you have to <a class="fw-semibold" href="https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8" target="_blank">Download App Lock</a> by searching for it on the Apple App Store or click on this link to Download App Lock. Make sure you have installed the right application otherwise the provided instruction will not work. 
 
-<img class="w-100" src="/assets/img/blog/iphone-home-screen-with-app-lock-installed.webp" alt="iphone home screen with app lock installed">
+<figure class="text-center">
+  <img class="w-100" src="/assets/img/blog/iphone-home-screen-with-app-lock-installed.webp" srcset="/assets/img/blog/iphone-home-screen-with-app-lock-installed.webp 1x, /assets/img/blog/iphone-home-screen-with-app-lock-installed@2x.webp 2x" alt="iphone home screen with app lock installed" loading="lazy" />
+  <figcaption class="text-muted small">iphone home screen with app lock installed</figcaption>
+</figure>
+
+<br>
 
 After you have successfully installed the <a class="fw-semibold" href="https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8" target="_blank">App Lock</a> on your iPhone, procced to set up the passcode and Face ID or Touch ID, depends on your device capabilties. In my case I have successfully enable PIN Code and Face ID, like in the image below. 
 
@@ -37,7 +42,10 @@ Here are the instructions:
 3. Enable PIN Code (this is different passcode, not your device passcode)
 4. Enable Face ID
 
-<img class="w-100" src="/assets/img/blog/set-up-passcode-and-faceid-to-lock-messages-app.webp" alt="this image displays passcode and Face ID option are enabled">
+<figure class="text-center">
+  <img class="w-100" src="/assets/img/blog/set-up-passcode-and-faceid-to-lock-messages-app.webp" srcset="/assets/img/blog/set-up-passcode-and-faceid-to-lock-messages-app.webp 1x, /assets/img/blog/set-up-passcode-and-faceid-to-lock-messages-app@2x.webp 2x" alt="this image displays passcode and Face ID option are enabled" loading="lazy" />
+  <figcaption class="text-muted small">this image displays passcode and Face ID option are enabled</figcaption>
+</figure>
 
 <br>
 
@@ -47,13 +55,19 @@ Now you have all the needed stuff for securely lock your private messages.
 
 From the <a class="fw-semibold" href="https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8" target="_blank">App Lock</a>, switch to the Lock Apps tab and search for Messages, like is showed in the image below, tap on the Start button to activate blocking Messages App. You'll notice that the entire screen becomes blurred; don't worry, that's OK.
 
-<img class="w-100" src="/assets/img/blog/this-image-contains-3-images-of-iphone-and-display-how-to-lock-messages.webp" alt="this image contains 3 images of iphone and display how to lock messages">
+<figure class="text-center">
+  <img class="w-100" src="/assets/img/blog/this-image-contains-3-images-of-iphone-and-display-how-to-lock-messages.webp" srcset="/assets/img/blog/this-image-contains-3-images-of-iphone-and-display-how-to-lock-messages.webp 1x, /assets/img/blog/this-image-contains-3-images-of-iphone-and-display-how-to-lock-messages@2x.webp 2x" alt="this image contains 3 images of iphone and display how to lock messages" loading="lazy" />
+  <figcaption class="text-muted small">this image contains 3 images of iphone and display how to lock messages</figcaption>
+</figure>
 
 <br>
 
 From now on, accessing your messages will require entering <a class="fw-semibold" href="https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8" target="_blank">App Lock</a> passcode or authenticate using Face ID or Touch ID. Now that you know how to lock Messages App on your iPhone, nobody will be able to read your messages from your locked screen.
 
-<img class="w-100" src="/assets/img/blog/iphone-home-screen-with-messages-app-locked.webp" alt="iphone home screen with messages app locked">
+<figure class="text-center">
+  <img class="w-100" src="/assets/img/blog/iphone-home-screen-with-messages-app-locked.webp" srcset="/assets/img/blog/iphone-home-screen-with-messages-app-locked.webp 1x, /assets/img/blog/iphone-home-screen-with-messages-app-locked@2x.webp 2x" alt="iphone home screen with messages app locked" loading="lazy" />
+  <figcaption class="text-muted small">iphone home screen with messages app locked</figcaption>
+</figure>
 
 <br>
 

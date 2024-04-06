@@ -26,16 +26,29 @@ Picture this: I'm at a family gathering, excited to share a funny Snapchat story
 2. Search for **App Lock:** In the App Store's search bar, type "App Lock" and look for the app. Download and install it on your iPhone. Or tap on this link to <a class="fw-semibold" href="https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8" target="_blank">Download App Lock</a>
 
 3. **Open App Lock:** Once installed, open the App Lock app.
-<img class="w-100" src="/assets/img/blog/open-app-lock.webp" alt="open app lock">
+<figure class="text-center"><img class="w-100" src="/assets/img/blog/iphone-home-screen-with-app-lock-installed.webp" srcset="/assets/img/blog/iphone-home-screen-with-app-lock-installed.webp 1x, /assets/img/blog/iphone-home-screen-with-app-lock-installed@2x.webp 2x" alt="iphone home screen with app lock installed" loading="lazy" /><figcaption class="text-muted small">iphone home screen with app lock installed</figcaption></figure>
 
-4. **Set Up a Passcode and Face ID:** To be able to enable Face ID for Snapchat protection, you'll be prompted to set a passcode first. This code will serve as your safeguard for your Snapchat app. Choose a code that only you would know. <br> **Pro Tip**. Choose different passcode from the one you have settled on your iPhone.
-<img class="w-100" src="/assets/img/blog/enable-faceid-to-lock-snapchat.webp" alt="enable faceid to lock snapchat">
+<br>
 
-5. **Select Snapchat:** Next, switch to the Lock Apps tab, and select Snapchat that is located under Social category list. Tap on Start to activete blocking.
-<img class="w-100" src="/assets/img/blog/select-snapchat-and-tap-start-to-block.webp" alt="select snapchat and tap start to block">
+– 4. **Set Up a Passcode and Face ID:** To be able to enable Face ID for Snapchat protection, you'll be prompted to set a passcode first. This code will serve as your safeguard for your Snapchat app. Choose a code that only you would know. <br> **Pro Tip**. Choose different passcode from the one you have settled on your iPhone.
+<figure class="text-center">
+  <img class="w-100" src="/assets/img/blog/set-up-passcode-and-faceid-to-lock-messages-app.webp" srcset="/assets/img/blog/set-up-passcode-and-faceid-to-lock-messages-app.webp 1x, /assets/img/blog/set-up-passcode-and-faceid-to-lock-messages-app@2x.webp 2x" alt="this image displays passcode and Face ID option are enabled" loading="lazy" />
+  <figcaption class="text-muted small">this image displays passcode and Face ID option are enabled</figcaption>
+</figure>
 
-6. **Test Drive:** Lets see if our setup is working as expected. Go to the home screen of your iPhone, and try to open the Snapchat.  If all the steps have been followed correctly, the Snapchat icon should go slightly dark and you should see a screen like the one below when you try to open it.
-<img class="w-100" src="/assets/img/blog/test-if-snapchat-is-blocked.webp" alt="test if snapchat is blocked">
+<br>
+
+– 5. **Select Snapchat:** Next, switch to the Lock Apps tab, and select Snapchat that is located under Social category list. Tap on Start to activete blocking.
+<figure class="text-center">
+  <img class="w-100" src="/assets/img/blog/select-snapchat-and-tap-start-to-block.webp" srcset="/assets/img/blog/select-snapchat-and-tap-start-to-block.webp 1x, /assets/img/blog/select-snapchat-and-tap-start-to-block@2x.webp 2x" alt="select snapchat and tap start to block" loading="lazy" />
+  <figcaption class="text-muted small">select snapchat and tap start to block</figcaption>
+</figure>
+
+– 6. **Test Drive:** Lets see if our setup is working as expected. Go to the home screen of your iPhone, and try to open the Snapchat.  If all the steps have been followed correctly, the Snapchat icon should go slightly dark and you should see a screen like the one below when you try to open it.
+<figure class="text-center">
+  <img class="w-100" src="/assets/img/blog/test-if-snapchat-is-blocked.webp" srcset="/assets/img/blog/test-if-snapchat-is-blocked.webp 1x, /assets/img/blog/test-if-snapchat-is-blocked@2x.webp 2x" alt="test if snapchat is blocked" loading="lazy" />
+  <figcaption class="text-muted small">test if snapchat is blocked</figcaption>
+</figure>
 
 <br>
 
