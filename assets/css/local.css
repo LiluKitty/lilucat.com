@@ -368,3 +368,22 @@ ul {
 .rounded-img {
   border-radius: 1rem !important;
 }
+
+/* Lilucat pet background right */
+.lilucat-pet-bg {
+  display: none;
+}
+@media (min-width: 992px) {
+  .lilucat-pet-bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 380px;
+    height: 380px;
+    background: url('/assets/img/lilucat_pet.png') no-repeat right center/contain;
+    opacity: 0.95;
+    pointer-events: none;
+    z-index: 1;
+  }
+}

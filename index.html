@@ -1,15 +1,13 @@
 ---
 layout: bootstrap
-title: Lilucat
-description: Our team of experienced developers is dedicated to creating high-quality, user-friendly apps that are optimized for Apple's ecosystem.
-image: /assets/img/1024.png
-app_id: 6449741551
+image: /assets/img/lilucat_pet.png
 ---
 <div class="container pb-md-5 pb-4 mt-3">
-  <div class="p-md-5 p-3 mb-4 bg-light rounded-img">
+  <div class="p-md-5 p-3 mb-4 bg-light rounded-img position-relative overflow-hidden" style="min-height: 380px;">
+    <div class="lilucat-pet-bg"></div>
     <div class="container-fluid py-5">
-      <h1 class="display-5 fw-bold">Welcome to Lilucat</h1>
-      <p class="col-md-8 fs-4">Our team of experienced developers is dedicated to creating high-quality, user-friendly apps that are optimized for Apple's ecosystem.</p>
+      <h1 class="display-5 fw-bold">Welcome to {{ site.title }}</h1>
+      <p class="col-md-8 fs-4">{{ site.description }}</p>
     </div>
   </div>
 	{%- include products.html -%}  
