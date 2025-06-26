@@ -6,7 +6,7 @@
           <!-- <img class="rounded-img-compare" src="{{ site.data.footer.logo }}" width="40" alt="{{ site.title }} logo"> -->
           <span class="fw-semibold fs-5 text-dark">{{ site.title }}</span>
         </a>
-        <p class="fs-6 pb-2 pb-sm-3 opacity-60">{{ site.description }}</p>
+        <p class="fs-6 pb-2 pb-sm-3 opacity-60">{{ site.data.footer.description }}</p>
         {% for item in site.data.footer.social %}
           {% for link in item.links.option %}
           <a class="btn-social me-3 mb-2" href="{{ link.url }}" target="_blank" rel="noopener" data-splitbee-event="External Link..." data-splitbee-event-social="{{ link.name }}"><i class="text-dark h4 {{ link.image }}"></i></a>{% endfor %}
