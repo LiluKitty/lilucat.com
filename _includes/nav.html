@@ -1,20 +1,17 @@
-<div class="container py-2">
-  <header class="d-flex flex-column flex-md-row align-items-center pt-3 justify-content-between">
-   <div class="d-flex flex-column flex-md-row align-items-center">
-      <a class="me-md-auto mx-0 text-dark" href="/"> 
-         <div class="pb-md-0 pb-2 pt-1 pt-md-0 mb-0 small lh-sm w-100 text-center text-md-start">
-            <strong class="fw-semibold fs-5">{{ site.data.nav.title }}</strong>
-         </div>
-      </a>
-   </div>
-     <nav class="my-2 my-md-0 me-md-3">
-        {% for item in site.data.nav.data %}
-         {% if page.url == {{item.url}} %}
-         <a class="p-2 px-3 nav-hover" href="{{item.url}}" rel="noopener">{{item.name}}</a>
-            {% else %}
-         <a class="p-2 px-3 nav-hover text-secondary" href="{{item.url}}" rel="noopener">{{item.name}}</a>
-         {% endif %}
-        {% endfor %}
-     </nav>
-  </header>
-</div>
+<nav class="navbar navbar-expand-lg fixed-top" style="backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.3); border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+  <div class="container">
+    <a class="navbar-brand text-dark" href="/">
+      <strong class="fw-semibold fs-5">{{ site.data.nav.title }}</strong>
+    </a>
+    
+    <div class="navbar-nav ms-auto">
+      {% for item in site.data.nav.data %}
+        {% if page.url == {{item.url}} %}
+          <a class="nav-link p-2 px-3 nav-hover" href="{{item.url}}" rel="noopener">{{item.name}}</a>
+        {% else %}
+          <a class="nav-link p-2 px-3 nav-hover text-secondary" href="{{item.url}}" rel="noopener">{{item.name}}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</nav>
