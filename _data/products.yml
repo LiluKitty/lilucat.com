@@ -14,7 +14,7 @@ data:
           url: https://qrcodereaderapp.lilucat.com/legal/privacy
         - name: Terms of Service
           url: https://qrcodereaderapp.lilucat.com/legal/terms
-    page: qr
+    # page: qr
 
   - name: App Lock
     url: https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8
@@ -62,7 +62,7 @@ data:
           url: https://storagecleaner.lilucat.com/legal/privacy
         - name: Terms of Service
           url: https://storagecleaner.lilucat.com/legal/terms
-    page: storage-cleaner
+    # page: storage-cleaner
 
   - name: Clean Up iPhone
     url: https://apps.apple.com/us/app/clean-up-iphone/id6738309812
@@ -78,7 +78,7 @@ data:
           url: https://cleanmeup.lilucat.com/legal/privacy
         - name: Terms of Service
           url: https://cleanmeup.lilucat.com/legal/terms
-    page: clean-up-iphone
+    # page: clean-up-iphone
 
   - name: Photo Vault X
     url: https://apps.apple.com/us/app/photo-vault-x/id6618155410
@@ -94,4 +94,4 @@ data:
           url: https://photovault.lilucat.com/legal/privacy
         - name: Terms of Service
           url: https://photovault.lilucat.com/legal/terms
-    page: photo-vault-x
+    # page: photo-vault-x
