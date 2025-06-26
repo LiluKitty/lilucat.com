@@ -1,0 +1,25 @@
+data:
+  - name: AI-Powered Cleaning
+    description: Automatically finds and removes unnecessary files to free up space.
+    icon: /assets/img/clean-up-iphone/ai-cleaning-icon.png
+    screenshot: /assets/img/clean-up-iphone/ai-cleaning-screenshot.png
+
+  - name: On-Device Processing
+    description: All scans happen on your device, keeping your data 100% private.
+    icon: /assets/img/clean-up-iphone/privacy-icon.png
+    screenshot: /assets/img/clean-up-iphone/privacy-screenshot.png
+
+  - name: Cache Cleaning
+    description: Clears system junk and app cache from Facebook, WhatsApp, Instagram, Netflix, and more.
+    icon: /assets/img/clean-up-iphone/cache-icon.png
+    screenshot: /assets/img/clean-up-iphone/cache-screenshot.png
+
+  - name: Social Clean
+    description: Removes useless media and clutter from your social media apps for better performance.
+    icon: /assets/img/clean-up-iphone/social-clean-icon.png
+    screenshot: /assets/img/clean-up-iphone/social-clean-screenshot.png
+
+  - name: One-Tap Cleanup
+    description: Just press one button, and CleanMeUp does the rest.
+    icon: /assets/img/clean-up-iphone/one-tap-icon.png
+    screenshot: /assets/img/clean-up-iphone/one-tap-screenshot.png 

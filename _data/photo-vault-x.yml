@@ -1,0 +1,30 @@
+data:
+  - name: Password Protection
+    description: Keep your files secure with a robust password system, ensuring only you have access to your private photos and videos.
+    icon: /assets/img/photo-vault-x/password-icon.png
+    screenshot: /assets/img/photo-vault-x/password-screenshot.png
+
+  - name: Organized Storage
+    description: Easily organize your files into custom folders for quick and convenient access.
+    icon: /assets/img/photo-vault-x/organized-icon.png
+    screenshot: /assets/img/photo-vault-x/organized-screenshot.png
+
+  - name: User-Friendly Interface
+    description: Navigate through your memories effortlessly with our intuitive and easy-to-use interface.
+    icon: /assets/img/photo-vault-x/interface-icon.png
+    screenshot: /assets/img/photo-vault-x/interface-screenshot.png
+
+  - name: App Lock
+    description: Instantly lock any app on your device.
+    icon: /assets/img/photo-vault-x/app-lock-icon.png
+    screenshot: /assets/img/photo-vault-x/app-lock-screenshot.png
+
+  - name: High-Quality Viewing
+    description: Enjoy your photos and videos in their full resolution without any quality loss.
+    icon: /assets/img/photo-vault-x/quality-icon.png
+    screenshot: /assets/img/photo-vault-x/quality-screenshot.png
+
+  - name: Secure Sharing
+    description: Share selected files securely with friends and family without compromising your privacy.
+    icon: /assets/img/photo-vault-x/sharing-icon.png
+    screenshot: /assets/img/photo-vault-x/sharing-screenshot.png 

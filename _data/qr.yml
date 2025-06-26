@@ -1,0 +1,15 @@
+data:
+  - name: Scan Anything
+    description: Effortlessly scan QR codes, barcodes, WiFi codes, contact cards, URLs, and more. Whether it's on a product, a flyer, or a screen, QR reads it instantly and reliably.
+    icon: /assets/img/QR/qr-code-reader-app-icon.png
+    screenshot: /assets/img/QR/scan-screenshot.png
+
+  - name: Generate Custom Codes
+    description: Stand out with personalized QR code and barcode generator features. Add your logo, choose colors, and create professional-grade codes for business, events, and more.
+    icon: /assets/img/QR/qr-code-reader-app-icon.png
+    screenshot: /assets/img/QR/generate-screenshot.png
+
+  - name: Built for iPhone
+    description: Optimized for speed and simplicity, QR code scanner for iPhone delivers lightning-fast results with native performance and seamless iOS integration.
+    icon: /assets/img/QR/qr-code-reader-app-icon.png
+    screenshot: /assets/img/QR/iphone-screenshot.png 

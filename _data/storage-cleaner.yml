@@ -1,0 +1,30 @@
+data:
+  - name: Smart Cleaner
+    description: Our smart AI finds photos that look alike, duplicates, blurry pictures, and screenshots so you can decide what to keep or delete.
+    icon: /assets/img/storage-cleaner/smart-cleaner-icon.png
+    screenshot: /assets/img/storage-cleaner/smart-cleaner-screenshot.png
+
+  - name: Social Media Cleanup
+    description: It even checks files from social media apps, helping you clean up stuff you don't need anymore.
+    icon: /assets/img/storage-cleaner/social-media-icon.png
+    screenshot: /assets/img/storage-cleaner/social-media-screenshot.png
+
+  - name: Quick Video Cleanup
+    description: Easily pick and delete videos you no longer want to free up extra space.
+    icon: /assets/img/storage-cleaner/video-cleanup-icon.png
+    screenshot: /assets/img/storage-cleaner/video-cleanup-screenshot.png
+
+  - name: Swipe to Delete
+    description: Keep or delete photos by swiping left or right—it's quick and fun to use!
+    icon: /assets/img/storage-cleaner/swipe-icon.png
+    screenshot: /assets/img/storage-cleaner/swipe-screenshot.png
+
+  - name: Fast and Easy
+    description: Clean your phone in just seconds and enjoy more storage for new photos, videos, and apps.
+    icon: /assets/img/storage-cleaner/fast-icon.png
+    screenshot: /assets/img/storage-cleaner/fast-screenshot.png
+
+  - name: Simple Design
+    description: The app is made to be easy for everyone, so you can clean up without any hassle.
+    icon: /assets/img/storage-cleaner/simple-icon.png
+    screenshot: /assets/img/storage-cleaner/simple-screenshot.png 

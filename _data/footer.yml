@@ -16,11 +16,11 @@ social:
   - social: Social
     links:
       option:
-        - name: TikTok
-          url: https://www.tiktok.com/@lilucatapps/
-          image: bi-tiktok
+        #- name: TikTok
+        #  url: https://www.tiktok.com/@lilucat_apps/
+        #  image: bi-tiktok
         - name: YouTube
-          url: https://www.youtube.com/@lilucatapps/
+          url: https://www.youtube.com/@lilucat_apps/
           image: bi-youtube
 
 url: https://lilucat.com

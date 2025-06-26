@@ -1,19 +1,20 @@
 data:
-  - name: Screen Time
-    url: https://apps.apple.com/app/apple-store/id6469043032?pt=126142472&ct=fromWebsite&mt=8
-    description: ScreenTime App is the ultimate solution to help you regain control over your digital life and reduce screen time. With ScreenTime App, you can break free from the addictive grip of your devices and cultivate healthier habits, allowing you to reclaim your time and focus on what truly matters.
-    subtitle: Parental & Digital Detox
-    icon: /assets/img/focus-app/Focu-App-Icon.png
+
+  - name: QR
+    url: https://apps.apple.com/us/app/qr/id6745213752
+    description: The best QR Code Reader, Scanner & Generator! Custom your perfect QR Code! QR is the fastest, most intuitive way to scan QR codes, barcodes, and create your own custom codes—all in one sleek, privacy-first app.
+    subtitle: Code Reader Scanner Generator
+    icon: /assets/img/QR/qr-app-icon.png
     badge: https://one-badge.com/b/apple/appstore.svg 
-    rating: 4.9
-    ratings: 52
+    rating: 4.8
+    ratings: 125
     legal:
       option:
         - name: Privacy Policy
-          url: https://focus.lilucat.com/legal/privacy
-        - name: Terms Of Use
-          url: https://focus.lilucat.com/legal/terms
-    page: focus-app
+          url: https://qrcodereaderapp.lilucat.com/legal/privacy
+        - name: Terms of Service
+          url: https://qrcodereaderapp.lilucat.com/legal/terms
+    page: qr
 
   - name: App Lock
     url: https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8
@@ -31,18 +32,66 @@ data:
           url: https://applock.lilucat.com/legal/terms
     page: app-lock
 
-  - name: QR Code Generator
+  - name: QR Code Reader
     url: https://apps.apple.com/app/apple-store/id6469319539?pt=126142472&ct=fromWebsite&mt=8
-    description: Use your Mac, iPhone, iPad, or iPod touch to scan a QR code & Barcodes and add them to your Apple Wallet and Widgets.
-    subtitle: Barcode Reader & Scanner
+    description: QR Code Reader is the fastest and most reliable QR code scanner and barcode reader for iPhone. Scan any QR code or barcode instantly with your camera.
+    subtitle: QR Code Scanner & Barcode Reader
     icon: /assets/img/qr-code-reader/qr-code-reader-app-icon.png
-    badge: https://one-badge.com/b/apple/appstore.svg
-    rating: 4.8
-    ratings: 106
+    badge: https://one-badge.com/b/apple/appstore.svg 
+    rating: 4.7
+    ratings: 89
     legal:
       option:
         - name: Privacy Policy
           url: https://qrcode.lilucat.com/legal/privacy
-        - name: Terms Of Use
+        - name: Terms of Service
           url: https://qrcode.lilucat.com/legal/terms
     page: qr-code-reader
+
+  - name: Storage Cleaner
+    url: https://apps.apple.com/us/app/storage-cleaner/id6455376072
+    description: Is your device running out of space? Storage Cleaner is the perfect app to help you clean up and stay organized. With powerful AI and simple tools, you can make room for the things you care about in just a few steps.
+    subtitle: Free Up Space, Clean Up Photos
+    icon: /assets/img/storage-cleaner/storage-cleaner-app-icon.png
+    badge: https://one-badge.com/b/apple/appstore.svg 
+    rating: 4.4
+    ratings: 205
+    legal:
+      option:
+        - name: Privacy Policy
+          url: https://storagecleaner.lilucat.com/legal/privacy
+        - name: Terms of Service
+          url: https://storagecleaner.lilucat.com/legal/terms
+    page: storage-cleaner
+
+  - name: Clean Up iPhone
+    url: https://apps.apple.com/us/app/clean-up-iphone/id6738309812
+    description: Clean Up is a powerful app that helps you free up space and keep your device running smoothly. With advanced AI technology, it scans your storage and finds the best way to clean up junk, remove clutter, and improve performance.
+    subtitle: Phone Cleaner Free Up Storage
+    icon: /assets/img/clean-up-iphone/clean-up-iphone-app-icon.png
+    badge: https://one-badge.com/b/apple/appstore.svg 
+    rating: 4.6
+    ratings: 102
+    legal:
+      option:
+        - name: Privacy Policy
+          url: https://cleanmeup.lilucat.com/legal/privacy
+        - name: Terms of Service
+          url: https://cleanmeup.lilucat.com/legal/terms
+    page: clean-up-iphone
+
+  - name: Photo Vault X
+    url: https://apps.apple.com/us/app/photo-vault-x/id6618155410
+    description: Secure Your Memories with Photo Vault. Protect your precious memories with Photo Vault, the ultimate app for securing your photos and videos with a password. Whether it's cherished family moments, important documents, or personal videos, Photo Vault ensures they remain private and safe.
+    subtitle: App Lock, hide videos & pic
+    icon: /assets/img/photo-vault-x/photo-vault-x-app-icon.png
+    badge: https://one-badge.com/b/apple/appstore.svg 
+    rating: 4.4
+    ratings: 59
+    legal:
+      option:
+        - name: Privacy Policy
+          url: https://photovault.lilucat.com/legal/privacy
+        - name: Terms of Service
+          url: https://photovault.lilucat.com/legal/terms
+    page: photo-vault-x
