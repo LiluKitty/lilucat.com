@@ -2,7 +2,7 @@ data:
 
   - name: QR
     url: https://apps.apple.com/us/app/qr/id6745213752
-    description: The best QR Code Reader, Scanner & Generator! Custom your perfect QR Code! QR is the fastest, most intuitive way to scan QR codes, barcodes, and create your own custom codes—all in one sleek, privacy-first app.
+    description: Scan any QR code instantly and create your own custom codes. The fastest and most intuitive QR scanner you'll ever use.
     subtitle: Code Reader Scanner Generator
     icon: /assets/img/QR/qr-app-icon.png
     badge: https://one-badge.com/b/apple/appstore.svg 
@@ -18,28 +18,28 @@ data:
 
   - name: App Lock
     url: https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8
-    description: App Lock is a privacy app designed to help keep your sensitive apps hidden and secure. With App Lock, you can easily lock and hide any app you want, ensuring that you remain private and out of sight from prying eyes.
-    subtitle: Locker for iPhone and Block
+    description: Keep your private apps safe and hidden. Lock any app with a password and protect your sensitive information from prying eyes.
+    subtitle: Password for Apps, Hide, Block
     icon: /assets/img/applock/Icon-1024.png
     badge: https://one-badge.com/b/apple/appstore.svg 
-    rating: 4.7
-    ratings: 3156
+    rating: 4.6
+    ratings: 3000
     legal:
       option:
         - name: Privacy Policy
           url: https://applock.lilucat.com/legal/privacy
-        - name: Terms Of Use
+        - name: Terms of Service
           url: https://applock.lilucat.com/legal/terms
     page: app-lock
 
   - name: QR Code Reader
     url: https://apps.apple.com/app/apple-store/id6469319539?pt=126142472&ct=fromWebsite&mt=8
-    description: QR Code Reader is the fastest and most reliable QR code scanner and barcode reader for iPhone. Scan any QR code or barcode instantly with your camera.
-    subtitle: QR Code Scanner & Barcode Reader
+    description: Scan QR codes, barcodes, and create your own. Works with WiFi, contacts, calendar events, and more. Your all-in-one QR solution.
+    subtitle: Barcodes Scanner & Maker
     icon: /assets/img/qr-code-reader/qr-code-reader-app-icon.png
     badge: https://one-badge.com/b/apple/appstore.svg 
-    rating: 4.7
-    ratings: 89
+    rating: 4.4
+    ratings: 103
     legal:
       option:
         - name: Privacy Policy
@@ -50,7 +50,7 @@ data:
 
   - name: Storage Cleaner
     url: https://apps.apple.com/us/app/storage-cleaner/id6455376072
-    description: Is your device running out of space? Storage Cleaner is the perfect app to help you clean up and stay organized. With powerful AI and simple tools, you can make room for the things you care about in just a few steps.
+    description: Running out of space? Clean up your device easily with smart AI that finds duplicates, blurry photos, and unnecessary files.
     subtitle: Free Up Space, Clean Up Photos
     icon: /assets/img/storage-cleaner/storage-cleaner-app-icon.png
     badge: https://one-badge.com/b/apple/appstore.svg 
@@ -66,7 +66,7 @@ data:
 
   - name: Clean Up iPhone
     url: https://apps.apple.com/us/app/clean-up-iphone/id6738309812
-    description: Clean Up is a powerful app that helps you free up space and keep your device running smoothly. With advanced AI technology, it scans your storage and finds the best way to clean up junk, remove clutter, and improve performance.
+    description: Free up space and boost your device performance. Our AI finds junk files and cleans them up automatically.
     subtitle: Phone Cleaner Free Up Storage
     icon: /assets/img/clean-up-iphone/clean-up-iphone-app-icon.png
     badge: https://one-badge.com/b/apple/appstore.svg 
@@ -82,7 +82,7 @@ data:
 
   - name: Photo Vault X
     url: https://apps.apple.com/us/app/photo-vault-x/id6618155410
-    description: Secure Your Memories with Photo Vault. Protect your precious memories with Photo Vault, the ultimate app for securing your photos and videos with a password. Whether it's cherished family moments, important documents, or personal videos, Photo Vault ensures they remain private and safe.
+    description: Keep your precious photos and videos safe with password protection. Hide sensitive memories and lock apps for ultimate privacy.
     subtitle: App Lock, hide videos & pic
     icon: /assets/img/photo-vault-x/photo-vault-x-app-icon.png
     badge: https://one-badge.com/b/apple/appstore.svg 
