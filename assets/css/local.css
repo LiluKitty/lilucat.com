@@ -382,8 +382,15 @@ ul {
 
 /* Lilucat pet background right */
 .lilucat-pet-bg {
-  display: none;
+  animation: float-pet 3.5s ease-in-out infinite;
 }
+
+@keyframes float-pet {
+  0% { transform: translateY(0) scale(1);}
+  50% { transform: translateY(-4px) scale(1.02);}
+  100% { transform: translateY(0) scale(1);}
+}
+
 @media (min-width: 992px) {
   .lilucat-pet-bg {
     display: block;
