@@ -4,20 +4,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lilucat.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-email: support@lilucat.com
-support_mail: mailto:support@lilucat.com
-github_username: LiluKitty
-twitter_username: NewLiluKitty
-app_id_app_lock: 6448239603
-app_id_ai_pdf_scanner: 6448180124
-app_id_ai_math_solver: 6449217479
-focus-app: 6469043032
-qr-code-reader: 6469319539
+support_mail: support@lilucat.com
 
-feed:
-  categories:
-    - app-lock
-    - focus-app
 
 plugins:
   - jekyll-sitemap
@@ -28,9 +16,6 @@ plugins:
 sass:
 style: compressed
 
-collections:
-  legal:
-    output: true
 
 exclude:
   - package.json
