@@ -31,6 +31,7 @@ data:
         - name: Terms of Service
           url: https://applock.lilucat.com/legal/terms
     page: app-lock
+    included_in_pro: true
 
   - name: QR Code Reader
     url: https://apps.apple.com/app/apple-store/id6469319539?pt=126142472&ct=fromWebsite&mt=8
@@ -47,6 +48,7 @@ data:
         - name: Terms of Service
           url: https://qrcode.lilucat.com/legal/terms
     page: qr-code-reader
+    included_in_pro: true
 
   - name: Storage Cleaner
     url: https://apps.apple.com/us/app/storage-cleaner/id6455376072
@@ -63,6 +65,7 @@ data:
         - name: Terms of Service
           url: https://storagecleaner.lilucat.com/legal/terms
     # page: storage-cleaner
+    included_in_pro: true
 
   - name: Clean Up iPhone
     url: https://apps.apple.com/us/app/clean-up-iphone/id6738309812
@@ -95,3 +98,4 @@ data:
         - name: Terms of Service
           url: https://photovault.lilucat.com/legal/terms
     # page: photo-vault-x
+    included_in_pro: true
