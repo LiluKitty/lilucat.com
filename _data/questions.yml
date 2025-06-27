@@ -1,19 +1,42 @@
 data:
-  - question: how to lock apps on iphone
-    answer: null
-  - question: how to lock app on iphone
-    answer: null
-  - question: how to lock messages
-    answer: null
-  - question: how to lock your messages
-    answer: null
-  - question: how to app lock in iphone
-    answer: null
-  - question: how to lock application in iphone
-    answer: null
-  - question: how to use app lock in iphone
-    answer: null
-  - question: how to lock instagram chat
-    answer: null
-  - question: how to lock app in iphone
-    answer: null
+  - question: How to lock apps on iPhone?
+    answer: "Super easy! Just grab App Lock from the App Store, open it up, and set up a passcode or Face ID (whatever you prefer). Then pick which apps you want to keep private - like your messages, social media, or banking apps. Hit 'Start' and boom! Those apps are now locked up tight. No more worrying about someone snooping through your stuff."
+  
+  - question: How to lock Messages app on iPhone?
+    answer: "Want to keep your texts private? App Lock has got you covered! Open the app, find 'Messages' in the list, set up your passcode, and tap 'Start'. Now your Messages app is like a vault - you'll need to unlock it every time you want to check your texts. Perfect for keeping your conversations private!"
+  
+  - question: How to lock Instagram on iPhone?
+    answer: "Instagram getting too addictive? Or just want to keep it private? No problem! Open App Lock, find Instagram in your app list, set up your security (passcode or Face ID works great), and turn on protection. Now Instagram is locked down - you'll need to unlock it every time you want to scroll through your feed."
+  
+  - question: How to lock Snapchat on iPhone?
+    answer: "Snapchat can be a privacy concern, right? Here's how to lock it up: Open App Lock, find Snapchat in the list, set up your passcode or Face ID, and hit 'Start'. Now your Snapchat is protected - no one can open it without your permission. Your snaps stay private!"
+  
+  - question: How to hide apps on iPhone?
+    answer: "Want to make apps completely disappear from your home screen? App Lock can do that! Open the app, pick which apps you want to hide, turn on the 'Hide' option, and poof! They're gone from your home screen. But don't worry - you can still access them through App Lock whenever you need them."
+  
+  - question: How to lock WhatsApp on iPhone?
+    answer: "WhatsApp has all your private chats, so let's keep it secure! Open App Lock, find WhatsApp in the app list, set up your passcode or Face ID, and enable protection. Now your WhatsApp is locked - no one can read your messages without your permission. Your conversations stay private!"
+  
+  - question: How to lock banking apps on iPhone?
+    answer: "Your banking apps have sensitive info, so extra protection is smart! Open App Lock, select your banking apps from the list, set up a strong passcode, and turn on protection. Now your financial info has an extra security layer - like having a second lock on your digital wallet."
+  
+  - question: How to lock apps with Face ID?
+    answer: "Love Face ID? App Lock works with it too! Go to Settings in the app, turn on Face ID authentication, and set it up. Now you can unlock your protected apps just by looking at your phone - no need to type in a passcode every time. Super convenient and secure!"
+  
+  - question: How to lock apps with Touch ID?
+    answer: "Still rocking Touch ID? No worries! App Lock supports it too. Go to Settings in the app, enable Touch ID, and you're all set. Now you can unlock your protected apps with just your fingerprint - quick, easy, and secure!"
+  
+  - question: How to backup locked apps data?
+    answer: "Don't want to lose your app lock settings? Good news - App Lock automatically backs everything up to iCloud! Just make sure you're signed into iCloud on your device, and all your app lock configurations are safely stored. If you get a new phone, all your settings will be there waiting for you."
+  
+  - question: Can App Lock lock system apps?
+    answer: "App Lock can lock most third-party apps, but some system apps (like Settings, Phone, etc.) are protected by iOS and can't be locked. This is actually a good thing - it ensures you can always access essential system functions. But all your social media, messaging, and banking apps can be locked!"
+  
+  - question: Does App Lock work in the background?
+    answer: "Yes! App Lock runs in the background and automatically locks your protected apps whenever you switch away from them or lock your phone. It's always working to keep your apps secure, so you don't have to remember to lock them manually."
+  
+  - question: How to temporarily disable App Lock?
+    answer: "Need to disable App Lock temporarily? Easy! Open the App Lock app, go to Settings, and you'll find an option to temporarily disable protection. This is useful when you're at home and want quick access to your apps. Just remember to turn it back on when you're done!"
+  
+  - question: Is App Lock safe and private?
+    answer: "Absolutely! App Lock is designed with your privacy in mind. Your passcode is stored securely on your device, and the app doesn't collect or share any of your personal data. Plus, it works completely offline - your app lock settings never leave your phone."
