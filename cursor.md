@@ -246,6 +246,42 @@ _posts/
 - Build a coherent design system
 - **Always mobile-first**
 
+## 🖼️ Image Optimization
+
+### Product Screenshots Optimization Process
+
+#### Standard Dimensions
+- **App icons**: 76×76 px (consistent across site)
+
+#### Optimization Workflow
+1. **Resize**: Convert to target dimensions using `sips`
+   ```bash
+   sips -z 402 320 original.png --out resized.png
+   ```
+2. **Convert**: PNG to WebP using `cwebp` with quality 80
+   ```bash
+   cwebp resized.png -o optimized.webp
+   ```
+3. **Update**: YAML data files to reference new WebP images
+4. **Clean**: Remove temporary PNG files
+
+#### Expected Results
+- **Format**: WebP with excellent compression
+- **Quality**: Maintained visual quality at 100% compression
+- **Performance**: Faster loading, better Core Web Vitals
+
+#### File Naming Convention
+- **Screenshots**: `Product-Feature-320x402.webp`
+- **Icons**: `product-icon-76x76.webp`
+- **Logos**: `publication-logo-172x56.webp`
+
+#### Benefits
+- **Faster loading**: Significantly smaller file sizes
+- **Better performance**: Reduced bandwidth usage
+- **Mobile-optimized**: Correct dimensions for mobile screens
+- **Modern format**: WebP with universal browser support
+- **SEO friendly**: Better page speed scores
+
 ---
 
 *This guide reflects the best practices observed in the current project and should evolve over time.* 
