@@ -1,6 +1,7 @@
 {
-    "name": "Lilucat: Our team of experienced developers is dedicated to creating high-quality, user-friendly apps that are optimized for Apple's ecosystem.",
+    "name": "Lilucat - High-quality iOS apps for productivity and privacy",
     "short_name": "Lilucat",
+    "description": "Our team creates user-friendly apps optimized for Apple's ecosystem",
     "icons": [
         {
             "src": "/apple-touch-icon.png",
@@ -21,34 +22,49 @@
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone",
+    "start_url": "/",
     "shortcuts": [
         {
-          "name": "Screenfree - Screen Time",
-          "short_name": "Screefree",
-          "description": "Control, block apps and focus",
-          "url": "/screen-free/",
-          "icons": [{ "src": "/assets/img/screenfree/Icon-1024.png", "sizes": "412x412" }]
+            "name": "Screenfree - Screen Time Control",
+            "short_name": "Screenfree",
+            "description": "Control, block apps and focus",
+            "url": "/screenfree/",
+            "icons": [{ "src": "/assets/img/screenfree/Icon-1024.png", "sizes": "1024x1024" }]
         },
         {
             "name": "App Lock for iPhone",
             "short_name": "App Lock",
-            "description": "Locker and Block Apps",
+            "description": "Secure your sensitive apps with Face ID",
             "url": "/app-lock/",
-            "icons": [{ "src": "/assets/img/applock/Icon-1024.png", "sizes": "412x412" }]
-          },
-          {
-            "name": "AI Scanner: PDF and Documents",
-            "short_name": "AI PDF Scanner",
-            "description": "Scan, Edit, Sign and Filler",
+            "icons": [{ "src": "/assets/img/applock/Icon-1024.png", "sizes": "1024x1024" }]
+        },
+        {
+            "name": "AI PDF Scanner",
+            "short_name": "AI Scanner",
+            "description": "Scan, edit, sign and fill documents",
             "url": "/ai-pdf-scanner/",
-            "icons": [{ "src": "/assets/img/aipdfscanner/Icon-1024.png", "sizes": "412x412" }]
-          },
-          {
+            "icons": [{ "src": "/assets/img/aipdfscanner/Icon-1024.png", "sizes": "1024x1024" }]
+        },
+        {
             "name": "AI Math Solver",
             "short_name": "AI Math",
-            "description": "Solver AI Scanner Helper",
+            "description": "Solve math problems with AI assistance",
             "url": "/ai-math-solver/",
-            "icons": [{ "src": "/assets/img/aimath/Icon-1024.png", "sizes": "412x412" }]
-          }
-      ]
+            "icons": [{ "src": "/assets/img/aimath/Icon-1024.png", "sizes": "1024x1024" }]
+        },
+        {
+            "name": "QR Code Reader",
+            "short_name": "QR Reader",
+            "description": "Scan QR codes and create barcodes",
+            "url": "/qr-code-reader/",
+            "icons": [{ "src": "/assets/img/qr-code-reader/qr-code-reader-app-icon.png", "sizes": "1024x1024" }]
+        },
+        {
+            "name": "Focus App",
+            "short_name": "Focus",
+            "description": "Stay focused and productive",
+            "url": "/focus-app/",
+            "icons": [{ "src": "/assets/img/focus-app/Icon-1024.png", "sizes": "1024x1024" }]
+        }
+    ]
 }
