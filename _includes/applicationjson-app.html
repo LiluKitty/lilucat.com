@@ -1,0 +1,22 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "{{ page.title | escape }}",
+  "description": "{{ page.description | escape }}",
+  "applicationCategory": "{{ page.category | escape }}",
+  "operatingSystem": "{{ page.os | escape }}",
+  "image": "{{ site.url }}{{ page.image }}",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ page.rating }}",
+    "reviewCount": "{{ page.review_count }}"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "{{ page.price }}",
+    "priceCurrency": "{{ page.price_currency }}",
+    "category": "free"
+  }
+}
+</script> 
