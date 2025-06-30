@@ -399,7 +399,7 @@ ul {
     right: 0;
     width: 380px;
     height: 380px;
-    background: url('/assets/img/lilucat_pet.png') no-repeat right center/contain;
+    background: url('/assets/img/lilucat_pet.webp') no-repeat right center/contain;
     opacity: 0.95;
     pointer-events: none;
     z-index: 1;
