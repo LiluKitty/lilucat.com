@@ -28,10 +28,10 @@ app_id: 6448239603
     {% for feature in site.data.applock.data %}
     <div class="col-lg-4 mb-4">
       <div class="h-100 p-md-5 p-4 pb-0 pb-md-0 bg-body-tertiary rounded-img"> 
-        <img src="{{ feature.icon }}" width="42" class="mb-3 shadow-sm rounded-3" alt="{{ feature.name }} icon" title="{{ feature.name }} icon">
+        <img src="{{ feature.icon }}" width="42" height="42" class="mb-3 shadow-sm rounded-3" alt="{{ feature.name }} icon" title="{{ feature.name }} icon">
         <h2 class="pb-2 m-0 fw-semibold">{{ feature.name }}</h2>
         <p class="lead fw-normal text-body-secondary">{{ feature.description }}</p>
-        <img src="{{ feature.screenshot }}" class="w-100" alt="{{ feature.description }} image" title="{{ feature.description }}">
+        <img src="{{ feature.screenshot }}" class="w-100" alt="{{ feature.description }} image" title="{{ feature.description }}" width="320" height="402" loading="lazy">
       </div>
     </div>
     {% endfor %}
