@@ -7,7 +7,8 @@
     "build": "rm -rf _site && bundle exec jekyll build --trace",
     "gulp": "gulp",
     "deploy": "git add . -A && git commit -m 'update' && git push origin master",
-    "deploy-force": "git add . -A && git commit -m 'update' && git push origin master --force"
+    "deploy-force": "git add . -A && git commit -m 'update' && git push origin master --force",
+    "clean": "bundle exec jekyll clean"
   },
   "devDependencies": {
     "gulp-clean-css": "^4.3.0",
