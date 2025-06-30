@@ -10,10 +10,10 @@
     <tbody>
       {% for item in site.data.qr-code-reader-barcodes.data %}
       <tr class="align-middle">
-        <td class="ps-0"><img class="card-img-top" src="{{ item.image }}" alt="{{ item.title }}" width=""></td>
+        <td class="ps-0"><img class="card-img-top" src="{{ item.image }}" alt="{{ item.title }}" width="76" height="76"></td>
         <td>{{ item.title }}<br>
         </td>
-        {% if item.supported == true %}
+        {% if item.supported == "Yes" %}
         <td class="text-center"><i class="text-success h3 bi bi-check"></i></td>
         {% else %}
         <td class="text-center"><i class="text-danger h3 bi bi-x"></i></td>
