@@ -37,7 +37,7 @@ data:
     url: https://apps.apple.com/app/apple-store/id6469319539?pt=126142472&ct=fromWebsite&mt=8
     description: Scan QR codes, barcodes, and create your own. Works with WiFi, contacts, calendar events, and more. Your all-in-one QR solution.
     subtitle: Barcodes Scanner & Maker
-    icon: /assets/img/qr-code-reader/qr-code-reader-app-icon.png
+    icon: /assets/img/qr-code-reader/qr-code-reader-app-icon.webp
     badge: https://one-badge.com/b/apple/appstore.svg 
     rating: 4.4
     ratings: 103
