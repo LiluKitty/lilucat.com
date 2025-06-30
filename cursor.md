@@ -1,45 +1,45 @@
-# Guía de Estilo para Cursor - Lilucat.com
+# Style Guide for Cursor - Lilucat.com
 
-## 🎯 Filosofía del Proyecto
+## 🎯 Project Philosophy
 
-Este es un sitio web Jekyll para **Lilucat**, una empresa que desarrolla aplicaciones iOS simples y útiles. El proyecto sigue principios de **simplicidad**, **legibilidad** y **mobile-first**.
+This is a Jekyll website for **Lilucat**, a company that develops simple and useful iOS apps. The project follows principles of **simplicity**, **readability**, and **mobile-first**.
 
-## 🏗️ Arquitectura del Proyecto
+## 🏗️ Project Architecture
 
-### Estructura de Carpetas
+### Folder Structure
 ```
 lilucat.com/
-├── _config.yml          # Configuración principal de Jekyll
-├── _data/               # Datos estructurados (YAML)
-├── _includes/           # Componentes reutilizables
-├── _layouts/            # Plantillas de página
-├── _plugins/            # Plugins personalizados (Ruby)
-├── _posts/              # Posts del blog organizados por categoría
-├── assets/              # Recursos estáticos
-│   ├── css/            # Estilos CSS
+├── _config.yml          # Main Jekyll configuration
+├── _data/               # Structured data (YAML)
+├── _includes/           # Reusable components
+├── _layouts/            # Page templates
+├── _plugins/            # Custom plugins (Ruby)
+├── _posts/              # Blog posts organized by category
+├── assets/              # Static assets
+│   ├── css/            # CSS styles
 │   ├── js/             # JavaScript
-│   └── img/            # Imágenes organizadas por producto
-├── pages/               # Páginas estáticas
-└── Gemfile             # Dependencias de Ruby
+│   └── img/            # Images organized by product
+├── pages/               # Static pages
+└── Gemfile             # Ruby dependencies
 ```
 
-## 📝 Convenciones de Código
+## 📝 Code Conventions
 
-### Idioma y Contenido
-- **Todos los textos deben escribirse en inglés**: Títulos, descripciones, contenido de páginas, posts del blog
-- **Consistencia lingüística**: Mantener el mismo idioma en todo el sitio
-- **SEO optimizado**: Usar términos en inglés para mejor posicionamiento
-- **Audiencia global**: El contenido en inglés permite llegar a más usuarios
+### Language and Content
+- **All text must be written in English**: Titles, descriptions, page content, blog posts
+- **Consistent language**: Keep the same language throughout the site
+- **SEO optimized**: Use English terms for better search ranking
+- **Global audience**: English content reaches more users
 
 ### HTML/Liquid Templates
 
-#### Estructura de Includes
-- **Nombres descriptivos**: `product-page.html`, `nav.html`, `footer.html`
-- **Responsive design**: Siempre mobile-first
-- **Accesibilidad**: Incluir `alt`, `title`, `rel="noopener"` en enlaces externos
-- **Contenido en inglés**: Todos los textos visibles al usuario
+#### Includes Structure
+- **Descriptive names**: `product-page.html`, `nav.html`, `footer.html`
+- **Responsive design**: Always mobile-first
+- **Accessibility**: Include `alt`, `title`, `rel="noopener"` in external links
+- **Content in English**: All user-visible text
 
-#### Ejemplo de Include:
+#### Example Include:
 ```html
 {% assign product = site.data.products.data[page.index] %}
 <img class="rounded-4 shadow-sm mb-md-4 mb-3" 
@@ -52,13 +52,13 @@ lilucat.com/
 
 ### CSS
 
-#### Organización
-- **Mobile-first**: Media queries para pantallas más grandes
-- **Clases utilitarias**: Usar Bootstrap 5 + clases personalizadas
-- **Transiciones suaves**: `transition: 0.25s ease-in-out`
-- **Comentarios**: Solo cuando la lógica es compleja
+#### Organization
+- **Mobile-first**: Media queries for larger screens
+- **Utility classes**: Use Bootstrap 5 + custom classes
+- **Smooth transitions**: `transition: 0.25s ease-in-out`
+- **Comments**: Only when logic is complex
 
-#### Ejemplo de Estilo:
+#### Example Style:
 ```css
 .hover {
   border-radius: 0.5rem;
@@ -78,12 +78,12 @@ lilucat.com/
 
 ### JavaScript
 
-#### Estructura
-- **Funciones simples**: Una función por archivo cuando sea posible
-- **Nombres descriptivos**: `thankYou()`, `needImprove()`
-- **Tracking**: Integración con Splitbee para analytics
+#### Structure
+- **Simple functions**: One function per file when possible
+- **Descriptive names**: `thankYou()`, `needImprove()`
+- **Tracking**: Splitbee integration for analytics
 
-#### Ejemplo:
+#### Example:
 ```javascript
 function thankYou() {
     document.getElementById("helpful").innerHTML = '<div class="py-2">Thank You!</div>';
@@ -93,12 +93,12 @@ function thankYou() {
 
 ### YAML (Data Files)
 
-#### Estructura de Datos
-- **Indentación consistente**: 2 espacios
-- **Nombres descriptivos**: `products.yml`, `nav.yml`
-- **Organización lógica**: Agrupar datos relacionados
+#### Data Structure
+- **Consistent indentation**: 2 spaces
+- **Descriptive names**: `products.yml`, `nav.yml`
+- **Logical organization**: Group related data
 
-#### Ejemplo:
+#### Example:
 ```yaml
 data:
   - name: QR
@@ -112,12 +112,12 @@ data:
 
 ### Ruby (Plugins)
 
-#### Estructura
-- **Comentarios descriptivos**: Explicar el propósito del plugin
-- **Nombres de módulos**: PascalCase
-- **Documentación**: Incluir ejemplos de uso
+#### Structure
+- **Descriptive comments**: Explain the plugin's purpose
+- **Module names**: PascalCase
+- **Documentation**: Include usage examples
 
-#### Ejemplo:
+#### Example:
 ```ruby
 # frozen_string_literal: true
 
@@ -134,34 +134,34 @@ end
 Liquid::Template.register_filter(CapitalizeWords)
 ```
 
-## 🎨 Sistema de Diseño
+## 🎨 Design System
 
-### Componentes UI
-- **Botones**: Usar clases Bootstrap + personalizadas
-- **Cards**: Bordes redondeados (`rounded-4`), sombras sutiles
-- **Navegación**: Efecto blur, transiciones suaves
-- **Iconos**: Bootstrap Icons + SVG inline cuando sea necesario
+### UI Components
+- **Buttons**: Use Bootstrap classes + custom styles
+- **Cards**: Rounded borders (`rounded-4`), subtle shadows
+- **Navigation**: Blur effect, smooth transitions
+- **Icons**: Bootstrap Icons + inline SVG when needed
 
-### Paleta de Colores
-- **Primario**: Bootstrap default + personalizaciones
-- **Secundario**: `text-body-secondary` para texto secundario
-- **Éxito**: `#28a745` (verde)
-- **Info**: `#0366d6` (azul)
+### Color Palette
+- **Primary**: Bootstrap default + customizations
+- **Secondary**: `text-body-secondary` for secondary text
+- **Success**: `#28a745` (green)
+- **Info**: `#0366d6` (blue)
 
-### Tipografía
-- **Jerarquía clara**: `display-5`, `fs-4`, `h5`
-- **Pesos**: `fw-bold`, `fw-semibold`, `fw-normal`
-- **Responsive**: Tamaños adaptativos
+### Typography
+- **Clear hierarchy**: `display-5`, `fs-4`, `h5`
+- **Weights**: `fw-bold`, `fw-semibold`, `fw-normal`
+- **Responsive**: Adaptive sizes
 
 ## 📱 Mobile-First
 
-### Principios
-1. **Diseño mobile primero**: CSS base para móviles
-2. **Media queries progresivas**: `@media (min-width: 768px)`
-3. **Touch-friendly**: Tamaños mínimos de 44px para elementos interactivos
-4. **Performance**: Lazy loading para imágenes
+### Principles
+1. **Mobile-first design**: Base CSS for mobile
+2. **Progressive media queries**: `@media (min-width: 768px)`
+3. **Touch-friendly**: Minimum 44px for interactive elements
+4. **Performance**: Lazy loading for images
 
-### Ejemplo de Responsive:
+#### Responsive Example:
 ```css
 @media (max-width: 767.98px) {
   body {
@@ -176,40 +176,40 @@ Liquid::Template.register_filter(CapitalizeWords)
 }
 ```
 
-## 🔧 Herramientas y Build
+## 🔧 Tools and Build
 
 ### Gulp Tasks
-- **Minificación**: JS, CSS, HTML
-- **Optimización**: Selectores CSS, compresión
-- **Compatibilidad**: IE8 para CSS
+- **Minification**: JS, CSS, HTML
+- **Optimization**: CSS selectors, compression
+- **Compatibility**: IE8 for CSS
 
 ### Jekyll
 - **Plugins**: SEO, sitemap, feed, last-modified
 - **Sass**: Compressed style
-- **Live reload**: Para desarrollo
+- **Live reload**: For development
 
-## 📁 Organización de Archivos
+## 📁 File Organization
 
-### Imágenes
+### Images
 ```
 assets/img/
-├── [producto]/          # Una carpeta por producto
-│   ├── Icon-1024.png   # Icono principal
+├── [product]/          # One folder per product
+│   ├── Icon-1024.png   # Main icon
 │   ├── screenshot-01.png
-│   └── [otros assets]
-├── blog/               # Imágenes del blog
-└── [categorías]/
+│   └── [other assets]
+├── blog/               # Blog images
+└── [categories]/
 ```
 
-### Posts del Blog
+### Blog Posts
 ```
 _posts/
-├── [categoría]/        # Organizar por categoría
-│   ├── YYYY-MM-DD-titulo.md
+├── [category]/        # Organized by category
+│   ├── YYYY-MM-DD-title.md
 │   └── ...
 ```
 
-## 🚀 Scripts de Desarrollo
+## 🚀 Development Scripts
 
 ### Package.json
 ```json
@@ -221,31 +221,31 @@ _posts/
 }
 ```
 
-## 📋 Checklist de Calidad
+## 📋 Quality Checklist
 
-### Antes de Commit
-- [ ] Código es legible y bien comentado
+### Before Commit
+- [ ] Code is readable and well-commented
 - [ ] Mobile-first responsive design
-- [ ] Accesibilidad básica (alt, title, etc.)
-- [ ] Performance optimizada (lazy loading, minificación)
-- [ ] Consistencia con el sistema de diseño existente
+- [ ] Basic accessibility (alt, title, etc.)
+- [ ] Performance optimized (lazy loading, minification)
+- [ ] Consistent with the existing design system
 
-### Estructura de Componentes
-- [ ] Nombres descriptivos y consistentes
-- [ ] Reutilización cuando sea posible
-- [ ] Separación de responsabilidades
-- [ ] Documentación cuando sea necesario
+### Component Structure
+- [ ] Descriptive and consistent names
+- [ ] Reuse when possible
+- [ ] Separation of concerns
+- [ ] Documentation when needed
 
-## 🎯 Recordatorio
+## 🎯 Reminder
 
-**"Eres un programador simple, optas por la legibilidad del código y las buenas prácticas. Dejas comentarios cuando la cosa se pone difícil."**
+**"You are a simple programmer, you opt for code readability and best practices. Leave comments when things get tricky."**
 
-- Prioriza la simplicidad sobre la complejidad
-- Mantén el código legible y mantenible
-- Usa herramientas existentes antes de agregar nuevas
-- Construye un sistema de diseño coherente
-- **Mobile-first siempre**
+- Prioritize simplicity over complexity
+- Keep code readable and maintainable
+- Use existing tools before adding new ones
+- Build a coherent design system
+- **Always mobile-first**
 
 ---
 
-*Esta guía refleja las mejores prácticas observadas en el proyecto actual y debe evolucionar con el tiempo.* 
+*This guide reflects the best practices observed in the current project and should evolve over time.* 
