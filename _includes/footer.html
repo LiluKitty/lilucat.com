@@ -15,7 +15,7 @@
       {% for item in site.data.footer.data %}
       <div class="col-md-2 col-sm-4 col mb-4">
         <div class="widget">          
-          <h5 class="opacity-10">{{ item.name }}</h5>
+          <h4 class="opacity-10">{{ item.name }}</h4>
           <ul class="list-unstyled">
             {% for link in item.links.option %}
               {% if link.url == # %}
@@ -31,7 +31,7 @@
       <!-- Products -->
       <div class="col-md-2 col-sm-4 col mb-4">
         <div class="widget">          
-          <h5 class="opacity-10">Products</h5>
+          <h4 class="opacity-10">Products</h4>
           <ul class="list-unstyled">
             {% for product in site.data.products.data %}
               {% if product.url == # %}
