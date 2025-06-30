@@ -4,7 +4,7 @@ data:
     url: https://apps.apple.com/us/app/qr/id6745213752
     description: Scan any QR code instantly and create your own custom codes. The fastest and most intuitive QR scanner you'll ever use.
     subtitle: Code Reader Scanner Generator
-    icon: /assets/img/QR/qr-app-icon.png
+    icon: /assets/img/QR/qr-app-icon.webp
     badge: https://one-badge.com/b/apple/appstore.svg 
     rating: 4.8
     ratings: 125
@@ -20,7 +20,7 @@ data:
     url: https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8
     description: Keep your private apps safe and hidden. Lock any app with a password and protect your sensitive information from prying eyes.
     subtitle: Password for Apps, Hide, Block
-    icon: /assets/img/applock/Icon-1024.png
+    icon: /assets/img/applock/app-icon.webp
     badge: https://one-badge.com/b/apple/appstore.svg 
     rating: 4.6
     ratings: 3000
@@ -54,7 +54,7 @@ data:
     url: https://apps.apple.com/us/app/storage-cleaner/id6455376072
     description: Running out of space? Clean up your device easily with smart AI that finds duplicates, blurry photos, and unnecessary files.
     subtitle: Free Up Space, Clean Up Photos
-    icon: /assets/img/storage-cleaner/storage-cleaner-app-icon.png
+    icon: /assets/img/storage-cleaner/app-icon.webp
     badge: https://one-badge.com/b/apple/appstore.svg 
     rating: 4.4
     ratings: 205
@@ -71,7 +71,7 @@ data:
     url: https://apps.apple.com/us/app/clean-up-iphone/id6738309812
     description: Free up space and boost your device performance. Our AI finds junk files and cleans them up automatically.
     subtitle: Phone Cleaner Free Up Storage
-    icon: /assets/img/clean-up-iphone/clean-up-iphone-app-icon.png
+    icon: /assets/img/clean-up-iphone/app-icon.webp
     badge: https://one-badge.com/b/apple/appstore.svg 
     rating: 4.6
     ratings: 102
@@ -87,7 +87,7 @@ data:
     url: https://apps.apple.com/us/app/photo-vault-x/id6618155410
     description: Keep your precious photos and videos safe with password protection. Hide sensitive memories and lock apps for ultimate privacy.
     subtitle: App Lock, hide videos & pic
-    icon: /assets/img/photo-vault-x/photo-vault-x-app-icon.png
+    icon: /assets/img/photo-vault-x/app-icon.webp
     badge: https://one-badge.com/b/apple/appstore.svg 
     rating: 4.4
     ratings: 59
