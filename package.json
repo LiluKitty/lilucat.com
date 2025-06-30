@@ -1,10 +1,13 @@
 {
-  "name": "fix",
+  "name": "lilucat.com",
   "version": "1.0.0",
-  "description": "fix",
+  "description": "Lilucat Jekyll site",
   "scripts": {
     "dev": "rm -rf Gemfile.lock && bundle exec jekyll serve --livereload --trace",
-    "production": "rm -rf _site && bundle exec jekyll build --trace && git add . -A && git commit -a -m 'update' && git push origin master --force"
+    "build": "rm -rf _site && bundle exec jekyll build --trace",
+    "gulp": "gulp",
+    "deploy": "git add . -A && git commit -m 'update' && git push origin master",
+    "deploy-force": "git add . -A && git commit -m 'update' && git push origin master --force"
   },
   "devDependencies": {
     "gulp-clean-css": "^4.3.0",
