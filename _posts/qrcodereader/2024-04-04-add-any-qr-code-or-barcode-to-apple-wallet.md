@@ -4,7 +4,7 @@ permalink: /blog/:categories/:title/
 title: "How to Add Any QR Code or Barcode to Apple Wallet (Step-by-Step Guide)"
 categories: qr-code-reader
 date: 2024-04-04 11:21
-last_modified_at: 2024-04-06 12:26
+last_modified_at: 2025-07-01 14:16
 image:
   path: /assets/img/blog/add-any-qr-code-to-apple-wallet.jpg
   alt: "Add Any QR Code or Barcode to Apple Wallet"
