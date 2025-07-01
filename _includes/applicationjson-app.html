@@ -7,10 +7,10 @@
   "applicationCategory": "Utilities",
   "operatingSystem": "iOS",
   "image": "{{ site.url }}/assets/img/{{ page.title | downcase | replace: ' ', '-' }}/app-icon.webp",
-  "aggregateRating": {
+  {% if page.rating and page.review_count %}"aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "{{ page.rating }}",
     "ratingCount": "{{ page.review_count }}"
-  }
+  }{% endif %}
 }
 </script> 
