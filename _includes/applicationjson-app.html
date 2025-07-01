@@ -4,19 +4,13 @@
   "@type": "SoftwareApplication",
   "name": "{{ page.title | escape }}",
   "description": "{{ page.description | escape }}",
-  "applicationCategory": "{{ page.category | escape }}",
-  "operatingSystem": "{{ page.os | escape }}",
-  "image": "{{ site.url }}{{ page.image }}",
+  "applicationCategory": "Utilities",
+  "operatingSystem": "iOS",
+  "image": "{{ site.url }}/assets/img/{{ page.title | downcase | replace: ' ', '-' }}/app-icon.webp",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "{{ page.rating }}",
-    "reviewCount": "{{ page.review_count }}"
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": "{{ page.price }}",
-    "priceCurrency": "{{ page.price_currency }}",
-    "category": "free"
+    "ratingCount": "{{ page.review_count }}"
   }
 }
 </script> 
