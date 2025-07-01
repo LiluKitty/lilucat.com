@@ -284,4 +284,73 @@ _posts/
 
 ---
 
-*This guide reflects the best practices observed in the current project and should evolve over time.* 
+*This guide reflects the best practices observed in the current project and should evolve over time.*
+
+# How to create a new post in Lilucat.com
+
+## 1. Create the file
+- Place the file in the `_posts/<category>/` folder.
+- The name should follow the format: `YYYY-MM-DD-post-title.md`.
+
+## 2. Front Matter Structure
+Always include at the top of the file:
+```yaml
+---
+layout: post
+permalink: /blog/:categories/:title/
+title: "Post title in English (with keywords)"
+categories: <category-name>
+date: YYYY-MM-DD HH:MM
+image:
+  path: /assets/img/blog/<main-image>.jpg
+  alt: "Image description"
+author: Lilucat Team
+app_id: <optional, if applicable>
+published: true
+keywords: [keyword1, keyword2, keyword3]
+description: "Short description of the post for SEO."
+---
+```
+
+## 3. SEO and Generative AI Best Practices
+- Use a clear, direct title with keywords.
+- Include main keywords in the title, introduction, headings, and image alt text.
+- Add a FAQ section at the end if possible, using real user questions.
+- Use hierarchical headings (`##`, `###`) and lists for easy reading.
+- Add internal links to other relevant posts or pages.
+- Use optimized images with descriptive alt text.
+- If the post is relevant to a location, mention the city or country in the content and/or title.
+- Update the content if there are important changes.
+
+## 4. Example of an optimized post
+```markdown
+---
+layout: post
+permalink: /blog/:categories/:title/
+title: "How to Add Any QR Code or Barcode to Apple Wallet (Step-by-Step Guide)"
+categories: qr-code-reader
+date: 2024-04-04 11:21
+image:
+  path: /assets/img/blog/add-any-qr-code-to-apple-wallet.jpg
+  alt: "Add Any QR Code or Barcode to Apple Wallet"
+author: Lilucat Team
+published: true
+keywords: [apple wallet, qr code, add qr code to apple wallet, barcode, qr code generator]
+description: "Learn how to add any QR code or barcode to Apple Wallet on your iPhone. Step-by-step guide to save, scan, and manage QR codes and barcodes, including from photos."
+---
+
+Ever wondered how to add a QR code or barcode to Apple Wallet? You're not alone! ...
+
+## FAQ
+**How do I add a QR code to Apple Wallet?**
+Just open the app, generate or scan your QR code, and tap the option to add it to Apple Wallet. You'll see it appear instantly!
+```
+
+## 5. Publish the post
+- Save the file in the correct folder.
+- Commit and push to your repository.
+- Check that the post appears correctly on the website and that the URL is as expected.
+
+---
+
+Questions? Check this file or ask your AI pair programmer! 😉 
