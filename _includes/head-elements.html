@@ -9,7 +9,9 @@
 </noscript>
 <link rel="stylesheet" href="/assets/css/bootstrap-icons.css">
 <link rel="stylesheet" href="/assets/css/local.css">
-<meta name="apple-itunes-app" content="app-id={{ page.app_id }}">
+{% if page.app_id %}
+  <meta name="apple-itunes-app" content="app-id={{ page.app_id }}">
+{% endif %}
 <meta name="google-site-verification" content="VjZubRUuR6r3cVdFZD1MWYBfIKopUw4FTPFaCijdem8" />
 
 <!-- Lilucat brand image for SEO/social -->
