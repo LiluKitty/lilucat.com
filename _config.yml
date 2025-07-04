@@ -5,6 +5,16 @@ url: "https://lilucat.com"
 
 support_mail: support@lilucat.com
 
+# App Ads.txt configuration
+app_ads:
+  publisher_id: "pub-4162614441206072"
+  google_certification: "f08c47fec0942fa0"
+  # Uncomment and configure additional networks if needed:
+  # additional_networks:
+  #   - domain: "example.com"
+  #     publisher_id: "pub-123456789"
+  #     relationship: "RESELLER"
+  #     certification: "abc123def456"
 
 plugins:
   - jekyll-sitemap
@@ -37,3 +47,27 @@ exclude:
   - .idea/
   - test/
   - tmp/
+  - pages/tiktok-cash.html
+
+# Configuración del sitemap
+sitemap:
+  exclude:
+    - /feed.xml
+    - /404.html
+    - /tiktok-cash/
+
+
+
+  include_404: false
+  # Solo incluir posts con published: true
+  include_posts: true
+  # Excluir archivos con published: false
+  exclude_posts_with_published_false: true
+
+ios_apps:
+  qr: "https://apps.apple.com/us/app/qr/id6745213752"
+  app_lock: "https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8"
+  qr_code_reader: "https://apps.apple.com/app/apple-store/id6469319539?pt=126142472&ct=fromWebsite&mt=8"
+  storage_cleaner: "https://apps.apple.com/us/app/storage-cleaner/id6455376072"
+  clean_up_iphone: "https://apps.apple.com/us/app/clean-up-iphone/id6738309812"
+  photo_vault_x: "https://apps.apple.com/us/app/photo-vault-x/id6618155410"

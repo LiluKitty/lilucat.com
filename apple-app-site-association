@@ -3,16 +3,40 @@
         "apps": [],
         "details": [
             {
-                "appID": "4FJX9NH8Q4.com.lilucat.screenfree",
-                "paths": ["/screen-free/*"]
+                "appID": "4FJX9NH8Q4.com.lilucat.qr",
+                "paths": ["/qr/*"]
             },
             {
                 "appID": "4FJX9NH8Q4.com.lilucat.applock.us",
                 "paths": ["/app-lock/*"]
             },
             {
+                "appID": "4FJX9NH8Q4.com.lilucat.qrcodereader",
+                "paths": ["/qr-code-reader/*"]
+            },
+            {
+                "appID": "4FJX9NH8Q4.com.lilucat.storagecleaner",
+                "paths": ["/storage-cleaner/*"]
+            },
+            {
+                "appID": "4FJX9NH8Q4.com.lilucat.cleanupiphone",
+                "paths": ["/clean-up-iphone/*"]
+            },
+            {
+                "appID": "4FJX9NH8Q4.com.lilucat.photovaultx",
+                "paths": ["/photo-vault-x/*"]
+            },
+            {
+                "appID": "4FJX9NH8Q4.com.lilucat.screenfree",
+                "paths": ["/screenfree/*"]
+            },
+            {
                 "appID": "4FJX9NH8Q4.com.lilucat.mathsolver.new",
                 "paths": ["/ai-math-solver/*"]
+            },
+            {
+                "appID": "4FJX9NH8Q4.com.lilucat.aipdfscanner",
+                "paths": ["/ai-pdf-scanner/*"]
             }
         ]
     }
