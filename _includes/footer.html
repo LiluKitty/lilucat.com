@@ -33,14 +33,13 @@
         <div class="widget">          
           <h4 class="opacity-10">Products</h4>
           <ul class="list-unstyled">
-            {% for product in site.data.products.data %}
-              {% assign app_config = site.ios_apps[product.url_key] %}
-              {% if product.url_key == nil %}
-              <li class="m-0">{{ product.name }} <span class="badge bg-warning">soon</span></li>
-              {% elsif app_config and app_config.published != false %}
-              <li class="py-1"><a class="py-2 footer-hover text-secondary" href="{{ app_config.url }}" rel="noopener" data-splitbee-event="External Link..." data-splitbee-event-appstore="{{ app_config.name }}">{{ app_config.name }}</a></li>
+            {% for app_entry in site.ios_apps %}
+              {% assign app_key = app_entry[0] %}
+              {% assign app_config = app_entry[1] %}
+              {% if app_config.published != false %}
+              <li class="py-1"><a class="py-2 footer-hover text-secondary" href="{{ app_config.id | app_store_url }}" rel="noopener" data-splitbee-event="External Link..." data-splitbee-event-appstore="{{ app_config.name }}">{{ app_config.name }}</a></li>
               {% endif %}
-              {% endfor %}
+            {% endfor %}
           </ul>          
         </div>
       </div>

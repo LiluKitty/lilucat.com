@@ -46,7 +46,7 @@ permalink: /404.html
                 </div>
               </div>
               <p class="card-text small">{{ app_config.description | truncate: 100 }}</p>
-              <a href="{% if app_config.page %}/{{ app_config.page }}/{% else %}{{ app_config.url }}{% endif %}" 
+              <a href="{% if app_config.page %}/{{ app_config.page }}/{% else %}{{ app_config.id | app_store_url }}{% endif %}" 
                  class="btn btn-sm btn-outline-primary" 
                  {% unless app_config.page %}target="_blank"{% endunless %}>
                 Learn More

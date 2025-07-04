@@ -51,43 +51,8 @@ def download_image(url, local_path)
   end
 end
 
-def extract_app_key_from_url(url)
-  # Extraer el ID de la app de la URL
-  match = url.match(/id(\d+)/)
-  return match[1] if match
-  
-  # Si no hay ID, usar el nombre de la app como fallback
-  match = url.match(/\/([^\/]+)\/?$/)
-  return match[1] if match
-  
-  nil
-end
-
-def map_app_to_config_key(app)
-  # Mapear nombres de apps a las claves de configuración
-  app_name = app['trackName'].downcase
-  
-  case app_name
-  when /qr.*code.*reader/i
-    'qr_code_reader'
-  when /qr.*scanner/i
-    'qr'
-  when /app.*lock/i
-    'app_lock'
-  when /storage.*cleaner/i
-    'storage_cleaner'
-  when /clean.*up.*iphone/i
-    'clean_up_iphone'
-  when /photo.*vault/i
-    'photo_vault_x'
-  when /focus.*app/i
-    'focus_app'
-  when /screenfree/i
-    'screenfree'
-  else
-    # Crear clave basada en el nombre
-    app_name.gsub(/[^a-z0-9]/, '_')
-  end
+def find_app_by_id(apps, app_id)
+  apps.find { |app| app['trackId'].to_s == app_id.to_s }
 end
 
 def update_config_with_apps(apps)
@@ -95,45 +60,74 @@ def update_config_with_apps(apps)
   config = YAML.load_file(CONFIG_FILE)
   ios_apps = config['ios_apps'] || {}
   
+  # Crear un hash de apps por ID para búsqueda rápida
+  apps_by_id = {}
   apps.each do |app|
-    app_id = app['trackId']
-    app_name = app['trackName']
-    app_url = app['trackViewUrl']
-    
-    # Determinar clave de configuración
-    config_key = map_app_to_config_key(app)
-    
-    puts "📱 Processing: #{app_name} (#{config_key})"
-    
-    # Preparar datos de la app
-    app_data = {
-      'url' => app_url,
-      'name' => app_name,
-      'description' => app['description'] || ios_apps.dig(config_key, 'description') || '',
-      'subtitle' => app['subtitle'] || ios_apps.dig(config_key, 'subtitle') || '',
-      'rating' => app['averageUserRating'] || 0.0,
-      'ratings_count' => app['userRatingCount'] || 0,
-      'icon' => "/#{ASSETS_DIR}/#{config_key}/app-icon.webp",
-      'included_in_pro' => ios_apps.dig(config_key, 'included_in_pro') || false,
-      'page' => ios_apps.dig(config_key, 'page'),
-      'published' => ios_apps.dig(config_key, 'published') != false
-    }
-    
-    # Descargar ícono
-    if app['artworkUrl512']
-      icon_path = "#{ASSETS_DIR}/#{config_key}/app-icon.webp"
-      download_image(app['artworkUrl512'], icon_path)
-    end
-    
-    # Actualizar configuración
-    ios_apps[config_key] = app_data
+    apps_by_id[app['trackId'].to_s] = app
   end
   
-  # Escribir configuración actualizada
-  config['ios_apps'] = ios_apps
+  ios_apps.each do |config_key, app_data|
+    app_id = app_data['id']
+    
+    if app_id && apps_by_id[app_id.to_s]
+      app = apps_by_id[app_id.to_s]
+      app_name = app['trackName']
+      
+      puts "📱 Processing: #{app_name} (#{config_key}) - ID: #{app_id}"
+      
+      # Verificar si tiene versión Mac
+      has_mac_version = app['supportedDevices']&.include?('Mac') || false
+      
+      # Actualizar datos de la app preservando descripción existente
+      app_data.update({
+        'name' => app_name,
+        'description' => app_data['description'] || app['description'] || '',
+        'subtitle' => app['subtitle'] || app_data['subtitle'] || '',
+        'rating' => app['averageUserRating'] || 0.0,
+        'ratings_count' => app['userRatingCount'] || 0,
+        'has_mac_version' => has_mac_version,
+        'last_updated' => app['currentVersionReleaseDate'],
+        'release_date' => app['releaseDate']
+      })
+      
+      # Descargar ícono si no existe
+      if app['artworkUrl512'] && !File.exist?(app_data['icon'].sub('/', ''))
+        icon_path = app_data['icon'].sub('/', '')
+        download_image(app['artworkUrl512'], icon_path)
+      end
+      
+      last_updated = app['currentVersionReleaseDate'] ? Time.parse(app['currentVersionReleaseDate']).strftime('%Y-%m-%d') : 'Unknown'
+      puts "  ✅ Updated: #{app_name} (Mac version: #{has_mac_version}, Last update: #{last_updated})"
+    else
+      puts "⚠️  App not found in iTunes: #{config_key} (ID: #{app_id})"
+    end
+  end
+  
+  # Ordenar apps por fecha de última actualización (más reciente primero)
+  sorted_apps = ios_apps.sort_by { |key, app_data| 
+    if app_data['last_updated']
+      Time.parse(app_data['last_updated'])
+    else
+      Time.at(0) # Apps sin fecha van al final
+    end
+  }.reverse.to_h
+  
+  # Escribir configuración actualizada y ordenada
+  config['ios_apps'] = sorted_apps
   File.write(CONFIG_FILE, config.to_yaml)
   
-  puts "\n✅ Configuration updated: #{CONFIG_FILE}"
+  puts "\n✅ Configuration updated and sorted by last update: #{CONFIG_FILE}"
+  
+  # Mostrar el orden final
+  puts "\n📱 Apps ordered by last update (newest first):"
+  sorted_apps.each do |key, app_data|
+    if app_data['last_updated']
+      date = Time.parse(app_data['last_updated']).strftime('%Y-%m-%d')
+      puts "  #{date} - #{app_data['name']} (#{key})"
+    else
+      puts "  No date - #{app_data['name']} (#{key})"
+    end
+  end
 end
 
 def main
@@ -148,7 +142,7 @@ def main
   end
   
   puts "📱 Found #{apps.length} apps:"
-  apps.each { |app| puts "  - #{app['trackName']}" }
+  apps.each { |app| puts "  - #{app['trackName']} (ID: #{app['trackId']})" }
   
   puts "\n🔄 Updating configuration and downloading icons..."
   update_config_with_apps(apps)
