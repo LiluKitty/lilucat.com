@@ -13,9 +13,10 @@ permalink: /lilucat-pro/
       <!-- Apps incluidas en Pro -->
       <div class="col-md-10 mx-auto text-center mb-5">
         <div class="d-flex flex-wrap align-items-center justify-content-center gap-4 mt-4">
-          {% for product in site.data.products.data %}
-            {% assign app_config = site.ios_apps[product.url_key] %}
-            {% if app_config and app_config.included_in_pro %}
+          {% for app_entry in site.ios_apps %}
+            {% assign app_key = app_entry[0] %}
+            {% assign app_config = app_entry[1] %}
+            {% if app_config.published != false and app_config.included_in_pro %}
               <a class="d-flex flex-column align-items-center hover rounded-4" href="{{ app_config.url }}" rel="noopener" target="_blank">
                 <img class="d-block rounded-4 shadow-sm" src="{{ app_config.icon }}" alt="{{ app_config.name }} Icon" width="72" height="72" loading="lazy">
                 <span class="small text-muted mt-2">{{ app_config.name }}</span>
@@ -36,9 +37,10 @@ permalink: /lilucat-pro/
       <div class="col-md-10 mx-auto text-center mb-5">
         <h2 class="h4 mb-4 text-secondary">Also available individually</h2>
         <div class="d-flex flex-wrap align-items-center justify-content-center gap-4 mt-4">
-          {% for product in site.data.products.data %}
-            {% assign app_config = site.ios_apps[product.url_key] %}
-            {% if app_config and app_config.included_in_pro == false %}
+          {% for app_entry in site.ios_apps %}
+            {% assign app_key = app_entry[0] %}
+            {% assign app_config = app_entry[1] %}
+            {% if app_config.published != false and app_config.included_in_pro == false %}
               <a class="d-flex flex-column align-items-center hover rounded-4" href="{{ app_config.url }}" rel="noopener" target="_blank">
                 <img class="d-block rounded-4 shadow-sm" src="{{ app_config.icon }}" alt="{{ app_config.name }} Icon" width="72" height="72" loading="lazy">
                 <span class="small text-muted mt-2">{{ app_config.name }}</span>

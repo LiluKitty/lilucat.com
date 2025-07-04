@@ -1,142 +1,224 @@
+---
 title: Lilucat
-description: >-
-  We make simple, useful apps for your iPhone. Scan QR codes, lock your private apps, stay focused, and more. Everything you need, nothing you don't.
-url: "https://lilucat.com"
-
+description: We make simple, useful apps for your iPhone. Scan QR codes, lock your
+  private apps, stay focused, and more. Everything you need, nothing you don't.
+url: https://lilucat.com
 support_mail: support@lilucat.com
-
-# App Ads.txt configuration
 app_ads:
-  publisher_id: "pub-4162614441206072"
-  google_certification: "f08c47fec0942fa0"
-  # Uncomment and configure additional networks if needed:
-  # additional_networks:
-  #   - domain: "example.com"
-  #     publisher_id: "pub-123456789"
-  #     relationship: "RESELLER"
-  #     certification: "abc123def456"
-
+  publisher_id: pub-4162614441206072
+  google_certification: f08c47fec0942fa0
 plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-last-modified-at
-
+- jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-feed
+- jekyll-last-modified-at
 sass:
 style: compressed
-
-
 exclude:
-  - package.json
-  - .sass-cache/
-  - .jekyll-cache/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/
-  - gulpfile.js
-  - README.md
-  - README-Docker.md
-  - README*
-  - docker-compose.yml
-  - Dockerfile
-  - CNAME
-  - .DS_Store
-  - .env
-  - .vscode/
-  - .idea/
-  - test/
-  - tmp/
-  - pages/tiktok-cash.html
-  - pages/focus-app.html
-  - pages/screenfree.html
-
-# Configuración del sitemap
+- package.json
+- ".sass-cache/"
+- ".jekyll-cache/"
+- Gemfile
+- Gemfile.lock
+- node_modules/
+- vendor/
+- gulpfile.js
+- README.md
+- README-Docker.md
+- README*
+- docker-compose.yml
+- Dockerfile
+- CNAME
+- ".DS_Store"
+- ".env"
+- ".vscode/"
+- ".idea/"
+- test/
+- tmp/
+- pages/tiktok-cash.html
+- pages/focus-app.html
+- pages/screenfree.html
 sitemap:
   exclude:
-    - /feed.xml
-    - /404.html
-    - /tiktok-cash/
-
-
-
+  - "/feed.xml"
+  - "/404.html"
+  - "/tiktok-cash/"
   include_404: false
-  # Solo incluir posts con published: true
   include_posts: true
-  # Excluir archivos con published: false
   exclude_posts_with_published_false: true
-
 ios_apps:
-  qr: 
-    url: "https://apps.apple.com/us/app/qr/id6745213752"
-    name: "QR"
-    description: "Scan any QR code instantly and create your own custom codes. The fastest and most intuitive QR scanner you'll ever use."
+  qr:
+    url: https://apps.apple.com/us/app/qr-code-scanner/id6745213752?uo=4
+    name: QR Code Scanner
+    description: |-
+      QR – Smart QR Code Reader & Generator
+      Your all-in-one QR code reader, QR scanner, and QR code generator for iPhone.
+
+      QR is the fastest, most intuitive way to scan QR codes, barcodes, and create your own custom codes—all in one sleek, privacy-first app.
+
+      SCAN ANYTHING
+      Effortlessly scan QR codes, barcodes, WiFi codes, contact cards, URLs, and more. Whether it's on a product, a flyer, or a screen, QR reads it instantly and reliably.
+
+      GENERATE CUSTOM CODES
+      Stand out with personalized QR code and barcode generator features. Add your logo, choose colors, and create professional-grade codes for business, events, and more.
+
+      BUILT FOR IPHONE
+      Optimized for speed and simplicity, QR code scanner for iPhone delivers lightning-fast results with native performance and seamless iOS integration.
+
+      Bonus Feature: Instantly generate social QR codes that link to your Instagram, Facebook, YouTube, TikTok, and more—perfect for creators, influencers, and businesses who want to connect with their audience in one tap.
+
+      Download QR now – the smarter way to scan, generate, and share.
+
+      Links
+      Terms of Service: https://qrcodereaderapp.lilucat.com/legal/terms
+      Privacy: https://qrcodereaderapp.lilucat.com/legal/privacy
+    subtitle: Code Reader Scanner Generator
+    rating: 5
+    ratings_count: 1
+    icon: "/assets/img/qr/app-icon.webp"
     included_in_pro: false
     page: qr
-    subtitle: Code Reader Scanner Generator
-    icon: "/assets/img/QR/app-icon.webp"
-    rating: 4.4
-    ratings_count: 59
     published: true
-  app_lock: 
-    url: "https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8"
-    name: "App Lock"
-    description: "Keep your private apps safe and hidden. Lock any app with a password and protect your sensitive information from prying eyes."
+  app_lock:
+    url: https://apps.apple.com/us/app/app-lock/id6448239603?uo=4
+    name: App Lock
+    description: "App Lock is a privacy app designed to help keep your sensitive apps
+      private and secure on your device. With App Lock, you can easily block any app
+      you want, ensuring that you remain private and out of sight from prying eyes.\n\nThe
+      app features an intuitive and user-friendly interface that allows you to quickly
+      and easily select the apps you want to lock. Once an app has been locked, nobody
+      will be able to access your private data. \n\nApp Lock is the perfect solution
+      for anyone looking to ensure more privacy and security on your device.\n\n*
+      In order to use App Lock you need to purchase the Lilucat Pro which is an annual
+      service that costs 29.99$. Payment will be charged to iTunes Account at confirmation
+      of purchase and auto-renews at the same price unless disabled in iTunes Account
+      Settings at least 24 hours before the end of the current period. Your subscription
+      can be managed in your iTunes Account Settings. Any unused portion of a free
+      trial period, if offered, will be forfeited when you purchase a subscription.\n\nLinks\nTerms
+      of Service: https://applock.lilucat.com/legal/terms\nPrivacy: https://applock.lilucat.com/legal/privacy"
+    subtitle: Password for Apps, Hide, Block
+    rating: 4.60584
+    ratings_count: 2981
+    icon: "/assets/img/app_lock/app-icon.webp"
     included_in_pro: true
     page: app-lock
-    subtitle: Password for Apps, Hide, Block
-    icon: "/assets/img/applock/app-icon.webp"
-    rating: 4.6
-    ratings_count: 3000
     published: true
-  qr_code_reader: 
-    url: "https://apps.apple.com/app/apple-store/id6469319539?pt=126142472&ct=fromWebsite&mt=8"
-    name: "QR Code Reader"
-    description: "Scan QR codes, barcodes, and create your own. Works with WiFi, contacts, calendar events, and more. Your all-in-one QR solution."
+  qr_code_reader:
+    url: https://apps.apple.com/us/app/qr-code-reader/id6469319539?uo=4
+    name: QR Code Reader
+    description: |-
+      Lilucat's QR Code Reader is the essential digital tool that empowers you to scan and interpret all types of QR codes, encompassing URLs, Wi-Fi, Calendar events, VCards, Contacts, Text, Email, Geo locations, and more.
+
+      Beyond just scanning, Lilucat's QR Code Reader also facilitates the generation of QR codes for a myriad of purposes, be it social media platforms (like TikTok, YouTube, Facebook, etc.), URLs, Wi-Fi networks, VCards, Contact details, and beyond.
+
+      Key Features:
+
+      Rapid QR code scanning.
+      Dynamic QR code generation.
+      Integrate codes directly into Apple Wallet.
+      Conveniently add codes to Widgets.
+      Scan QR codes and barcodes directly from images.
+      Maintain a comprehensive scan history.
+      Sync and ensure your scans are always backed up.
+
+      * In order to use QR Code Reader you need to purchase the Lilucat Pro which is an annual service that costs 29.99$. Payment will be charged to iTunes Account at confirmation of purchase and auto-renews at the same price unless disabled in iTunes Account Settings at least 24 hours before the end of the current period. Your subscription can be managed in your iTunes Account Settings. Any unused portion of a free trial period, if offered, will be forfeited when you purchase a subscription.
+
+      Links
+      Terms of Service: https://qrcode.lilucat.com/legal/terms
+      Privacy: https://qrcode.lilucat.com/legal/privacy
+    subtitle: Barcodes Scanner & Maker
+    rating: 4.6383
+    ratings_count: 47
+    icon: "/assets/img/qr_code_reader/app-icon.webp"
     included_in_pro: true
     page: qr-code-reader
-    subtitle: Barcodes Scanner & Maker
-    icon: "/assets/img/qr-code-reader/qr-code-reader-app-icon.webp"
-    rating: 4.8
-    ratings_count: 12
     published: true
-  storage_cleaner: 
-    url: "https://apps.apple.com/us/app/storage-cleaner/id6455376072"
-    name: "Storage Cleaner"
-    description: "Running out of space? Clean up your device easily with smart AI that finds duplicates, blurry photos, and unnecessary files."
-    included_in_pro: true
-    # page: storage-cleaner
+  storage_cleaner:
+    url: https://apps.apple.com/us/app/storage-cleaner/id6455376072?uo=4
+    name: Storage Cleaner
+    description: |-
+      Is your device running out of space? Storage Cleaner is the perfect app to help you clean up and stay organized. With powerful AI and simple tools, you can make room for the things you care about in just a few steps.
+
+      Why Use Storage Cleaner?
+
+      - Smart Cleaner: Our smart AI finds photos that look alike, duplicates, blurry pictures, and screenshots so you can decide what to keep or delete.
+
+      - Social Media Cleanup: It even checks files from social media apps, helping you clean up stuff you don’t need anymore.
+
+      - Quick Video Cleanup: Easily pick and delete videos you no longer want to free up extra space.
+
+      - Swipe to Delete: Keep or delete photos by swiping left or right—it’s quick and fun to use!
+
+      - Fast and Easy: Clean your phone in just seconds and enjoy more storage for new photos, videos, and apps.
+
+      - Simple Design: The app is made to be easy for everyone, so you can clean up without any hassle.
+
+      With Storage Cleaner, managing your device is simple. You’ll have more space for memories, and your phone will run smoother. Try it today and feel the difference!
+
+      * In order to use Storage Cleaner you need to purchase the Lilucat Pro which is an annual or weekly service. Payment will be charged to iTunes Account at confirmation of purchase and auto-renews at the same price unless disabled in iTunes Account Settings at least 24 hours before the end of the current period. Your subscription can be managed in your iTunes Account Settings. Any unused portion of a free trial period, if offered, will be forfeited when you purchase a subscription.
+
+      Links
+      Terms of Service: https://storagecleaner.lilucat.com/legal/terms
+      Privacy: https://storagecleaner.lilucat.com/legal/privacy
     subtitle: Free Up Space, Clean Up Photos
-    icon: "/assets/img/storage-cleaner/storage-cleaner-app-icon.png"
-    rating: 4.4
-    ratings_count: 205
+    rating: 4.41872
+    ratings_count: 203
+    icon: "/assets/img/storage_cleaner/app-icon.webp"
+    included_in_pro: true
+    page:
     published: true
-  clean_up_iphone: 
-    url: "https://apps.apple.com/us/app/clean-up-iphone/id6738309812"
-    name: "Clean Up iPhone"
-    description: "Free up space and boost your device performance. Our AI finds junk files and cleans them up automatically."
+  clean_up_iphone:
+    url: https://apps.apple.com/us/app/clean-up-iphone/id6738309812
+    name: Clean Up iPhone
+    description: Free up space and boost your device performance. Our AI finds junk
+      files and cleans them up automatically.
     included_in_pro: false
-    # page: clean-up-iphone
     subtitle: Phone Cleaner Free Up Storage
     icon: "/assets/img/clean-up-iphone/clean-up-iphone-app-icon.png"
     rating: 4.6
     ratings_count: 102
     published: true
-  photo_vault_x: 
-    url: "https://apps.apple.com/us/app/photo-vault-x/id6618155410"
-    name: "Photo Vault X"
-    description: "Keep your precious photos and videos safe with password protection. Hide sensitive memories and lock apps for ultimate privacy."
-    included_in_pro: true
-    # page: photo-vault-x
+  photo_vault_x:
+    url: https://apps.apple.com/us/app/photo-vault-x/id6618155410?uo=4
+    name: Photo Vault X
+    description: |-
+      Secure Your Memories with Photo Vault
+
+      Protect your precious memories with Photo Vault, the ultimate app for securing your photos and videos with a password. Whether it's cherished family moments, important documents, or personal videos, Photo Vault ensures they remain private and safe.
+
+      Features:
+
+      - Password Protection: Keep your files secure with a robust password system, ensuring only you have access to your private photos and videos.
+
+      - Organized Storage: Easily organize your files into custom folders for quick and convenient access.
+
+      - User-Friendly Interface: Navigate through your memories effortlessly with our intuitive and easy-to-use interface.
+
+      - App Lock: Instantly lock any app on your device.
+
+      - High-Quality Viewing: Enjoy your photos and videos in their full resolution without any quality loss.
+
+      - Secure Sharing: Share selected files securely with friends and family without compromising your privacy.
+
+      Photo Vault is the perfect solution for anyone looking to keep their memories safe and organized. Download Photo Vault today and secure your memories with confidence!
+
+      * In order to use Photo Vault you need to purchase the Lilucat Pro which is an annual or weekly service. Payment will be charged to iTunes Account at confirmation of purchase and auto-renews at the same price unless disabled in iTunes Account Settings at least 24 hours before the end of the current period. Your subscription can be managed in your iTunes Account Settings. Any unused portion of a free trial period, if offered, will be forfeited when you purchase a subscription.
+
+      Links
+      Terms of Service: https://photovault.lilucat.com/legal/terms
+      Privacy: https://photovault.lilucat.com/legal/privacy
     subtitle: App Lock, hide videos & pic
-    icon: "/assets/img/photo-vault-x/photo-vault-x-app-icon.png"
-    rating: 4.4
-    ratings_count: 59
+    rating: 4.43103
+    ratings_count: 58
+    icon: "/assets/img/photo_vault_x/app-icon.webp"
+    included_in_pro: true
+    page:
     published: true
-  focus_app: 
-    url: "https://apps.apple.com/us/app/focus-app/id6469043032"
-    name: "Focus App"
-    description: "Take control of your digital life. Block distracting apps, set time limits, and stay focused on what matters most."
+  focus_app:
+    url: https://apps.apple.com/us/app/focus-app/id6469043032
+    name: Focus App
+    description: Take control of your digital life. Block distracting apps, set time
+      limits, and stay focused on what matters most.
     included_in_pro: false
     page: focus-app
     subtitle: Control, block apps and focus
@@ -144,10 +226,11 @@ ios_apps:
     rating: 4.4
     ratings_count: 59
     published: false
-  screenfree: 
-    url: "https://apps.apple.com/us/app/screenfree/id6449741551"
-    name: "Screenfree"
-    description: "Break free from screen addiction. Set limits, block apps, and regain control of your digital life with smart focus tools."
+  screenfree:
+    url: https://apps.apple.com/us/app/screenfree/id6449741551
+    name: Screenfree
+    description: Break free from screen addiction. Set limits, block apps, and regain
+      control of your digital life with smart focus tools.
     included_in_pro: false
     page: screenfree
     subtitle: Screen Time Control & Focus
@@ -155,3 +238,30 @@ ios_apps:
     rating: 4.4
     ratings_count: 59
     published: false
+  phone_cleaner_app:
+    url: https://apps.apple.com/us/app/phone-cleaner-app/id6738309812?uo=4
+    name: Phone Cleaner App
+    description: |-
+      Clean Up is a powerful app that helps you free up space and keep your device running smoothly. With advanced AI technology, it scans your storage and finds the best way to clean up junk, remove clutter, and improve performance.
+
+      Key Features
+      - AI-Powered Cleaning – Automatically finds and removes unnecessary files to free up space.
+      - On-Device Processing – All scans happen on your device, keeping your data 100% private.
+      - Cache Cleaning – Clears system junk and app cache from Facebook, WhatsApp, Instagram, Netflix, and more.
+      - Social Clean – Removes useless media and clutter from your social media apps for better performance.
+      - One-Tap Cleanup – Just press one button, and CleanMeUp does the rest.
+
+      At Lilucat, we designed Clean Up to be safe, fast, and easy to use. No complex settings, no data leaving your device. Just a simple way to keep your phone clean.
+
+      * In order to use Clean Up Pro you need to purchase the annual or weekly service. Payment will be charged to iTunes Account at confirmation of purchase and auto-renews at the         same price unless disabled in iTunes Account Settings at least 24 hours before the end of the current period. Your subscription can be managed in your iTunes Account Settings. Any unused portion of a free trial period, if offered, will be forfeited when you purchase a subscription.
+
+      Links
+      Terms of Service: https://cleanmeup.lilucat.com/legal/terms
+      Privacy: https://cleanmeup.lilucat.com/legal/privacy
+    subtitle: ''
+    rating: 4.625
+    ratings_count: 104
+    icon: "/assets/img/phone_cleaner_app/app-icon.webp"
+    included_in_pro: false
+    page:
+    published: true
