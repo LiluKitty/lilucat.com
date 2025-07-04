@@ -73,6 +73,7 @@ ios_apps:
     included_in_pro: false
     page: qr
     subtitle: Code Reader Scanner Generator
+    icon: "/assets/img/qr/app-icon.webp"
     published: true
   app_lock: 
     url: "https://apps.apple.com/app/apple-store/id6448239603?pt=126142472&ct=fromWebsite&mt=8"
@@ -80,6 +81,7 @@ ios_apps:
     included_in_pro: true
     page: app-lock
     subtitle: Password for Apps, Hide, Block
+    icon: "/assets/img/applock/app-icon.webp"
     published: true
   qr_code_reader: 
     url: "https://apps.apple.com/app/apple-store/id6469319539?pt=126142472&ct=fromWebsite&mt=8"
@@ -87,6 +89,7 @@ ios_apps:
     included_in_pro: true
     page: qr-code-reader
     subtitle: Barcodes Scanner & Maker
+    icon: "/assets/img/qr-code-reader/qr-code-reader-app-icon.webp"
     published: true
   storage_cleaner: 
     url: "https://apps.apple.com/us/app/storage-cleaner/id6455376072"
@@ -94,6 +97,7 @@ ios_apps:
     included_in_pro: true
     # page: storage-cleaner
     subtitle: Free Up Space, Clean Up Photos
+    icon: "/assets/img/storage-cleaner/storage-cleaner-app-icon.png"
     published: true
   clean_up_iphone: 
     url: "https://apps.apple.com/us/app/clean-up-iphone/id6738309812"
@@ -101,6 +105,7 @@ ios_apps:
     included_in_pro: false
     # page: clean-up-iphone
     subtitle: Phone Cleaner Free Up Storage
+    icon: "/assets/img/clean-up-iphone/clean-up-iphone-app-icon.png"
     published: true
   photo_vault_x: 
     url: "https://apps.apple.com/us/app/photo-vault-x/id6618155410"
@@ -108,6 +113,7 @@ ios_apps:
     included_in_pro: true
     # page: photo-vault-x
     subtitle: App Lock, hide videos & pic
+    icon: "/assets/img/photo-vault-x/photo-vault-x-app-icon.png"
     published: true
   focus_app: 
     url: "https://apps.apple.com/us/app/focus-app/id6469043032"
@@ -115,6 +121,7 @@ ios_apps:
     included_in_pro: false
     page: focus-app
     subtitle: Control, block apps and focus
+    icon: "/assets/img/focus-app/Focu-App-Icon.png"
     published: false
   screenfree: 
     url: "https://apps.apple.com/us/app/screenfree/id6449741551"
@@ -122,4 +129,5 @@ ios_apps:
     included_in_pro: false
     page: screenfree
     subtitle: Screen Time Control & Focus
+    icon: "/assets/img/screenfree/Icon-1024.png"
     published: false

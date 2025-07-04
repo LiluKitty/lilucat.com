@@ -15,7 +15,7 @@ module Jekyll
         metadata = fetch_itunes_metadata(app_id)
         if metadata
           app['name'] = metadata['trackName']
-          app['icon'] = metadata['artworkUrl512']
+          # app['icon'] = metadata['artworkUrl512'] # Ya no sobrescribir el icono
           app['rating'] = metadata['averageUserRating']
           app['ratings_count'] = metadata['userRatingCount']
         end
