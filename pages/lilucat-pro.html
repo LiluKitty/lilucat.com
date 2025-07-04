@@ -14,18 +14,17 @@ permalink: /lilucat-pro/
       <div class="col-md-10 mx-auto text-center mb-5">
         <div class="d-flex flex-wrap align-items-center justify-content-center gap-4 mt-4">
           {% for product in site.data.products.data %}
-            {% if product.included_in_pro %}
-              <a class="d-flex flex-column align-items-center hover rounded-4" href="{{ product.url }}" rel="noopener" target="_blank">
-                <img class="d-block rounded-4 shadow-sm" src="{{ product.icon }}" alt="{{ product.name }} Icon" width="72" height="72" loading="lazy">
-                <span class="small text-muted mt-2">{{ product.name }}</span>
+            {% assign app_config = site.ios_apps[product.url_key] %}
+            {% if app_config and app_config.included_in_pro %}
+              <a class="d-flex flex-column align-items-center hover rounded-4" href="{{ app_config.url }}" rel="noopener" target="_blank">
+                <img class="d-block rounded-4 shadow-sm" src="{{ app_config.icon }}" alt="{{ app_config.name }} Icon" width="72" height="72" loading="lazy">
+                <span class="small text-muted mt-2">{{ app_config.name }}</span>
               </a>
             {% endif %}
           {% endfor %}
         </div>
       </div>
 
-      
-      
       <p class="h5">
         <a class="p-2 px-3 nav-hover icon-link icon-link-hover mb-5" href="https://apps.apple.com/us/developer/lilucat/id1676061700" rel="noopener" target="_blank">Try for Free
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -38,17 +37,16 @@ permalink: /lilucat-pro/
         <h2 class="h4 mb-4 text-secondary">Also available individually</h2>
         <div class="d-flex flex-wrap align-items-center justify-content-center gap-4 mt-4">
           {% for product in site.data.products.data %}
-            {% unless product.included_in_pro %}
-              <a class="d-flex flex-column align-items-center hover rounded-4" href="{{ product.url }}" rel="noopener" target="_blank">
-                <img class="d-block rounded-4 shadow-sm" src="{{ product.icon }}" alt="{{ product.name }} Icon" width="72" height="72" loading="lazy">
-                <span class="small text-muted mt-2">{{ product.name }}</span>
+            {% assign app_config = site.ios_apps[product.url_key] %}
+            {% if app_config and app_config.included_in_pro == false %}
+              <a class="d-flex flex-column align-items-center hover rounded-4" href="{{ app_config.url }}" rel="noopener" target="_blank">
+                <img class="d-block rounded-4 shadow-sm" src="{{ app_config.icon }}" alt="{{ app_config.name }} Icon" width="72" height="72" loading="lazy">
+                <span class="small text-muted mt-2">{{ app_config.name }}</span>
               </a>
-            {% endunless %}
+            {% endif %}
           {% endfor %}
-          
         </div>
       </div>
-      
     </div>
   </div>
 </div>

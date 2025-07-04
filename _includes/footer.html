@@ -34,10 +34,11 @@
           <h4 class="opacity-10">Products</h4>
           <ul class="list-unstyled">
             {% for product in site.data.products.data %}
-              {% if product.url == # %}
+              {% assign app_config = site.ios_apps[product.url_key] %}
+              {% if product.url_key == nil %}
               <li class="m-0">{{ product.name }} <span class="badge bg-warning">soon</span></li>
-              {% else %}
-              <li class="py-1"><a class="py-2 footer-hover text-secondary" href="{{ product.url }}" rel="noopener" data-splitbee-event="External Link..." data-splitbee-event-appstore="{{ product.name }}">{{ product.name }}</a></li>
+              {% elsif app_config and app_config.published != false %}
+              <li class="py-1"><a class="py-2 footer-hover text-secondary" href="{{ app_config.url }}" rel="noopener" data-splitbee-event="External Link..." data-splitbee-event-appstore="{{ app_config.name }}">{{ app_config.name }}</a></li>
               {% endif %}
               {% endfor %}
           </ul>          
