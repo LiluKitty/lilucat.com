@@ -37,7 +37,7 @@
               {% assign app_key = app_entry[0] %}
               {% assign app_config = app_entry[1] %}
               {% if app_config.published != false %}
-              <li class="py-1"><a class="py-2 footer-hover text-secondary" href="{{ app_config.id | app_store_url }}" rel="noopener" data-splitbee-event="External Link..." data-splitbee-event-appstore="{{ app_config.name }}">{{ app_config.name }}</a></li>
+              <li class="py-1"><a class="py-2 footer-hover text-secondary" href="https://apps.apple.com/us/app/id{{ app_config.id }}" rel="noopener" data-splitbee-event="External Link..." data-splitbee-event-appstore="{{ app_config.name }}">{{ app_config.name }}</a></li>
               {% endif %}
             {% endfor %}
           </ul>          
