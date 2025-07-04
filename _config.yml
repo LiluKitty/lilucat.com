@@ -74,7 +74,7 @@ ios_apps:
     included_in_pro: false
     page: qr
     subtitle: Code Reader Scanner Generator
-    icon: "/assets/img/qr/app-icon.webp"
+    icon: "/assets/img/QR/app-icon.webp"
     rating: 4.4
     ratings_count: 59
     published: true
