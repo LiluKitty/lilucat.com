@@ -4,9 +4,6 @@ description: We make simple, useful apps for your iPhone. Scan QR codes, lock yo
   private apps, stay focused, and more. Everything you need, nothing you don't.
 url: https://lilucat.com
 support_mail: support@lilucat.com
-app_ads:
-  publisher_id: pub-4162614441206072
-  google_certification: f08c47fec0942fa0
 plugins:
 - jekyll-sitemap
 - jekyll-seo-tag
