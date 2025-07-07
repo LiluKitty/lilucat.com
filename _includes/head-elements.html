@@ -11,6 +11,11 @@
 <link rel="stylesheet" href="/assets/css/local.css">
 {% if page.app_id %}
   <meta name="apple-itunes-app" content="app-id={{ page.app_id }}">
+{% elsif page.app_key %}
+  {% assign app_config = site.ios_apps[page.app_key] %}
+  {% if app_config %}
+    <meta name="apple-itunes-app" content="app-id={{ app_config.id }}">
+  {% endif %}
 {% endif %}
 <meta name="google-site-verification" content="VjZubRUuR6r3cVdFZD1MWYBfIKopUw4FTPFaCijdem8" />
 
