@@ -54,7 +54,7 @@ ios_apps:
     ratings_count: 104
     icon: "/assets/img/phone_cleaner_app/app-icon.webp"
     included_in_pro: false
-    page:
+    page: phone-cleaner
     published: true
     has_mac_version: false
     last_updated: '2025-07-03T07:23:15Z'
