@@ -1,0 +1,118 @@
+# SEO Best Practices for Lilucat.com
+
+## Meta Tags & Head Elements
+- Always include proper meta title, description, and keywords in front matter
+- Use descriptive, keyword-rich titles (50-60 characters max)
+- Write compelling meta descriptions (150-160 characters max)
+- Include Open Graph tags for social media sharing
+- Add Twitter Card meta tags for better Twitter sharing
+- Use canonical URLs to prevent duplicate content issues
+
+## Image Optimization
+- Always include alt text for all images (descriptive, not generic)
+- Use title attributes for better accessibility and SEO
+- Optimize image file sizes (use WebP format when possible)
+- Include proper image dimensions (width/height attributes)
+- Use descriptive filenames for images
+- Implement lazy loading for images below the fold
+
+## Link Structure
+- Use descriptive, keyword-rich anchor text
+- Include title attributes on all links for better UX
+- Use proper rel attributes (noopener for external links)
+- Implement internal linking strategy
+- Ensure all links are working (no broken links)
+- Use semantic HTML for better crawlability
+
+## Content Structure
+- Use proper heading hierarchy (H1, H2, H3, etc.)
+- Include one H1 per page
+- Use descriptive, keyword-rich headings
+- Structure content with proper HTML semantics
+- Include schema markup for better search understanding
+- Write content for users, optimize for search engines
+
+## Technical SEO
+- Ensure mobile-first responsive design
+- Optimize page load speed
+- Use clean, semantic HTML
+- Implement proper URL structure
+- Include sitemap.xml
+- Add robots.txt file
+- Use HTTPS everywhere
+- Implement proper redirects
+
+## Local SEO (if applicable)
+- Include business information consistently
+- Use local keywords in content
+- Implement local schema markup
+- Ensure NAP (Name, Address, Phone) consistency
+
+## Performance
+- Minimize CSS and JavaScript
+- Optimize images and use appropriate formats
+- Use CDN for static assets
+- Implement caching strategies
+- Monitor Core Web Vitals
+
+## Accessibility
+- Include alt text for all images
+- Use proper ARIA labels where needed
+- Ensure proper color contrast
+- Make sure keyboard navigation works
+- Use semantic HTML elements
+
+## Content Guidelines
+- Write unique, valuable content
+- Use natural language and avoid keyword stuffing
+- Include relevant keywords naturally in content
+- Update content regularly
+- Use internal linking to related content
+- Include calls-to-action where appropriate
+
+## Social Media
+- Optimize Open Graph images (1200x630px recommended)
+- Include social media meta tags
+- Use engaging social media descriptions
+- Implement social sharing buttons
+
+## Analytics & Tracking
+- Implement Google Analytics properly
+- Set up Google Search Console
+- Track user behavior and engagement
+- Monitor search performance
+- Use proper event tracking
+
+## Code Quality
+- Write clean, semantic HTML
+- Use proper indentation and formatting
+- Comment complex code sections
+- Follow consistent naming conventions
+- Validate HTML and CSS
+
+## Security
+- Use HTTPS everywhere
+- Implement proper security headers
+- Keep dependencies updated
+- Use secure external links (rel="noopener")
+- Validate user inputs
+
+## Mobile Optimization
+- Ensure responsive design works on all devices
+- Optimize touch targets (minimum 44px)
+- Test on various screen sizes
+- Ensure fast loading on mobile networks
+- Use mobile-friendly navigation
+
+## International SEO (if applicable)
+- Use proper hreflang tags
+- Implement language-specific URLs
+- Translate content properly
+- Consider cultural differences in content
+
+## Monitoring & Maintenance
+- Regularly check for broken links
+- Monitor page load speeds
+- Track search rankings
+- Update content regularly
+- Monitor user feedback and analytics 
