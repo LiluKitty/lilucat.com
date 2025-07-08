@@ -7,6 +7,7 @@
           class="d-inline-flex align-items-center mb-2"
           href="/"
           aria-label="{{ site.title }}"
+          title="Lilucat - Home"
         >
           <span class="fw-semibold fs-5 text-dark">{{ site.title }}</span>
         </a>
@@ -22,6 +23,7 @@
           rel="noopener"
           data-splitbee-event="External Link..."
           data-splitbee-event-social="{{ link.name }}"
+          title="Follow Lilucat on {{ link.name }}"
           ><i class="text-dark h4 {{ link.image }}"></i></a
         >{% endfor %} {% endfor %}
       </div>
@@ -136,6 +138,7 @@
             class="footer-hover text-secondary"
             href="{{ site.data.footer.url }}"
             rel="noopener"
+            title="Lilucat Privacy Policy"
             >{{ site.data.footer.copyright }}</a
           ><span class="opacity-60 me-1"> {{ site.data.footer.message }}</span>
         </p>

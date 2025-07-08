@@ -1,15 +1,15 @@
 <nav class="navbar navbar-expand-lg fixed-top" style="backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.3); border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
   <div class="container">
-    <a class="navbar-brand text-dark" href="/">
+    <a class="navbar-brand text-dark" href="/" title="Lilucat - Home">
       <strong class="fw-semibold fs-5">{{ site.data.nav.title }}</strong>
     </a>
     
     <div class="navbar-nav ms-auto">
       {% for item in site.data.nav.data %}
         {% if page.url == {{item.url}} %}
-          <a class="nav-link p-2 px-3 nav-hover" href="{{item.url}}" rel="noopener">{{item.name}}</a>
+          <a class="nav-link p-2 px-3 nav-hover" href="{{item.url}}" rel="noopener" title="{{item.name}}">{{item.name}}</a>
         {% else %}
-          <a class="nav-link p-2 px-3 nav-hover text-secondary" href="{{item.url}}" rel="noopener">{{item.name}}</a>
+          <a class="nav-link p-2 px-3 nav-hover text-secondary" href="{{item.url}}" rel="noopener" title="{{item.name}}">{{item.name}}</a>
         {% endif %}
       {% endfor %}
     </div>
