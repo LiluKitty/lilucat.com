@@ -1,0 +1,23 @@
+---
+layout: bootstrap
+title: Clean Up iPhone Blog
+description: Tips, tricks, and guides for cleaning up your iPhone and freeing up storage space.
+permalink: /blog/clean-up-iphone/
+image:
+  path: https://lilucat.com/assets/img/blog/cover.jpg
+  alt: Clean Up iPhone Blog Page
+app_id: 6738309812
+---
+<div class="container pb-md-5 pb-4 mt-3">
+  {%- include blog-nav.html -%}
+  <div class="p-md-5 p-4 mb-4 bg-light rounded-img">
+    <div class="container-fluid py-md-5">
+      <h1 class="display-5 fw-bold">{{ page.title }}</h1>
+      <p class="col-md-9 fs-4 mb-0">{{ page.description }}</p>
+    </div>
+  </div>
+  <div class="row align-items-md-stretch">
+    {% assign sorted-posts = site.posts | where: "categories","clean-up-iphone" %}
+    {%- include blog-card.html -%}
+  </div>
+</div> 

@@ -7,5 +7,7 @@ data:
     url: /blog/app-lock/
   - name: QR Code Reader
     url: /blog/qr-code-reader/
+  - name: Clean Up iPhone
+    url: /blog/clean-up-iphone/
   # - name: AI Math Solver
   #   url: /blog/ai-math-solver/
