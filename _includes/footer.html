@@ -29,7 +29,7 @@
       {% for item in site.data.footer.data %}
       <div class="col-md-2 col-sm-4 col mb-4">
         <div class="widget">
-          <h4 class="opacity-10">{{ item.name }}</h4>
+          <div class="fw-semibold fs-6 text-dark mb-2">{{ item.name }}</div>
           <ul class="list-unstyled">
             {% if item.name == 'Resources' %}
               {% for category in site.data.blog.data %}
@@ -67,7 +67,7 @@
       <!-- Products al final -->
       <div class="col-md-4 mb-4">
         <div class="widget">
-          <h4 class="opacity-10">Products</h4>
+          <div class="fw-semibold fs-6 text-dark mb-2">Products</div>
           {% assign apps = "" | split: "" %} {% for app_entry in site.ios_apps
           %} {% assign app = app_entry[1] %} {% if app.published != false %} {%
           assign apps = apps | push: app %} {% endif %} {% endfor %}
