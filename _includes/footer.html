@@ -1,52 +1,144 @@
 <footer class="footer bg-light px-2 pt-md-5 mt-md-5">
   <div class="container pt-3 pt-md-0">
     <div class="row pb-3">
-      <div class="col-md-4 mt-n2 me-auto pb-3 pb-md-0 mb-4">
-        <a class="d-inline-flex align-items-center mb-2" href="/" aria-label="{{ site.title }}">
-          <!-- <img class="rounded-img-compare" src="{{ site.data.footer.logo }}" width="40" alt="{{ site.title }} logo"> -->
+      <!-- Marca -->
+      <div class="col-md-4 mb-4">
+        <a
+          class="d-inline-flex align-items-center mb-2"
+          href="/"
+          aria-label="{{ site.title }}"
+        >
           <span class="fw-semibold fs-5 text-dark">{{ site.title }}</span>
         </a>
-        <p class="fs-6 pb-2 pb-sm-3 opacity-60">{{ site.data.footer.description }}</p>
-        {% for item in site.data.footer.social %}
-          {% for link in item.links.option %}
-          <a class="btn-social me-3 mb-2" href="{{ link.url }}" target="_blank" rel="noopener" data-splitbee-event="External Link..." data-splitbee-event-social="{{ link.name }}"><i class="text-dark h4 {{ link.image }}"></i></a>{% endfor %}
-        {% endfor %}
+        <p class="fs-6 pb-2 pb-sm-3 opacity-60">
+          {{ site.data.footer.description }}
+        </p>
+        {% for item in site.data.footer.social %} {% for link in
+        item.links.option %}
+        <a
+          class="btn-social me-3 mb-2"
+          href="{{ link.url }}"
+          target="_blank"
+          rel="noopener"
+          data-splitbee-event="External Link..."
+          data-splitbee-event-social="{{ link.name }}"
+          ><i class="text-dark h4 {{ link.image }}"></i></a
+        >{% endfor %} {% endfor %}
       </div>
+      <!-- Company/Resources -->
       {% for item in site.data.footer.data %}
       <div class="col-md-2 col-sm-4 col mb-4">
-        <div class="widget">          
+        <div class="widget">
           <h4 class="opacity-10">{{ item.name }}</h4>
           <ul class="list-unstyled">
-            {% for link in item.links.option %}
-              {% if link.url == # %}
-              <li class="m-0">{{ link.name }} <span class="badge bg-warning">soon</span></li>
-              {% else %}
-              <li class="py-1"><a class="py-2 footer-hover text-secondary" href="{{ link.url }}" rel="noopener">{{ link.name }}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>          
+            {% if item.name == 'Resources' %}
+              {% for category in site.data.blog.data %}
+                {% unless category.name == "All" %}
+                <li class="py-1">
+                  <a
+                    class="py-2 footer-hover text-secondary"
+                    href="{{ category.url }}"
+                    rel="noopener"
+                    title="Read posts about {{ category.name }} on the Lilucat Blog"
+                  >{{ category.name }}</a>
+                </li>
+                {% endunless %}
+              {% endfor %}
+            {% else %}
+              {% for link in item.links.option %}
+                {% if link.url == # %}
+                <li class="m-0">{{ link.name }} <span class="badge bg-warning">soon</span></li>
+                {% else %}
+                <li class="py-1">
+                  <a
+                    class="py-2 footer-hover text-secondary"
+                    href="{{ link.url }}"
+                    rel="noopener"
+                    title="{{ link.name }} – Lilucat"
+                  >{{ link.name }}</a>
+                </li>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </ul>
         </div>
       </div>
       {% endfor %}
-      <!-- Products -->
-      <div class="col-md-2 col-sm-4 col mb-4">
-        <div class="widget">          
+      <!-- Products al final -->
+      <div class="col-md-4 mb-4">
+        <div class="widget">
           <h4 class="opacity-10">Products</h4>
-          <ul class="list-unstyled">
-            {% for app_entry in site.ios_apps %}
-              {% assign app_key = app_entry[0] %}
-              {% assign app_config = app_entry[1] %}
-              {% if app_config.published != false %}
-              <li class="py-1"><a class="py-2 footer-hover text-secondary" href="https://apps.apple.com/us/app/id{{ app_config.id }}" rel="noopener" data-splitbee-event="External Link..." data-splitbee-event-appstore="{{ app_config.name }}">{{ app_config.name }}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>          
+          {% assign apps = "" | split: "" %} {% for app_entry in site.ios_apps
+          %} {% assign app = app_entry[1] %} {% if app.published != false %} {%
+          assign apps = apps | push: app %} {% endif %} {% endfor %}
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled">
+                {% for app in apps limit:3 %}
+                <li class="py-1 d-flex align-items-center">
+                  <a
+                    class="py-2 footer-hover text-secondary"
+                    href="https://apps.apple.com/us/app/id{{ app.id }}"
+                    rel="noopener"
+                    data-splitbee-event="External Link..."
+                    data-splitbee-event-appstore="{{ app.name }}"
+                    title="Download {{ app.name }} for iPhone on the App Store"
+                  >
+                    <img
+                      src="{{ app.icon }}"
+                      alt="{{ app.name }} icon"
+                      width="24"
+                      height="24"
+                      class="me-2 rounded-3"
+                      loading="lazy"
+                      title="{{ app.name }} app icon"
+                    />
+                    {{ app.name }}
+                  </a>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled">
+                {% for app in apps offset:3 limit:3 %}
+                <li class="py-1 d-flex align-items-center">
+                  <a
+                    class="py-2 footer-hover text-secondary"
+                    href="https://apps.apple.com/us/app/id{{ app.id }}"
+                    rel="noopener"
+                    data-splitbee-event="External Link..."
+                    data-splitbee-event-appstore="{{ app.name }}"
+                    title="Download {{ app.name }} for iPhone on the App Store"
+                  >
+                    <img
+                      src="{{ app.icon }}"
+                      alt="{{ app.name }} icon"
+                      width="24"
+                      height="24"
+                      class="me-2 rounded-3"
+                      loading="lazy"
+                      title="{{ app.name }} app icon"
+                    />{{ app.name }}</a
+                  >
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="row align-items-center pb-3">
       <div class="col-md-4 order-2 order-md-1 mb-2">
-        <p class="m-0"><a class="footer-hover text-secondary" href="{{ site.data.footer.url }}" rel="noopener">{{ site.data.footer.copyright }}</a><span class="opacity-60 me-1"> {{ site.data.footer.message }}</span></p>
+        <p class="m-0">
+          <a
+            class="footer-hover text-secondary"
+            href="{{ site.data.footer.url }}"
+            rel="noopener"
+            >{{ site.data.footer.copyright }}</a
+          ><span class="opacity-60 me-1"> {{ site.data.footer.message }}</span>
+        </p>
       </div>
     </div>
   </div>

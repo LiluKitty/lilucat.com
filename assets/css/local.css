@@ -405,3 +405,27 @@ ul {
     z-index: 1;
   }
 }
+
+/* Footer clásico con productos en el centro y con íconos */
+.footer .row {
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .footer .row {
+    flex-direction: row;
+  }
+}
+.footer .widget ul {
+  padding-left: 0;
+}
+.footer .widget li {
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+.footer .widget img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-right: 0.5rem;
+}
