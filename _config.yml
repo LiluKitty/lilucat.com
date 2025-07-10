@@ -46,14 +46,12 @@ exclude:
 - ".idea/"
 - test/
 - tmp/
-- pages/tiktok-cash.html
 - pages/focus-app.html
 - pages/screenfree.html
 sitemap:
   exclude:
   - "/feed.xml"
   - "/404.html"
-  - "/tiktok-cash/"
   include_404: false
   include_posts: true
   exclude_posts_with_published_false: true
