@@ -9,7 +9,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     {%- include head-elements.html -%}
 
-    {% include applicationjson-app.html %}
+    {% if page.app_id or page.app_key %}
+      {% include applicationjson-app.html %}
+    {% endif %}
 
   </head>
   <body class="d-flex h-100">

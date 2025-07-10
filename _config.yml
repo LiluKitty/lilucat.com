@@ -4,6 +4,20 @@ description: We make simple, useful apps for your iPhone. Scan QR codes, lock yo
   private apps, stay focused, and more. Everything you need, nothing you don't.
 url: https://lilucat.com
 support_mail: support@lilucat.com
+lang: en-US
+timezone: America/New_York
+
+# GitHub Pages specific settings
+github:
+  is_project_page: false
+  source: master
+
+# Jekyll settings optimized for GitHub Pages
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 plugins:
 - jekyll-sitemap
 - jekyll-seo-tag
@@ -43,6 +57,23 @@ sitemap:
   include_404: false
   include_posts: true
   exclude_posts_with_published_false: true
+
+# Robots.txt configuration for GitHub Pages
+robots:
+  sitemap_url: https://lilucat.com/sitemap.xml
+  user_agents:
+    - "*"
+  allows:
+    - "/"
+  disallows:
+    - "/admin/"
+    - "/private/"
+    - "/.well-known/"
+    - "/.git/"
+    - "/_config.yml"
+    - "/Gemfile"
+    - "/Gemfile.lock"
+  crawl_delay: 1
 ios_apps:
   phone_cleaner_app:
     id: 6738309812

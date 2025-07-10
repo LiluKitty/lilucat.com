@@ -1,3 +1,42 @@
+{% if page.app_key %}
+  {% assign app_config = site.ios_apps[page.app_key] %}
+  {% if app_config %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "{{ app_config.name | escape }}",
+  "description": "{{ app_config.description | escape }}",
+  "applicationCategory": "Utilities",
+  "operatingSystem": "iOS",
+  "operatingSystemVersion": "14.0",
+  "applicationSubCategory": "Productivity",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "http://schema.org/InStock"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lilucat",
+    "url": "https://lilucat.com"
+  },
+  "image": "{{ site.url }}{{ app_config.icon }}",
+  "url": "https://apps.apple.com/us/app/id{{ app_config.id }}"
+  {% if app_config.rating and app_config.ratings_count %},
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ app_config.rating }}",
+    "ratingCount": "{{ app_config.ratings_count }}",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+  {% endif %}
+}
+</script>
+  {% endif %}
+{% elsif page.app_id %}
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -6,13 +45,30 @@
   "description": "{{ page.description | escape }}",
   "applicationCategory": "Utilities",
   "operatingSystem": "iOS",
-  "image": "{{ site.url }}/assets/img/{{ page.title | downcase | replace: ' ', '-' }}/app-icon.webp"
+  "operatingSystemVersion": "14.0",
+  "applicationSubCategory": "Productivity",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "http://schema.org/InStock"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lilucat",
+    "url": "https://lilucat.com"
+  },
+  "image": "{{ site.url }}/assets/img/{{ page.title | downcase | replace: ' ', '-' }}/app-icon.webp",
+  "url": "https://apps.apple.com/us/app/id{{ page.app_id }}"
   {% if page.rating and page.review_count %},
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "{{ page.rating }}",
-    "ratingCount": "{{ page.review_count }}"
+    "ratingCount": "{{ page.review_count }}",
+    "bestRating": "5",
+    "worstRating": "1"
   }
   {% endif %}
 }
-</script> 
+</script>
+{% endif %} 

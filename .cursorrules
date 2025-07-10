@@ -41,6 +41,8 @@
 - Add robots.txt file
 - Use HTTPS everywhere
 - Implement proper redirects
+- **GitHub Pages specific**: Use meta tags for security headers (no _headers file support)
+- **GitHub Pages specific**: Optimize for bandwidth limitations and CDN
 
 ## Local SEO (if applicable)
 - Include business information consistently

@@ -19,12 +19,44 @@
 {% endif %}
 <meta name="google-site-verification" content="VjZubRUuR6r3cVdFZD1MWYBfIKopUw4FTPFaCijdem8" />
 
-<!-- Lilucat brand image for SEO/social -->
-<meta property="og:image" content="/assets/img/lilucat_pet.webp">
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image" content="{% if page.image and page.image.path %}{{ page.image.path }}{% else %}{{ site.url }}/assets/img/lilucat_pet.webp{% endif %}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{% if page.image and page.image.alt %}{{ page.image.alt }}{% else %}Lilucat - iPhone Apps for Privacy and Productivity{% endif %}">
+<meta property="og:site_name" content="{{ site.title }}">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="twitter:image" content="{% if page.image and page.image.path %}{{ page.image.path }}{% else %}{{ site.url }}/assets/img/lilucat_pet.webp{% endif %}">
+<meta property="twitter:image:alt" content="{% if page.image and page.image.alt %}{{ page.image.alt }}{% else %}Lilucat - iPhone Apps for Privacy and Productivity{% endif %}">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
 <meta name="robots" content="index, follow">
+<meta name="author" content="{{ site.title }}">
+<meta name="language" content="en">
+<meta name="revisit-after" content="7 days">
 
+<!-- Security Headers for GitHub Pages -->
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+<!-- Preload critical resources for GitHub Pages -->
+<link rel="preload" href="/assets/css/bootstrap.min.css" as="style">
 <link rel="preload" href="/assets/css/local.css" as="style">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//analytics.ahrefs.com">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-79G5FQW2NL"></script>
@@ -37,3 +69,25 @@
 </script>
 
 <script src="https://analytics.ahrefs.com/analytics.js" data-key="DBzPGlnxt2vZsT3Jp7h57Q" async></script>
+
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "Lilucat",
+  "url": "https://lilucat.com",
+  "logo": "https://lilucat.com/assets/img/lilucat_pet.webp",
+  "description": "We make simple, useful apps for your iPhone. Scan QR codes, lock your private apps, stay focused, and more.",
+  "sameAs": [
+    "https://www.youtube.com/@lilucatapps/"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "email": "support@lilucat.com"
+  },
+  "foundingDate": "2023",
+  "areaServed": "Worldwide"
+}
+</script>
