@@ -22,14 +22,20 @@
             <img class="mb-md-2" src="https://one-badge.com/b/apple/appstore.svg" alt="Download on the App Store" width="135" height="48" title="Download {{ app_config.name }} on the App Store">
           </a>
         </p>
+        {% if app_config.legal %}
         <div class="d-flex gap-2">
+          {% if app_config.legal.privacy %}
           <p class="mt-3 small">
-            <a class="p-2 nav-hover text-dark stretched-link" href="https://{{ app_key }}.lilucat.com/legal/privacy" style="position: relative;" rel="noopener" target="_blank" title="{{ app_config.name }} Privacy Policy">Privacy Policy</a>
+            <a class="p-2 nav-hover text-dark stretched-link" href="{{ app_config.legal.privacy }}" style="position: relative;" rel="noopener" target="_blank" title="{{ app_config.name }} Privacy Policy">Privacy Policy</a>
           </p>
+          {% endif %}
+          {% if app_config.legal.terms %}
           <p class="mt-3 small">
-            <a class="p-2 nav-hover text-dark stretched-link" href="https://{{ app_key }}.lilucat.com/legal/terms" style="position: relative;" rel="noopener" target="_blank" title="{{ app_config.name }} Terms of Service">Terms of Service</a>
+            <a class="p-2 nav-hover text-dark stretched-link" href="{{ app_config.legal.terms }}" style="position: relative;" rel="noopener" target="_blank" title="{{ app_config.name }} Terms of Service">Terms of Service</a>
           </p>
+          {% endif %}
         </div>
+        {% endif %}
       </div>
     </div>
       {% endif %}

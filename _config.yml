@@ -6,13 +6,9 @@ url: https://lilucat.com
 support_mail: support@lilucat.com
 lang: en-US
 timezone: America/New_York
-
-# GitHub Pages specific settings
 github:
   is_project_page: false
   source: master
-
-# Jekyll settings optimized for GitHub Pages
 markdown: kramdown
 highlighter: rouge
 lsi: false
@@ -55,22 +51,20 @@ sitemap:
   include_404: false
   include_posts: true
   exclude_posts_with_published_false: true
-
-# Robots.txt configuration for GitHub Pages
 robots:
   sitemap_url: https://lilucat.com/sitemap.xml
   user_agents:
-    - "*"
+  - "*"
   allows:
-    - "/"
+  - "/"
   disallows:
-    - "/admin/"
-    - "/private/"
-    - "/.well-known/"
-    - "/.git/"
-    - "/_config.yml"
-    - "/Gemfile"
-    - "/Gemfile.lock"
+  - "/admin/"
+  - "/private/"
+  - "/.well-known/"
+  - "/.git/"
+  - "/_config.yml"
+  - "/Gemfile"
+  - "/Gemfile.lock"
   crawl_delay: 1
 ios_apps:
   phone_cleaner_app:
@@ -88,6 +82,9 @@ ios_apps:
     has_mac_version: false
     last_updated: '2025-07-03T07:23:15Z'
     release_date: '2025-03-17T07:00:00Z'
+    legal:
+      terms: https://cleanmeup.lilucat.com/legal/terms
+      privacy: https://cleanmeup.lilucat.com/legal/privacy
   qr:
     id: 6745213752
     name: QR Code Scanner
@@ -95,7 +92,7 @@ ios_apps:
       fastest and most intuitive QR scanner you'll ever use.
     subtitle: Code Reader Scanner Generator
     rating: 5
-    ratings_count: 1
+    ratings_count: 3
     icon: "/assets/img/qr/app-icon.webp"
     included_in_pro: false
     page: qr
@@ -103,14 +100,17 @@ ios_apps:
     has_mac_version: false
     last_updated: '2025-07-03T06:32:56Z'
     release_date: '2025-06-22T07:00:00Z'
+    legal:
+      terms: https://qrcodereaderapp.lilucat.com/legal/terms
+      privacy: https://qrcodereaderapp.lilucat.com/legal/privacy
   app_lock:
     id: 6448239603
     name: App Lock
     description: Keep your private apps safe and hidden. Lock any app with a password
       and protect your sensitive information from prying eyes.
     subtitle: Password for Apps, Hide, Block
-    rating: 4.60584
-    ratings_count: 2981
+    rating: 4.61042
+    ratings_count: 3034
     icon: "/assets/img/app_lock/app-icon.webp"
     included_in_pro: true
     page: app-lock
@@ -118,21 +118,27 @@ ios_apps:
     has_mac_version: false
     last_updated: '2025-06-21T09:36:37Z'
     release_date: '2023-04-26T07:00:00Z'
+    legal:
+      privacy: https://applock.lilucat.com/legal/privacy
+      terms: https://applock.lilucat.com/legal/terms
   storage_cleaner:
     id: 6455376072
     name: Storage Cleaner
     description: Running out of space? Clean up your device easily with smart AI that
       finds duplicates, blurry photos, and unnecessary files.
     subtitle: Free Up Space, Clean Up Photos
-    rating: 4.41872
-    ratings_count: 203
+    rating: 4.43564
+    ratings_count: 202
     icon: "/assets/img/storage_cleaner/app-icon.webp"
     included_in_pro: true
-    page:
+    page: storage-cleaner
     published: true
     has_mac_version: false
     last_updated: '2025-06-17T17:01:39Z'
     release_date: '2024-11-14T08:00:00Z'
+    legal:
+      privacy: https://storagecleaner.lilucat.com/legal/privacy
+      terms: https://storagecleaner.lilucat.com/legal/terms
   qr_code_reader:
     id: 6469319539
     name: QR Code Reader
@@ -148,6 +154,9 @@ ios_apps:
     has_mac_version: false
     last_updated: '2025-04-22T06:18:19Z'
     release_date: '2023-10-16T07:00:00Z'
+    legal:
+      privacy: https://qrcode.lilucat.com/legal/privacy
+      terms: https://qrcode.lilucat.com/legal/terms
   photo_vault_x:
     id: 6618155410
     name: Photo Vault X
@@ -163,6 +172,9 @@ ios_apps:
     has_mac_version: false
     last_updated: '2024-10-29T13:13:46Z'
     release_date: '2024-09-19T07:00:00Z'
+    legal:
+      terms: https://photovault.lilucat.com/legal/terms
+      privacy: https://photovault.lilucat.com/legal/privacy
   focus_app:
     id: 6469043032
     name: Focus App

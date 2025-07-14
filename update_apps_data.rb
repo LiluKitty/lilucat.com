@@ -55,6 +55,74 @@ def find_app_by_id(apps, app_id)
   apps.find { |app| app['trackId'].to_s == app_id.to_s }
 end
 
+def extract_legal_links_from_description(description)
+  return {} unless description
+  
+  legal_links = {}
+  
+  # Buscar la sección "Links" al final de la descripción
+  if description.include?("\nLinks\n")
+    links_section = description.split("\nLinks\n").last
+    
+    # Buscar enlaces de Terms of Service
+    terms_match = links_section.match(/Terms of Service:\s*(https?:\/\/[^\s\n]+)/i)
+    if terms_match
+      legal_links['terms'] = terms_match[1]
+    end
+    
+    # Buscar enlaces de Privacy
+    privacy_match = links_section.match(/Privacy:\s*(https?:\/\/[^\s\n]+)/i)
+    if privacy_match
+      legal_links['privacy'] = privacy_match[1]
+    end
+  end
+  
+  # Fallback: buscar en toda la descripción si no se encuentra la sección Links
+  if legal_links.empty?
+    # Buscar enlaces de privacy policy (formato alternativo)
+    privacy_policy_match = description.match(/privacy\s+policy[:\s]*([^\s\n]+)/i)
+    if privacy_policy_match
+      legal_links['privacy'] = privacy_policy_match[1]
+    end
+    
+    # Buscar enlaces de terms of service (formato alternativo)
+    terms_service_match = description.match(/terms\s+of\s+service[:\s]*([^\s\n]+)/i)
+    if terms_service_match
+      legal_links['terms'] = terms_service_match[1]
+    end
+    
+    # Buscar URLs que contengan "privacy" o "terms"
+    urls = description.scan(/https?:\/\/[^\s\n]+/)
+    urls.each do |url|
+      if url.downcase.include?('privacy') && !legal_links['privacy']
+        legal_links['privacy'] = url
+      elsif url.downcase.include?('terms') && !legal_links['terms']
+        legal_links['terms'] = url
+      end
+    end
+  end
+  
+  legal_links
+end
+
+def update_legal_links(app_data, app)
+  # Extraer enlaces legales de la descripción de la app
+  legal_links = extract_legal_links_from_description(app['description'])
+  
+  if legal_links.any?
+    # Inicializar sección legal si no existe
+    app_data['legal'] ||= {}
+    
+    # Actualizar enlaces encontrados
+    legal_links.each do |type, url|
+      app_data['legal'][type] = url
+      puts "  🔗 Found #{type} link: #{url}"
+    end
+  else
+    puts "  ⚠️  No legal links found in description"
+  end
+end
+
 def update_config_with_apps(apps)
   # Leer configuración actual
   config = YAML.load_file(CONFIG_FILE)
@@ -89,6 +157,9 @@ def update_config_with_apps(apps)
         'last_updated' => app['currentVersionReleaseDate'],
         'release_date' => app['releaseDate']
       })
+      
+      # Actualizar enlaces legales desde la descripción
+      update_legal_links(app_data, app)
       
       # Descargar ícono si no existe
       if app['artworkUrl512'] && !File.exist?(app_data['icon'].sub('/', ''))
