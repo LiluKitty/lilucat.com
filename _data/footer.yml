@@ -1,4 +1,9 @@
 data:
+  - name: Resources
+    links:
+      option:
+        - name: Blog
+          url: /blog/
   - name: Company
     links:
       option:
@@ -6,11 +11,6 @@ data:
           url: /about/
         - name: Contact
           url: mailto:support@lilucat.com
-  - name: Resources
-    links:
-      option:
-        - name: Blog
-          url: /blog/
 
 social:
   - social: Social

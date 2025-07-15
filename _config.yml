@@ -97,7 +97,7 @@ ios_apps:
     included_in_pro: false
     page: qr
     published: true
-    has_mac_version: false
+    has_mac_version: true
     last_updated: '2025-07-03T06:32:56Z'
     release_date: '2025-06-22T07:00:00Z'
     legal:
@@ -151,7 +151,7 @@ ios_apps:
     included_in_pro: true
     page: qr-code-reader
     published: true
-    has_mac_version: false
+    has_mac_version: true
     last_updated: '2025-04-22T06:18:19Z'
     release_date: '2023-10-16T07:00:00Z'
     legal:

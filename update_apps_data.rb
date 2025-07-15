@@ -144,7 +144,7 @@ def update_config_with_apps(apps)
       puts "📱 Processing: #{app_name} (#{config_key}) - ID: #{app_id}"
       
       # Verificar si tiene versión Mac
-      has_mac_version = app['supportedDevices']&.include?('Mac') || false
+      has_mac_version = app['supportedDevices']&.any? { |device| device.include?('Mac') } || false
       
       # Actualizar datos de la app preservando descripción existente
       app_data.update({

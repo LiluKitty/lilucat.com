@@ -1,7 +1,10 @@
 data:
-  - name: 💰 Earn Money with Lilucat
+  - name_mobile: 💰
+    name_desktop: Earn Money with Lilucat
     url: /tiktok-cash/
-  - name: Lilucat Pro - Try for Free
+  - name_mobile: /assets/icons/mstile-150x150.png
+    name_desktop: Lilucat Pro
+    is_image: true
     url: /lilucat-pro/
 title: Lilucat
-logo: /assets/img/lilucat_pet.webp
+logo: /assets/icons/mstile-150x150.png
