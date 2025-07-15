@@ -1,13 +1,41 @@
-data:
-  - name: Create QR Codes
-    icon: /assets/img/qr/qr-app-icon.webp
-    screenshot: /assets/img/qr/qr-screenshot-01.png
-    description: Generate custom QR codes for any purpose - websites, contact info, WiFi networks, and more.
-  - name: Scan QR Codes
-    icon: /assets/img/qr/qr-app-icon.webp
-    screenshot: /assets/img/qr/qr-screenshot-02.png
-    description: Instantly scan any QR code with your camera and get the information you need.
-  - name: Share QR Codes
-    icon: /assets/img/qr/qr-app-icon.webp
-    screenshot: /assets/img/qr/qr-screenshot-03.png
-    description: Save and share your QR codes with friends, family, or colleagues easily. 
+iphone:
+  data:
+    - name: Create QR Codes
+      icon: /assets/img/qr/qr-app-icon.webp
+      screenshot: /assets/img/qr/qr-screenshot-01.png
+      description: Generate custom QR codes for any purpose - websites, contact info, WiFi networks, and more.
+    - name: Scan QR Codes
+      icon: /assets/img/qr/qr-app-icon.webp
+      screenshot: /assets/img/qr/qr-screenshot-02.png
+      description: Instantly scan any QR code with your camera and get the information you need.
+    - name: Share QR Codes
+      icon: /assets/img/qr/qr-app-icon.webp
+      screenshot: /assets/img/qr/qr-screenshot-03.png
+      description: Save and share your QR codes with friends, family, or colleagues easily.
+
+mac:
+  data:
+    - name: QR Code Scanner
+      icon: /assets/img/qr/qr-app-icon.webp
+      screenshot: /assets/img/qr/macOS 1.jpg
+      description: Clean macOS interface for scanning and displaying multiple QR codes with intuitive navigation for scanning, creating, history, and settings.
+    - name: Real-time Scanning
+      icon: /assets/img/qr/qr-app-icon.webp
+      screenshot: /assets/img/qr/macOS 2.jpg
+      description: Active scanning interface with real-time barcode detection, featuring scanning frames and live camera feed for instant code recognition.
+    - name: Custom QR Generator
+      icon: /assets/img/qr/qr-app-icon.webp
+      screenshot: /assets/img/qr/macOS 3.jpg
+      description: Advanced QR code customization with color options, background selection, and round corners for creating personalized codes like Wi-Fi networks.
+    - name: QR Code Generator
+      icon: /assets/img/qr/qr-app-icon.webp
+      screenshot: /assets/img/qr/macOS 4.jpg
+      description: Comprehensive QR code creation with multiple categories including personal info, social media, and various data types all in one organized interface.
+    - name: Barcode Generator
+      icon: /assets/img/qr/qr-app-icon.webp
+      screenshot: /assets/img/qr/macOS 5.jpg
+      description: Professional barcode generation supporting multiple formats including Code 39, Code 128, UPC-E, EAN-8, EAN-13, and ISBN-13 for various business needs. 
+    - name: Codes History
+      icon: /assets/img/qr/qr-app-icon.webp
+      screenshot: /assets/img/qr/macOS 6.jpg
+      description: Complete history tracking of all scanned and generated codes, organized by type with timestamps and easy access to past QR codes and barcodes.

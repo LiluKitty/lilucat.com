@@ -1,13 +1,38 @@
-{% assign app_config = site.ios_apps[page.app_key] %}
-{% if app_config %}
-<img class="rounded-4 shadow-sm mb-md-4 mb-3" src="{{ app_config.icon }}" alt="{{ app_config.name }} Icon" title="{{ app_config.name }} Icon" width="76" height="76" loading="lazy">
+{% assign app_config = site.ios_apps[page.app_key] %} {% if app_config %}
+<img
+  class="rounded-4 shadow-sm mb-md-4 mb-3"
+  src="{{ app_config.icon }}"
+  alt="{{ app_config.name }} Icon"
+  title="{{ app_config.name }} Icon"
+  width="76"
+  height="76"
+  loading="lazy"
+/>
 <h1 class="display-5 fw-bold">{{ app_config.name }}</h1>
 <h2 class="fs-4 text-body-secondary pb-3">{{ app_config.subtitle }}</h2>
 <p class="col-lg-8 col-xl-6 d-flex mx-auto">{{ app_config.description }}</p>
+
 <p class="mt-md-4 h5 mb-md-0">
-  <a class="p-2 px-3 nav-hover icon-link icon-link-hover" href="https://apps.apple.com/us/app/id{{ app_config.id }}" rel="noopener" target="_blank" data-splitbee-event="External Link..." data-splitbee-event-appstore="{{ app_config.name }}">Try for free 
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+  <a
+    class="p-2 px-3 nav-hover icon-link icon-link-hover"
+    href="https://apps.apple.com/us/app/id{{ app_config.id }}?platform=iphone"
+    rel="noopener"
+    target="_blank"
+    data-splitbee-event="External Link..."
+    data-splitbee-event-appstore="{{ app_config.name }}"
+    >Try for free
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-arrow-right"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+      />
     </svg>
   </a>
 </p>

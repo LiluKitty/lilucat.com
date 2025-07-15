@@ -6,21 +6,152 @@ keywords: QR code, QR scanner, barcode reader, QR generator, iPhone, scan QR, cr
 permalink: /qr/
 app_key: qr
 ---
+
 <div class="container pb-md-5 pb-4 mt-3">
-  <div class="px-md-5 pt-md-3 pt-2 mb-4 bg-light rounded-img mx-auto text-center">
+  <div
+    class="px-md-5 pt-md-3 pt-2 mb-4 bg-light rounded-img mx-auto text-center"
+  >
     <div class="container-fluid py-md-5 py-3">
-        {%- include product-page.html -%}
+      {%- include product-page.html -%}
     </div>
   </div>
-  <div class="row align-items-md-stretch">
-    {% for feature in site.data.qr.data %}
-    <div class="col-lg-4 mb-4">
-      <div class="h-100 p-md-5 p-4 pb-0 pb-md-0 bg-body-tertiary rounded-img text-start d-flex flex-column"> 
-        <h2 class="pb-2 m-0 fw-semibold">{{ feature.name }}</h2>
-        <p class="text-start lead fw-normal text-body-secondary">{{ feature.description }}</p>
-        <img src="{{ feature.screenshot }}" class="w-100 mt-auto" alt="QR code generator screen on iPhone" width="320" height="402" loading="lazy">
-      </div>
+
+  <!-- Platform Tabs -->
+  <div class="text-center mb-4">
+    <div class="btn-group" role="group" aria-label="Platform selector">
+      <input
+        type="radio"
+        class="btn-check"
+        name="platform"
+        id="iphone-tab"
+        value="iphone"
+        checked
+      />
+      <label class="btn btn-outline-primary" for="iphone-tab">
+        <i class="bi bi-phone"></i> iPhone
+      </label>
+
+      <input
+        type="radio"
+        class="btn-check"
+        name="platform"
+        id="mac-tab"
+        value="mac"
+      />
+      <label class="btn btn-outline-primary" for="mac-tab">
+        <i class="bi bi-laptop"></i> Mac
+      </label>
     </div>
-    {% endfor %}
+  </div>
+
+  <!-- iPhone Layout (3 columns) -->
+  <div class="iphone-layout">
+    <div class="row align-items-md-stretch">
+      {% for feature in site.data.qr.iphone.data %}
+      <div class="col-lg-4 mb-4">
+        <div
+          class="h-100 p-md-5 p-4 pb-0 pb-md-0 bg-body-tertiary rounded-img text-start d-flex flex-column"
+        >
+          <h2 class="pb-2 m-0 fw-semibold">{{ feature.name }}</h2>
+          <p class="text-start lead fw-normal text-body-secondary">
+            {{ feature.description }}
+          </p>
+
+          <!-- iPhone Screenshot -->
+          <img
+            src="{{ feature.screenshot }}"
+            class="platform-screenshot iphone-screenshot w-100 mt-auto"
+            alt="{{ feature.name }} on iPhone"
+            width="320"
+            height="402"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Mac Layout (2 columns) -->
+  <div class="mac-layout">
+    <div class="row align-items-md-stretch">
+      {% for feature in site.data.qr.mac.data %}
+      <div class="col-lg-6 mb-4">
+        <div
+          class="h-100 p-md-5 p-4 pb-0 pb-md-0 bg-body-tertiary rounded-img text-start d-flex flex-column"
+        >
+          <h2 class="pb-2 m-0 fw-semibold">{{ feature.name }}</h2>
+          <p class="text-start lead fw-normal text-body-secondary">
+            {{ feature.description }}
+          </p>
+
+          <!-- Mac Screenshot -->
+          <img
+            src="{{ feature.screenshot }}"
+            class="mb-4 platform-screenshot mac-screenshot w-100 mt-auto rounded-3 shadow-sm"
+            alt="{{ feature.name }} on Mac"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
+
+<style>
+  /* Layout Styles */
+  .iphone-layout,
+  .mac-layout {
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  /* Mac specific styles */
+  .mac-screenshot {
+    border: 1px solid #e9ecef;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  /* Responsive adjustments for Mac layout */
+  @media (max-width: 991.98px) {
+    .mac-layout .col-lg-6 {
+      margin-bottom: 2rem;
+    }
+
+    .mac-screenshot {
+      max-height: 300px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const platformTabs = document.querySelectorAll('input[name="platform"]');
+    const iphoneLayout = document.querySelector(".iphone-layout");
+    const macLayout = document.querySelector(".mac-layout");
+
+    platformTabs.forEach((tab) => {
+      tab.addEventListener("change", function () {
+        const platform = this.value;
+        console.log("Platform changed to:", platform); // Debug
+
+        if (platform === "mac") {
+          iphoneLayout.style.display = "none";
+          macLayout.style.display = "block";
+          console.log("Switched to Mac layout"); // Debug
+        } else {
+          iphoneLayout.style.display = "block";
+          macLayout.style.display = "none";
+          console.log("Switched to iPhone layout"); // Debug
+        }
+      });
+    });
+
+    // Initialize with iPhone view
+    iphoneLayout.style.display = "block";
+    macLayout.style.display = "none";
+    console.log("Initialized with iPhone view"); // Debug
+  });
+</script>
