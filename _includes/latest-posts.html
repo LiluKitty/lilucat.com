@@ -1,0 +1,38 @@
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+{% assign latest_posts = sorted_posts | slice: 0, 3 %}
+
+<div class="container pb-5">
+  <div class="row">
+    <div class="col-12 text-center mb-4">
+      <h2 class="display-6 fw-bold">Latest from Our Blog</h2>
+      <p class="lead text-body-secondary">Tips, tricks, and insights to make the most of your iPhone</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    {% for post in latest_posts %}
+    <div class="col-lg-4 mb-4">
+      <div class="h-100 bg-body-tertiary rounded-4 text-start position-relative product">
+        <a href="{{ post.url }}" class="stretched-link" title="Read: {{ post.title }}"></a>
+        <div class="position-absolute top-0 mt-3 ps-3">
+          <span class="badge bg-light-subtle text-light-emphasis">{{ post.categories | replace: '-', ' ' | remove: '"]' | remove: '["' | capitalize }}</span>
+        </div>
+        <img src="{{ post.image.path }}" class="w-100 rounded-top-4" alt="{{ post.image.alt }}" width="416" height="253" loading="lazy" title="{{ post.image.title }}">
+        <div class="p-md-4 p-3">
+          <h3 class="fw-semibold fs-4">{{ post.title }}</h3>
+          <p class="text-start lead fw-normal text-body-secondary">{{ post.description | truncatewords: 20 }}</p>
+          <p class="card-text mb-2"><small class="text-muted">{{ post.date | date_to_string }}</small></p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  
+  <div class="row mt-4">
+    <div class="col-12 text-center">
+      <a href="/blog/" class="btn btn-outline-primary btn-lg px-4" title="View all blog posts">
+        View All Posts
+      </a>
+    </div>
+  </div>
+</div> 
