@@ -1,7 +1,7 @@
 data:
   - name_mobile: 💰
     name_desktop: Earn Money with Lilucat
-    url: /tiktok-cash/
+    url: /tiktok/
   - name_mobile: /assets/icons/mstile-150x150.png
     name_desktop: Lilucat Pro
     is_image: true
