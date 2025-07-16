@@ -265,6 +265,11 @@ ul {
   color: rgba(255,255,255);
 }
 
+/* YouTube specific hover color */
+.btn-social:hover .bi-youtube {
+  color: #ff0000 !important;
+}
+
 .btn {
   transition: color 0.25s ease-in-out,background-color 0.25s ease-in-out;
 }
