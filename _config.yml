@@ -44,13 +44,7 @@ exclude:
 - tmp/
 - pages/focus-app.html
 - pages/screenfree.html
-sitemap:
-  exclude:
-  - "/feed.xml"
-  - "/404.html"
-  include_404: false
-  include_posts: true
-  exclude_posts_with_published_false: true
+- google179db452624aa307.html
 robots:
   sitemap_url: https://lilucat.com/sitemap.xml
   user_agents:
@@ -167,7 +161,7 @@ ios_apps:
     ratings_count: 58
     icon: "/assets/img/photo_vault_x/app-icon.webp"
     included_in_pro: true
-    page:
+    page: photo-vault-x
     published: true
     has_mac_version: false
     last_updated: '2024-10-29T13:13:46Z'
