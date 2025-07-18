@@ -34,8 +34,9 @@ Ever wondered how to add a QR code or barcode to Apple Wallet? You're not alone!
   }
 }
 </script>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cst6WBS7cJw" title="How to Download the QR Code Generator App" frameborder="0" allowfullscreen></iframe>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/cst6WBS7cJw" title="How to Download the QR Code Generator App" frameborder="0" allowfullscreen></iframe>
+</div>
 
 <br>
 
