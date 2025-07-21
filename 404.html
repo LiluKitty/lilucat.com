@@ -46,9 +46,9 @@ permalink: /404.html
                 </div>
               </div>
               <p class="card-text small">{{ app_config.description | truncate: 100 }}</p>
-              <a href="{% if app_config.page %}/{{ app_config.page }}/{% else %}https://apps.apple.com/us/app/id{{ app_config.id }}{% endif %}" 
+              <a href="{% if app_config.page %}/{{ app_config.page }}/{% else %}https://apps.apple.com/us/app/id{{ app_config.id }}{% endif %}" class="btn btn-sm btn-outline-primary"
                  {% unless app_config.page %}target="_blank"{% endunless %}>
-                <img class="p-0" src="https://one-badge.com/b/apple/appstore.svg" alt="Download on the App Store" width="135" height="48">
+                View App
               </a>
             </div>
           </div>
