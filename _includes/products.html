@@ -37,20 +37,18 @@
           ><span class="small text-body-secondary"
             >{{ app_config.ratings_count }} Ratings</span
           >
-          {% if app_config.has_mac_version == true %}
-          <span class="badge bg-success ms-2">Mac</span>
-          {% endif %}
         </div>
       </div>
       <p class="pb-2">{{ app_config.description }}</p>
-      <p class="mb-0">
+      <p class="mb-0 d-flex flex-wrap gap-2 align-items-center">
         <a
           class="stretched-link"
           href="https://apps.apple.com/us/app/id{{ app_config.id }}?platform=iphone"
           style="position: relative"
           target="_blank"
+          rel="noopener"
           data-splitbee-event="External Link..."
-          data-splitbee-event-appstore="{{ app_config.name }}"
+          data-splitbee-event-appstore-iphone="{{ app_config.name }}"
           title="Download {{ app_config.name }} on the App Store"
         >
           <img
@@ -62,6 +60,26 @@
             title="Download {{ app_config.name }} on the App Store"
           />
         </a>
+        {% if app_config.has_mac_version == true %}
+        <a
+          class="stretched-link"
+          href="https://apps.apple.com/us/app/id{{ app_config.id }}?platform=mac"
+          style="position: relative"
+          target="_blank"
+          rel="noopener"
+          data-splitbee-event="External Link..."
+          data-splitbee-event-appstore-mac="{{ app_config.name }}"
+          title="Download {{ app_config.name }} on the Mac App Store"
+        >
+          <img
+            class="mb-md-2"
+            src="https://one-badge.com/b/apple/mac.svg"
+            alt="Download on the Mac App Store"
+            height="48"
+            title="Download {{ app_config.name }} on the Mac App Store"
+          />
+        </a>
+        {% endif %}
       </p>
       {% if app_config.legal %}
       <div class="d-flex gap-2">
