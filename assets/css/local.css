@@ -434,3 +434,143 @@ ul {
   object-fit: contain;
   margin-right: 0.5rem;
 }
+
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1px;
+  background-color: #e9ecef;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline-item:before,
+.timeline-item:after {
+  content: " ";
+  display: table;
+}
+
+.timeline-item:after {
+  clear: both;
+}
+
+.timeline-panel {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  float: left;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline-image {
+  position: absolute;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  margin-left: -75px;
+  z-index: 100;
+  border-radius: 25px;
+  object-fit: cover;
+  background-color: #111;
+}
+
+.timeline-image img {
+  width: 100%;
+  height: auto;
+}
+
+.timeline-body p {
+  color: #a0a0a0;
+}
+
+.subheading {
+  font-size: 1rem;
+  font-style: italic;
+  color: #a0a0a0;
+}
+
+.dialog-card {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #011522;
+  border-radius: 8px;
+  z-index: 1;
+ }
+ 
+ .dialog-card .tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+ }
+ 
+ .dialog-card .circle {
+  padding: 0 4px;
+ }
+ 
+ .dialog-card .box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+ }
+ 
+ .dialog-card .red {
+  background-color: #ff605c;
+ }
+ 
+ .dialog-card .yellow {
+  background-color: #ffbd44;
+ }
+ 
+ .dialog-card .green {
+  background-color: #00ca4e;
+ }
+ 
+ .dialog-card .card__content {
+    padding: 0 15px 15px 15px;
+    color: #fff;
+ }
+
+@media (max-width: 767px) {
+  .timeline:before {
+    left: 60px;
+  }
+
+  .timeline-item {
+    margin-bottom: 20px;
+  }
+
+  .timeline-panel {
+    width: calc(100% - 150px);
+    float: right;
+  }
+
+  .timeline-image {
+    left: 0;
+    margin-left: 0;
+    width: 120px;
+    height: 120px;
+  }
+}
