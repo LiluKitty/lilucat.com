@@ -3,15 +3,16 @@ layout: bootstrap
 title: Phone Cleaner App
 permalink: /phone-cleaner/
 description: Free up space and boost your iPhone’s performance with Phone Cleaner App. AI-powered, private, and easy to use.
-app_id: 6738309812
+app_key: phone_cleaner_app
 published: true
 ---
 <div class="container pb-md-5 pb-4 mt-3">
-  <div class="p-md-5 p-4 mb-4 bg-light rounded-img text-center">
-    <h1 class="display-4 fw-bold mb-3">Phone Cleaner App</h1>
-    <h2 class="h5 mb-4">Free up space and keep your iPhone running smoothly</h2>
-    <p class="lead mb-4">Phone Cleaner App uses advanced AI to scan your storage, find unnecessary files, and help you clean up your device in seconds. All processing happens on your device—your data stays private.</p>
-    {% include appstorebadge.html app_id=page.app_id platform="iphone" src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store" height="40" rel="noopener" title="Download Phone Cleaner App on the App Store" %}
+  <div
+    class="px-md-5 pt-md-3 pt-2 mb-4 bg-light rounded-img mx-auto text-center"
+  >
+    <div class="container-fluid py-md-5 py-3">
+      {%- include product-header.html -%}
+    </div>
   </div>
   <div class="row align-items-md-stretch mt-4">
     <div class="col-md-6 mb-4">
