@@ -6,10 +6,10 @@ description: Got 2,000+ TikTok followers? Let's make you some serious cash! Earn
 keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok monetization, social media income
 ---
 
-<div class="container pb-5 mt-5">
+<div class="container pb-5">
   <div class="mx-auto text-center" style="max-width: 900px; width: 100%">
     <!-- Abstract Background Squares -->
-    <div class="position-relative mb-5">
+    <div class="position-relative mb-5 mt-4">
       <div class="abstract-bg-squares">
         <div class="square square-1"></div>
         <div class="square square-2"></div>
@@ -19,20 +19,19 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
         <div class="square square-6"></div>
       </div>
 
-      <div
-        class="position-relative z-3 text-center p-4 rounded-5"
-        style="backdrop-filter: brightness(0.7)"
-      >
-        <h2 class="display-5 fw-bold mb-4 text-white">Ready to Cash In?</h2>
-        <p class="fs-3 text-white mb-0" style="line-height: 1.4">
-          Listen up,<br />
-          <span class="fw-bold text-warning">TikTok creators!</span><br />
-          If you've got<br />
-          <span class="fw-bold text-danger">2,000+ followers</span><br />and
-          want to turn your social media hustle into<br />
-          <span class="fw-bold text-info">real money</span>,<br />you're in the
-          right place!
-        </p>
+      <div class="position-relative z-3 text-center">
+        <div class="card-glass">
+          <h2 class="display-5 fw-bold mb-4 text-white">Ready to Cash In?</h2>
+          <p class="fs-3 text-white mb-0" style="line-height: 1.4">
+            Listen up,<br />
+            <span class="fw-bold text-warning">TikTok creators!</span><br />
+            If you've got<br />
+            <span class="fw-bold text-success">2,000+ followers</span><br />and
+            want to turn your social media hustle into<br />
+            <span class="fw-bold text-info">real money</span>,<br />you're in the
+            right place!
+          </p>
+        </div>
       </div>
     </div>
     <div
@@ -48,7 +47,7 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
           Are you in?
         </p>
         <a
-          class="btn btn-success btn-lg px-5 py-3 fw-bold mb-3"
+          class="btn btn-promote fw-bold mb-3"
           href="mailto:{{ site.support_mail }}?subject=Lilucat%20:%20I%20Want%20to%20Promote%20Your%20Apps!"
           rel="noopener"
           title="Contact us to promote our apps and earn money with your TikTok account"
@@ -76,41 +75,48 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
         <div class="triangle triangle-2"></div>
       </div>
 
-      <div
-        class="position-relative z-3 text-center p-5 rounded-5"
-        style="backdrop-filter: brightness(0.7)"
-      >
-        <h3 class="display-6 fw-bold mb-4 text-white">
-          <span class="me-3">📋</span>Requirements
-        </h3>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="requirements-list">
-              <div class="requirement-item">
-                <div class="requirement-icon">📱</div>
-                <div class="requirement-text">TikTok account</div>
-              </div>
-              <div class="requirement-item">
-                <div class="requirement-icon">👥</div>
-                <div class="requirement-text">
-                  <strong>2,000+ followers</strong>
+      <div class="position-relative z-3 text-center">
+        <div class="p-4">
+          <h3 class="display-6 fw-bold mb-4 text-white">
+            <span class="me-3">📋</span>Requirements
+          </h3>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="requirements-list">
+                <div class="requirement-item">
+                  <div class="requirement-icon">📱</div>
+                  <div class="requirement-text">TikTok account</div>
                 </div>
-              </div>
-              <div class="requirement-item">
-                <div class="requirement-icon">🎂</div>
-                <div class="requirement-text">
-                  <strong>18+ years old</strong>
+                <div class="requirement-item">
+                  <div class="requirement-icon">👥</div>
+                  <div class="requirement-text">
+                    <strong>2,000+ followers</strong>
+                  </div>
                 </div>
-              </div>
-              <div class="requirement-item">
-                <div class="requirement-icon">💰</div>
-                <div class="requirement-text">Want to make money</div>
+                <div class="requirement-item">
+                  <div class="requirement-icon">🎂</div>
+                  <div class="requirement-text">
+                    <strong>18+ years old</strong>
+                  </div>
+                </div>
+                <div class="requirement-item">
+                  <div class="requirement-icon">💰</div>
+                  <div class="requirement-text">Want to make money</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <a
+      class="btn btn-promote fw-bold mb-3"
+      href="mailto:{{ site.support_mail }}?subject=Lilucat%20:%20I%20Want%20to%20Promote%20Your%20Apps!"
+      rel="noopener"
+      title="Contact us to promote our apps and earn money with your TikTok account"
+    >
+      🚀 Contact Us
+    </a>
   </div>
 
   <div class="mt-4 text-muted small text-center">
@@ -151,8 +157,10 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
     moneyTitle.classList.add("animate__rubberBand");
 
     // Calculate button position relative to viewport
-    const originX = (buttonRect.left + buttonRect.width / 2) / window.innerWidth;
-    const originY = (buttonRect.top + buttonRect.height / 2) / window.innerHeight;
+    const originX =
+      (buttonRect.left + buttonRect.width / 2) / window.innerWidth;
+    const originY =
+      (buttonRect.top + buttonRect.height / 2) / window.innerHeight;
 
     // Fire confetti sequence from button position
     setTimeout(() => {
@@ -193,16 +201,16 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
 
   // Add click event listener to the promote button
   if (promoteButton) {
-    promoteButton.addEventListener('click', (e) => {
+    promoteButton.addEventListener("click", (e) => {
       // Prevent default behavior to control timing
       e.preventDefault();
-      
+
       // Get button position
       const buttonRect = promoteButton.getBoundingClientRect();
-      
+
       // Trigger confetti immediately
       triggerConfetti(buttonRect);
-      
+
       // Open email client after 3 seconds
       setTimeout(() => {
         window.location.href = promoteButton.href;
@@ -226,7 +234,7 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
     bottom: 0;
     overflow: hidden;
     border-radius: 2rem;
-    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    background: linear-gradient(135deg, #35373b 0%, #282a2e 100%);
   }
 
   .square {
@@ -239,7 +247,7 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
   .square-1 {
     width: 80px;
     height: 80px;
-    background: linear-gradient(45deg, #ffe96b, #24ee4c);
+    background: linear-gradient(45deg, #ff9a9e, #fecfef);
     top: 10%;
     left: 10%;
     animation-delay: 0s;
@@ -248,7 +256,7 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
   .square-2 {
     width: 60px;
     height: 60px;
-    background: linear-gradient(45deg, #4ecdc4, #44a08d);
+    background: linear-gradient(45deg, #a8edea, #fed6e3);
     top: 20%;
     right: 15%;
     animation-delay: 1s;
@@ -257,7 +265,7 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
   .square-3 {
     width: 100px;
     height: 100px;
-    background: linear-gradient(45deg, #d15845, #c93d3d);
+    background: linear-gradient(45deg, #ffecd2, #fcb69f);
     bottom: 20%;
     left: 20%;
     animation-delay: 2s;
@@ -266,7 +274,7 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
   .square-4 {
     width: 70px;
     height: 70px;
-    background: linear-gradient(45deg, #f9ca24, #f0932b);
+    background: linear-gradient(45deg, #d299c2, #fef9d7);
     bottom: 15%;
     right: 10%;
     animation-delay: 3s;
@@ -275,7 +283,7 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
   .square-5 {
     width: 50px;
     height: 50px;
-    background: linear-gradient(45deg, #6c5ce7, #a29bfe);
+    background: linear-gradient(45deg, #ff6b9d, #ff8fb2);
     top: 50%;
     left: 5%;
     animation-delay: 4s;
@@ -284,7 +292,7 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
   .square-6 {
     width: 90px;
     height: 90px;
-    background: linear-gradient(45deg, #fd79a8, #e84393);
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
     top: 30%;
     right: 5%;
     animation-delay: 5s;
@@ -329,6 +337,21 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
     transition: transform 0.3s ease;
   }
 
+  .card-glass {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    border-radius: 2rem;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  @media (min-width: 992px) {
+    .card-glass {
+      padding: 3rem;
+    }
+  }
+
   /* Requirements Section Styles */
   .requirements-bg {
     position: absolute;
@@ -338,7 +361,7 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
     bottom: 0;
     overflow: hidden;
     border-radius: 2rem;
-    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    background: linear-gradient(135deg, #35373b 0%, #282a2e 100%);
   }
 
   .circle {
@@ -464,6 +487,42 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
     font-size: 1.2rem;
     color: white;
     font-weight: 500;
+  }
+
+  .text-highlight-red {
+    color: #ff5c5c !important;
+  }
+
+  .btn-promote {
+    padding: 1.2rem 3.5rem;
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
+    border: none;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .btn-promote:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(56, 239, 125, 0.4);
+  }
+
+  @keyframes pulse-btn {
+    0% {
+      transform: scale(0.98);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    70% {
+      transform: scale(1.02);
+      box-shadow: 0 6px 20px rgba(56, 239, 125, 0.3);
+    }
+    100% {
+      transform: scale(0.98);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
   }
 
   /* Mobile responsive for requirements */
