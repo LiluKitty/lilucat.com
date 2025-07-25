@@ -574,3 +574,11 @@ ul {
     height: 120px;
   }
 }
+
+.text-indigo {
+  color: #6610f2 !important;
+}
+
+.text-teal {
+  color: #20c997 !important;
+}

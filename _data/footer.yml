@@ -9,6 +9,8 @@ data:
       option:
         - name: About
           url: /about/
+        - name: Team
+          url: /team/
         - name: Contact
           url: mailto:support@lilucat.com
 
