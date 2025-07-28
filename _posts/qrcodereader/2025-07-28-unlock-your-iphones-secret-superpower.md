@@ -5,6 +5,7 @@ title: "From Instant Wi-Fi to Digital Business Cards: Your Mac's QR Code Superpo
 categories: qr-code-reader
 date: 2025-07-28 10:00:00
 last_modified_at: 2025-07-28 10:00:00
+description: "Think QR codes are just for your phone? Think again. Our Mac app lets you scan, generate, and manage QR codes right from your desktop, making your workflow seamless."
 image:
   path: /assets/img/blog/qr-code-superpower-unlocked-mac.png
   alt: "A sleek, modern image of a MacBook with the QR Code app open, showing a generated Wi-Fi QR code next to a coffee cup."
