@@ -26,48 +26,15 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
       </div>
     </div>
 
-    <!-- Requirements Section -->
-    <div class="mb-5">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-lg-6">
-          <div class="p-4">
-            <h3 class="display-6 fw-bold mb-4 text-center">
-              <span class="me-3">📋</span>Requirements
-            </h3>
-            <div class="requirements-list">
-              <div class="requirement-item">
-                <div class="requirement-icon">📱</div>
-                <div class="requirement-text">TikTok account</div>
-              </div>
-              <div class="requirement-item">
-                <div class="requirement-icon">👥</div>
-                <div class="requirement-text">
-                  <strong>2,000+ followers</strong>
-                </div>
-              </div>
-              <div class="requirement-item">
-                <div class="requirement-icon">💵</div>
-                <div class="requirement-text">PayPal account</div>
-              </div>
-              <div class="requirement-item">
-                <div class="requirement-icon">🎂</div>
-                <div class="requirement-text">
-                  <strong>18+ years old</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 text-center">
-          <img
-            src="/assets/img/make-money.webp"
-            alt="Make money with TikTok followers"
-            title="Make money with TikTok followers - Join our TikTok Cash Challenge"
-            class="img-fluid rounded-4"
-            style="max-width: 400px; width: 100%"
-          />
-        </div>
-      </div>
+    <!-- Centered Lilucat Image -->
+    <div class="text-center mb-5">
+      <img
+        src="/assets/img/make-money.webp"
+        alt="Make money with TikTok followers"
+        title="Make money with TikTok followers - Join our TikTok Cash Challenge"
+        class="img-fluid rounded-4"
+        style="max-width: 400px; width: 100%"
+      />
     </div>
 
     <div class="text-center">
@@ -77,121 +44,104 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
       <p class="fs-3 text-body-secondary mb-4">
         Earn from $50 to $10,000 quickly and easily. Are you in?
       </p>
-      <a
-        class="btn btn-promote btn-lg fw-bold mb-3"
-        href="mailto:{{ site.support_mail }}?subject=Lilucat%20:%20I%20Want%20to%20Promote%20Your%20Apps!"
-        rel="noopener"
-        title="Contact us to promote our apps and earn money with your TikTok account"
-      >
-        🚀 Apply Now
-      </a>
+
     </div>
   </div>
 
-  <div class="mt-4 text-muted small text-center">
-    <p class="mb-1">
-      💼 Serious inquiries only. We pay for authentic app promotion content.
-    </p>
-    <p class="mb-1">
-      📱 Promote our apps to your followers and earn money doing what you love!
-    </p>
-    <p class="mb-1">🔒 100% secure and confidential.</p>
+  <!-- Application Form Section -->
+  <div class="mx-auto text-center" style="max-width: 900px; width: 100%">
+    <div class="mb-5">
+      <div class="p-4">
+        <h3 class="display-6 fw-bold mb-4 text-center">
+          <span class="me-3">📋</span>Requirements
+        </h3>
+        <form action="https://formspree.io/f/mnnzvrov" method="POST" id="applyForm" class="application-form">
+          <div class="form-fields-list">
+            <div class="form-field-item">
+              <div class="form-field-icon">👤</div>
+              <div class="form-field-input">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your full name" required>
+              </div>
+            </div>
+            
+            <div class="form-field-item">
+              <div class="form-field-icon">📧</div>
+              <div class="form-field-input">
+                <input type="email" class="form-control" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            
+            <div class="form-field-item">
+              <div class="form-field-icon">📱</div>
+              <div class="form-field-input">
+                <div class="input-group">
+                  <span class="input-group-text">@</span>
+                  <input type="text" class="form-control" id="tiktokUsername" name="tiktokUsername" placeholder="your_tiktok_user" required>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-field-item">
+              <div class="form-field-icon">👥</div>
+              <div class="form-field-input">
+                <input type="number" class="form-control" id="followers" name="followers" placeholder="2000" min="2000" required>
+                <div class="form-text">Minimum 2,000 followers required</div>
+              </div>
+            </div>
+            
+            <div class="form-field-item">
+              <div class="form-field-icon">💵</div>
+              <div class="form-field-input">
+                <input type="email" class="form-control" id="paypalEmail" name="paypalEmail" placeholder="your-paypal@email.com" required>
+                <div class="form-text">PayPal email for payments</div>
+              </div>
+            </div>
+            
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <div class="text-center mt-4">
+      <div class="form-check d-inline-block mb-3">
+        <input class="form-check-input" type="checkbox" id="terms" name="terms" form="applyForm" required>
+        <label class="form-check-label" for="terms">
+          I'm 18+ years old and agree to the terms *
+        </label>
+      </div>
+    </div>
+    
+    <div class="text-center">
+      <button type="submit" form="applyForm" class="btn btn-promote btn-lg fw-bold w-100">
+        🚀 Apply Now
+      </button>
+    </div>
+  </div>
   </div>
 </div>
 
-<!-- Confetti Effect Script -->
-<script type="module">
-  import confetti from "https://cdn.skypack.dev/canvas-confetti@1.4.0";
 
-  const promoteButton = document.querySelector('a[href*="mailto"]');
-  const moneyTitle = document.querySelector("#money-title");
 
-  const defaults = {
-    particleCount: 500,
-    spread: 80,
-    angle: 90,
-    origin: { x: 0.5, y: 0.5 },
-  };
+<!-- Form Submission Script -->
+<script>
+  const applyForm = document.getElementById('applyForm');
 
-  const fire = (particleRatio, opts) => {
-    confetti(
-      Object.assign({}, defaults, opts, {
-        particleCount: Math.floor(defaults.particleCount * particleRatio),
-      })
-    );
-  };
-
-  const triggerConfetti = (buttonRect) => {
-    // Add animation class to title
-    moneyTitle.classList.add("animate__rubberBand");
-
-    // Calculate button position relative to viewport
-    const originX =
-      (buttonRect.left + buttonRect.width / 2) / window.innerWidth;
-    const originY =
-      (buttonRect.top + buttonRect.height / 2) / window.innerHeight;
-
-    // Fire confetti sequence from button position
-    setTimeout(() => {
-      fire(0.25, {
-        spread: 26,
-        startVelocity: 55,
-        origin: { x: originX, y: originY },
-      });
-      fire(0.2, {
-        spread: 60,
-        origin: { x: originX, y: originY },
-      });
-      fire(0.35, {
-        spread: 100,
-        decay: 0.91,
-        scalar: 0.8,
-        origin: { x: originX, y: originY },
-      });
-      fire(0.1, {
-        spread: 120,
-        startVelocity: 25,
-        decay: 0.92,
-        scalar: 1.2,
-        origin: { x: originX, y: originY },
-      });
-      fire(0.1, {
-        spread: 120,
-        startVelocity: 45,
-        origin: { x: originX, y: originY },
-      });
-
-      // Remove animation class
-      setTimeout(() => {
-        moneyTitle.classList.remove("animate__rubberBand");
-      }, 300);
-    }, 300);
-  };
-
-  // Add click event listener to the promote button
-  if (promoteButton) {
-    promoteButton.addEventListener("click", (e) => {
-      // Prevent default behavior to control timing
-      e.preventDefault();
-
-      // Get button position
-      const buttonRect = promoteButton.getBoundingClientRect();
-
-      // Trigger confetti immediately
-      triggerConfetti(buttonRect);
-
-      // Open email client after 3 seconds
-      setTimeout(() => {
-        window.location.href = promoteButton.href;
-      }, 3000);
+  // Handle form submission
+  if (applyForm) {
+    applyForm.addEventListener('submit', function(e) {
+      const submitButton = this.querySelector('button[type="submit"]');
+      
+      // Show loading state
+      submitButton.innerHTML = '⏳ Submitting...';
+      submitButton.disabled = true;
+      
+      // Form will be handled by Formspree
+      // The form will redirect to a success page or show success message
     });
   }
 </script>
-<!-- Animate.css for rubber band effect -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
+
+
 
 <!-- Custom Styles -->
 <style>
@@ -268,6 +218,123 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
     .btn-promote {
       font-size: 1.5rem;
       padding: 1.2rem 2.5rem;
+    }
+  }
+
+  /* Application Form Styles */
+  .application-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .application-form {
+    margin-top: 1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-fields-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .form-field-item {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 0.75rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+  }
+
+  .form-field-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .form-field-icon {
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    min-width: 2.5rem;
+    text-align: center;
+  }
+
+  .form-field-input {
+    flex: 1;
+  }
+
+  .form-control {
+    border-radius: 0.5rem;
+    border: 1px solid #dee2e6;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    color: #212529;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    width: 100%;
+  }
+
+  .form-control:focus {
+    border-color: #38ef7d;
+    box-shadow: 0 0 0 0.2rem rgba(56, 239, 125, 0.25);
+    outline: none;
+  }
+
+  .input-group-text {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-right: none;
+    color: #6c757d;
+    font-weight: 600;
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .input-group .form-control {
+    border-left: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  .form-check-input:checked {
+    background-color: #38ef7d;
+    border-color: #38ef7d;
+  }
+
+  .form-text {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 0.25rem;
+  }
+
+  .form-check-label {
+    font-size: 1.1rem;
+    color: #212529;
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    .application-form-container {
+      padding: 1rem;
+      margin: 0 1rem;
+    }
+    
+    .form-field-item {
+      padding: 0.75rem 1rem;
+    }
+    
+    .form-field-icon {
+      font-size: 1.25rem;
+      margin-right: 1rem;
+      min-width: 2rem;
+    }
+    
+    .form-control {
+      font-size: 16px; /* Prevents zoom on iOS */
     }
   }
 </style>
