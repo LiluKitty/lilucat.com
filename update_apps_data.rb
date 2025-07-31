@@ -134,6 +134,15 @@ def update_config_with_apps(apps)
     apps_by_id[app['trackId'].to_s] = app
   end
   
+  # Crear un hash de apps configuradas por ID para búsqueda rápida
+  configured_app_ids = {}
+  ios_apps.each do |config_key, app_data|
+    if app_data['id']
+      configured_app_ids[app_data['id'].to_s] = config_key
+    end
+  end
+  
+  # Procesar apps existentes en la configuración
   ios_apps.each do |config_key, app_data|
     app_id = app_data['id']
     
@@ -172,6 +181,64 @@ def update_config_with_apps(apps)
     else
       puts "⚠️  App not found in iTunes: #{config_key} (ID: #{app_id})"
     end
+  end
+  
+  # Detectar y añadir apps nuevas que están en la App Store pero no en la configuración
+  puts "\n🔍 Checking for new apps in App Store..."
+  new_apps_count = 0
+  
+  apps.each do |app|
+    app_id = app['trackId'].to_s
+    app_name = app['trackName']
+    
+    unless configured_app_ids[app_id]
+      # Esta es una app nueva que no está en la configuración
+      new_apps_count += 1
+      
+      # Generar key para la nueva app usando el ID (más confiable que el nombre)
+      app_key = "app_#{app['trackId']}"
+      
+      # Verificar si tiene versión Mac
+      has_mac_version = app['supportedDevices']&.any? { |device| device.include?('Mac') } || false
+      
+      # Crear nueva entrada de app
+      new_app_data = {
+        'id' => app['trackId'],
+        'name' => app_name,
+        'description' => app['description'] || '',
+        'subtitle' => app['subtitle'] || '',
+        'rating' => app['averageUserRating'] || 0.0,
+        'ratings_count' => app['userRatingCount'] || 0,
+        'icon' => "/assets/img/app_#{app['trackId']}/app-icon.webp",
+        'included_in_pro' => false,
+        'page' => app_key,
+        'published' => true,
+        'has_mac_version' => has_mac_version,
+        'last_updated' => app['currentVersionReleaseDate'],
+        'release_date' => app['releaseDate']
+      }
+      
+      # Extraer enlaces legales
+      legal_links = extract_legal_links_from_description(app['description'])
+      new_app_data['legal'] = legal_links if legal_links.any?
+      
+      # Añadir a la configuración
+      ios_apps[app_key] = new_app_data
+      
+      puts "🆕 Added new app: #{app_name} (#{app_key}) - ID: #{app_id}"
+      
+      # Descargar ícono
+      if app['artworkUrl512']
+        icon_path = new_app_data['icon'].sub('/', '')
+        download_image(app['artworkUrl512'], icon_path)
+      end
+    end
+  end
+  
+  if new_apps_count == 0
+    puts "  ✅ No new apps found"
+  else
+    puts "  🎉 Added #{new_apps_count} new app(s)"
   end
   
   # Ordenar apps por fecha de última actualización (más reciente primero)

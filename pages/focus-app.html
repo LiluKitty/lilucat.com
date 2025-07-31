@@ -3,9 +3,15 @@ layout: bootstrap
 title: Focus App
 description: Control, block apps and focus
 permalink: /focus-app/
-app_key: focus_app
+app_id: 6469043032
 ---
-{% assign app_config = site.ios_apps[page.app_key] %}
+{% assign app_config = nil %}
+{% for app_entry in site.ios_apps %}
+  {% if app_entry[1].id == page.app_id %}
+    {% assign app_config = app_entry[1] %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 {% if app_config and app_config.published != false %}
 <div class="container pb-md-5 pb-4 mt-3">
   <div class="px-md-5 pt-md-3 pt-2 mb-4 bg-light rounded-img mx-auto text-center">
@@ -20,7 +26,7 @@ app_key: focus_app
         <img src="{{ feature.icon }}" width="42" height="42" class="mb-3 shadow-sm rounded-3" alt="{{ feature.name }} Icon">
         <h2 class="pb-2 m-0 fw-semibold">{{ feature.name }}</h2>
         <p class="text-start lead fw-normal text-body-secondary">{{ feature.description }}</p>
-        <img src="{{ feature.screenshot }}" class="w-100" alt="{{ feature.name }} Screenshot" width="400" height="300" loading="lazy">
+        <img src="{{ feature.screenshot }}" class="w-100" alt="{{ feature.name }} Screenshot" loading="lazy" style="max-height: 500px; object-fit: contain;">
       </div>
     </div>
     {% endfor %}

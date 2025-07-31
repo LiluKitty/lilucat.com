@@ -3,9 +3,15 @@ layout: bootstrap
 title: Clean Up iPhone
 description: Free up space on your iPhone
 permalink: /clean-up-iphone/
-app_key: clean_up_iphone
+app_id: 6455376072
 ---
-{% assign app_config = site.ios_apps[page.app_key] %}
+{% assign app_config = nil %}
+{% for app_entry in site.ios_apps %}
+  {% if app_entry[1].id == page.app_id %}
+    {% assign app_config = app_entry[1] %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 {% if app_config and app_config.published != false %}
 <div class="container pb-md-5 pb-4 mt-3">
   <div class="px-md-5 pt-md-3 pt-2 mb-4 bg-light rounded-img mx-auto text-center">

@@ -1,0 +1,30 @@
+data:
+  - name: AI-Powered Cleaning
+    description: Automatically finds and removes unnecessary files, duplicates, and junk to free up space.
+    icon: 🤖
+    color: "#667eea 0%, #764ba2 100%"
+
+  - name: On-Device Privacy
+    description: All scans and cleaning happen directly on your iPhone. Your files and personal data never leave your device.
+    icon: 🔒
+    color: "#f093fb 0%, #f5576c 100%"
+
+  - name: One-Tap Cleanup
+    description: Just press one button and Phone Cleaner App will do the rest—fast, safe, and easy.
+    icon: 👆
+    color: "#4facfe 0%, #00f2fe 100%"
+
+  - name: Social & App Cache Cleaning
+    description: Removes useless media and cache from WhatsApp, Instagram, Facebook, Netflix, and more for better performance.
+    icon: 📱
+    color: "#43e97b 0%, #38f9d7 100%"
+
+  - name: Fast and Safe
+    description: Clean your phone in just seconds and enjoy more storage for new photos, videos, and apps.
+    icon: ⚡
+    color: "#fa709a 0%, #fee140 100%"
+
+  - name: No Complex Settings
+    description: The app is made to be easy for everyone, so you can clean up without any hassle.
+    icon: ✨
+    color: "#a8edea 0%, #fed6e3 100%" 

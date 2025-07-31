@@ -2,10 +2,18 @@
 layout: bootstrap
 title: Phone Cleaner App
 permalink: /phone-cleaner/
-description: Free up space and boost your iPhone’s performance with Phone Cleaner App. AI-powered, private, and easy to use.
-app_key: phone_cleaner_app
+description: Free up space and boost your iPhone's performance with Phone Cleaner App. AI-powered, private, and easy to use.
+app_id: 6738309812
 published: true
 ---
+{% assign app_config = nil %}
+{% for app_entry in site.ios_apps %}
+  {% if app_entry[1].id == page.app_id %}
+    {% assign app_config = app_entry[1] %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% if app_config and app_config.published != false %}
 <div class="container pb-md-5 pb-4 mt-3">
   <div
     class="px-md-5 pt-md-3 pt-2 mb-4 bg-light rounded-img mx-auto text-center"
@@ -14,39 +22,16 @@ published: true
       {%- include product-header.html -%}
     </div>
   </div>
-  <div class="row align-items-md-stretch mt-4">
-    <div class="col-md-6 mb-4">
-      <div class="h-100 p-4 bg-body-tertiary rounded-4 text-start">
-        <h3 class="fw-semibold mb-2">AI-Powered Cleaning</h3>
-        <p>Automatically finds and removes unnecessary files, duplicates, and junk to free up space.</p>
+  <div class="row align-items-md-stretch">
+    {% for feature in site.data.phone-cleaner.data %}
+    <div class="col-lg-4 mb-4">
+      <div class="h-100 p-md-5 p-4 pb-0 pb-md-0 bg-body-tertiary rounded-img text-start"> 
+        <div class="mb-3 d-flex align-items-center justify-content-center rounded-3" style="width: 42px; height: 42px; font-size: 24px; background: linear-gradient(135deg, {{ feature.color }});">{{ feature.icon }}</div>
+        <h2 class="pb-2 m-0 fw-semibold">{{ feature.name }}</h2>
+        <p class="text-start lead fw-normal text-body-secondary">{{ feature.description }}</p>
       </div>
     </div>
-    <div class="col-md-6 mb-4">
-      <div class="h-100 p-4 bg-body-tertiary rounded-4 text-start">
-        <h3 class="fw-semibold mb-2">On-Device Privacy</h3>
-        <p>All scans and cleaning happen directly on your iPhone. Your files and personal data never leave your device.</p>
-      </div>
-    </div>
-    <div class="col-md-6 mb-4">
-      <div class="h-100 p-4 bg-body-tertiary rounded-4 text-start">
-        <h3 class="fw-semibold mb-2">One-Tap Cleanup</h3>
-        <p>Just press one button and Phone Cleaner App will do the rest—fast, safe, and easy.</p>
-      </div>
-    </div>
-    <div class="col-md-6 mb-4">
-      <div class="h-100 p-4 bg-body-tertiary rounded-4 text-start">
-        <h3 class="fw-semibold mb-2">Social & App Cache Cleaning</h3>
-        <p>Removes useless media and cache from WhatsApp, Instagram, Facebook, Netflix, and more for better performance.</p>
-      </div>
-    </div>
+    {% endfor %}
   </div>
-  <div class="mt-5">
-    <h2 class="h4 fw-bold mb-3">Why choose Phone Cleaner App?</h2>
-    <ul class="list-unstyled lead">
-      <li>• Fast and safe cleaning</li>
-      <li>• 100% on-device privacy</li>
-      <li>• No complex settings</li>
-      <li>• Try Pro features with a free trial</li>
-    </ul>
-  </div>
-</div> 
+</div>
+{% endif %} 

@@ -3,9 +3,15 @@ layout: bootstrap
 title: Photo Vault X
 description: Secure photo and video storage
 permalink: /photo-vault-x/
-app_key: photo_vault_x
+app_id: 6618155410
 ---
-{% assign app_config = site.ios_apps[page.app_key] %}
+{% assign app_config = nil %}
+{% for app_entry in site.ios_apps %}
+  {% if app_entry[1].id == page.app_id %}
+    {% assign app_config = app_entry[1] %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 {% if app_config and app_config.published != false %}
 <div class="container pb-md-5 pb-4 mt-3">
   <div class="px-md-5 pt-md-3 pt-2 mb-4 bg-light rounded-img mx-auto text-center">
@@ -17,10 +23,9 @@ app_key: photo_vault_x
     {% for feature in site.data.photo-vault-x.data %}
     <div class="col-lg-4 mb-4">
       <div class="h-100 p-md-5 p-4 pb-0 pb-md-0 bg-body-tertiary rounded-img text-start"> 
-        <img src="{{ feature.icon }}" width="42" height="42" class="mb-3 shadow-sm rounded-3" alt="{{ feature.name }} Icon">
+        <div class="mb-3 d-flex align-items-center justify-content-center rounded-3" style="width: 42px; height: 42px; font-size: 24px; background: linear-gradient(135deg, {{ feature.color }});">{{ feature.icon }}</div>
         <h2 class="pb-2 m-0 fw-semibold">{{ feature.name }}</h2>
         <p class="text-start lead fw-normal text-body-secondary">{{ feature.description }}</p>
-        <img src="{{ feature.screenshot }}" class="w-100" alt="{{ feature.name }} Screenshot" width="320" height="402" loading="lazy">
       </div>
     </div>
     {% endfor %}

@@ -42,7 +42,7 @@ exclude:
 - ".idea/"
 - test/
 - tmp/
-- pages/focus-app.html
+# - pages/focus-app.html
 - pages/screenfree.html
 - google179db452624aa307.html
 robots:
@@ -61,15 +61,51 @@ robots:
   - "/Gemfile.lock"
   crawl_delay: 1
 ios_apps:
-  phone_cleaner_app:
+  app_6455376072:
+    id: 6455376072
+    name: Storage Cleaner
+    description: Running out of space? Clean up your device easily with smart AI that
+      finds duplicates, blurry photos, and unnecessary files.
+    subtitle: Free Up Space, Clean Up Photos
+    rating: 4.44118
+    ratings_count: 204
+    icon: "/assets/img/app_6455376072/app-icon.webp"
+    included_in_pro: true
+    page: storage-cleaner
+    published: true
+    has_mac_version: false
+    last_updated: '2025-07-28T12:04:59Z'
+    release_date: '2024-11-14T08:00:00Z'
+    legal:
+      privacy: https://storagecleaner.lilucat.com/legal/privacy
+      terms: https://storagecleaner.lilucat.com/legal/terms
+  app_6745213752:
+    id: 6745213752
+    name: QR Code Scanner
+    description: Scan any QR code instantly and create your own custom codes. The
+      fastest and most intuitive QR scanner you'll ever use.
+    subtitle: Code Reader Scanner Generator
+    rating: 5
+    ratings_count: 7
+    icon: "/assets/img/app_6745213752/app-icon.webp"
+    included_in_pro: false
+    page: qr
+    published: true
+    has_mac_version: true
+    last_updated: '2025-07-25T22:51:14Z'
+    release_date: '2025-06-22T07:00:00Z'
+    legal:
+      terms: https://qrcodereaderapp.lilucat.com/legal/terms
+      privacy: https://qrcodereaderapp.lilucat.com/legal/privacy
+  app_6738309812:
     id: 6738309812
     name: Phone Cleaner App
     description: Free up space and boost your device performance. Our AI finds junk
       files and cleans them up automatically.
     subtitle: Phone Cleaner Free Up Storage
-    rating: 4.625
-    ratings_count: 104
-    icon: "/assets/img/phone_cleaner_app/app-icon.webp"
+    rating: 4.62857
+    ratings_count: 105
+    icon: "/assets/img/app_6738309812/app-icon.webp"
     included_in_pro: false
     page: phone-cleaner
     published: true
@@ -79,33 +115,15 @@ ios_apps:
     legal:
       terms: https://cleanmeup.lilucat.com/legal/terms
       privacy: https://cleanmeup.lilucat.com/legal/privacy
-  qr:
-    id: 6745213752
-    name: QR Code Scanner
-    description: Scan any QR code instantly and create your own custom codes. The
-      fastest and most intuitive QR scanner you'll ever use.
-    subtitle: Code Reader Scanner Generator
-    rating: 5
-    ratings_count: 3
-    icon: "/assets/img/qr/app-icon.webp"
-    included_in_pro: false
-    page: qr
-    published: true
-    has_mac_version: true
-    last_updated: '2025-07-03T06:32:56Z'
-    release_date: '2025-06-22T07:00:00Z'
-    legal:
-      terms: https://qrcodereaderapp.lilucat.com/legal/terms
-      privacy: https://qrcodereaderapp.lilucat.com/legal/privacy
-  app_lock:
+  app_6448239603:
     id: 6448239603
     name: App Lock
     description: Keep your private apps safe and hidden. Lock any app with a password
       and protect your sensitive information from prying eyes.
     subtitle: Password for Apps, Hide, Block
-    rating: 4.61042
-    ratings_count: 3034
-    icon: "/assets/img/app_lock/app-icon.webp"
+    rating: 4.60661
+    ratings_count: 3147
+    icon: "/assets/img/app_6448239603/app-icon.webp"
     included_in_pro: true
     page: app-lock
     published: true
@@ -115,33 +133,15 @@ ios_apps:
     legal:
       privacy: https://applock.lilucat.com/legal/privacy
       terms: https://applock.lilucat.com/legal/terms
-  storage_cleaner:
-    id: 6455376072
-    name: Storage Cleaner
-    description: Running out of space? Clean up your device easily with smart AI that
-      finds duplicates, blurry photos, and unnecessary files.
-    subtitle: Free Up Space, Clean Up Photos
-    rating: 4.43564
-    ratings_count: 202
-    icon: "/assets/img/storage_cleaner/app-icon.webp"
-    included_in_pro: true
-    page: storage-cleaner
-    published: true
-    has_mac_version: false
-    last_updated: '2025-06-17T17:01:39Z'
-    release_date: '2024-11-14T08:00:00Z'
-    legal:
-      privacy: https://storagecleaner.lilucat.com/legal/privacy
-      terms: https://storagecleaner.lilucat.com/legal/terms
-  qr_code_reader:
+  app_6469319539:
     id: 6469319539
     name: QR Code Reader
     description: Scan QR codes, barcodes, and create your own. Works with WiFi, contacts,
       calendar events, and more. Your all-in-one QR solution.
     subtitle: Barcodes Scanner & Maker
-    rating: 4.6383
-    ratings_count: 47
-    icon: "/assets/img/qr_code_reader/app-icon.webp"
+    rating: 4.5098
+    ratings_count: 51
+    icon: "/assets/img/app_6469319539/app-icon.webp"
     included_in_pro: true
     page: qr-code-reader
     published: true
@@ -151,7 +151,7 @@ ios_apps:
     legal:
       privacy: https://qrcode.lilucat.com/legal/privacy
       terms: https://qrcode.lilucat.com/legal/terms
-  photo_vault_x:
+  app_6618155410:
     id: 6618155410
     name: Photo Vault X
     description: Keep your precious photos and videos safe with password protection.
@@ -159,7 +159,7 @@ ios_apps:
     subtitle: App Lock, hide videos & pic
     rating: 4.43103
     ratings_count: 58
-    icon: "/assets/img/photo_vault_x/app-icon.webp"
+    icon: "/assets/img/app_6618155410/app-icon.webp"
     included_in_pro: true
     page: photo-vault-x
     published: true
@@ -169,29 +169,20 @@ ios_apps:
     legal:
       terms: https://photovault.lilucat.com/legal/terms
       privacy: https://photovault.lilucat.com/legal/privacy
-  focus_app:
+  app_6469043032:
     id: 6469043032
-    name: Focus App
-    description: Take control of your digital life. Block distracting apps, set time
-      limits, and stay focused on what matters most.
-    subtitle: Control, block apps and focus
-    icon: "/assets/img/focus-app/Focu-App-Icon.png"
-    rating: 4.4
-    ratings_count: 59
+    name: Focus - Screen Time Control
+    description: Focus App helps you control your digital life and reduce screen time.
+    subtitle: ''
+    rating: 4.73214
+    ratings_count: 56
+    icon: "/assets/img/app_6469043032/app-icon.webp"
     included_in_pro: false
     page: focus-app
-    published: false
+    published: true
     has_mac_version: false
-  screenfree:
-    id: 6449741551
-    name: Screenfree
-    description: Break free from screen addiction. Set limits, block apps, and regain
-      control of your digital life with smart focus tools.
-    subtitle: Screen Time Control & Focus
-    icon: "/assets/img/screenfree/Icon-1024.png"
-    rating: 4.4
-    ratings_count: 59
-    included_in_pro: false
-    page: screenfree
-    published: false
-    has_mac_version: false
+    last_updated: '2024-09-07T13:44:19Z'
+    release_date: '2023-10-12T07:00:00Z'
+    legal:
+      terms: https://focus.lilucat.com/legal/terms
+      privacy: https://focus.lilucat.com/legal/privacy

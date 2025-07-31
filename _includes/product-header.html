@@ -1,4 +1,11 @@
-{% assign app_config = site.ios_apps[page.app_key] %} {% if app_config %}
+{% assign app_config = nil %}
+{% for app_entry in site.ios_apps %}
+  {% if app_entry[1].id == page.app_id %}
+    {% assign app_config = app_entry[1] %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% if app_config %}
 <img
   class="rounded-4 shadow-sm mb-md-4 mb-3"
   src="{{ app_config.icon }}"

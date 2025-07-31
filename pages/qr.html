@@ -4,8 +4,16 @@ title: QR Code Scanner & Generator for iPhone
 description: Scan and create QR codes and barcodes instantly on your iPhone. Share Wi-Fi, contacts, links, and more. Fast, secure, and easy-to-use QR code scanner and generator app. Download now!
 keywords: QR code, QR scanner, barcode reader, QR generator, iPhone, scan QR, create QR, free QR app, QR code app, barcode app
 permalink: /qr/
-app_key: qr
+app_id: 6745213752
 ---
+{% assign app_config = nil %}
+{% for app_entry in site.ios_apps %}
+  {% if app_entry[1].id == page.app_id %}
+    {% assign app_config = app_entry[1] %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% if app_config and app_config.published != false %}
 
 <div class="container pb-md-5 pb-4 mt-3">
   <div
@@ -155,3 +163,4 @@ app_key: qr
     console.log("Initialized with iPhone view"); // Debug
   });
 </script>
+{% endif %}
