@@ -17,7 +17,7 @@
         <div class="position-absolute top-0 mt-3 ps-3">
           <span class="badge bg-light-subtle text-light-emphasis">{{ post.categories | replace: '-', ' ' | remove: '"]' | remove: '["' | capitalize }}</span>
         </div>
-        <img src="{{ post.image.path }}" class="w-100 rounded-top-4" alt="{{ post.image.alt }}" width="416" height="253" loading="lazy" title="{{ post.image.title }}">
+        <img src="{{ post.image.path }}" class="w-100 rounded-top-4" alt="{{ post.image.alt }}" width="416" height="253" loading="lazy" title="{{ post.image.title }}" style="object-fit: cover; height: 253px;">
         <div class="p-md-4 p-3">
           <h3 class="fw-semibold fs-4">{{ post.title }}</h3>
           <p class="text-start lead fw-normal text-body-secondary">{{ post.description | truncatewords: 20 }}</p>

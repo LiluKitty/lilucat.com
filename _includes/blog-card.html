@@ -7,7 +7,7 @@
         <span class="badge bg-light-subtle text-light-emphasis">{{ post.categories | replace: '-', ' ' | remove: '"]' | remove: '["' | capitalizewords }}</span>
       </a>
     </div>
-    <img src="{{ post.image.path }}" class="w-100 rounded-top-4" alt="{{ post.title }} Image" width="416" height="253" loading="lazy">
+    <img src="{{ post.image.path }}" class="w-100 rounded-top-4" alt="{{ post.title }} Image" width="416" height="253" loading="lazy" style="object-fit: cover; height: 253px;">
     <div class="p-md-4 p-3">
       <h2 class="fw-semibold fs-4">{{ post.title }}</h3>
       <p class="text-start lead fw-normal text-body-secondary">{{ post.excerpt | truncatewords: 20 }}</p>
