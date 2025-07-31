@@ -7,16 +7,25 @@ permalink: /lilucat-pro/
 
 <style>
   .app-folder-container {
-    background-color: #1c1c1e80;
-    backdrop-filter: blur(10px);
-    border: 1px solid #ffffff1a;
+    background-color: transparent;
+    border: 1px solid #e9ecef;
+    border-radius: 1rem;
   }
   .app-name {
-    width: 60px; /* Match icon width */
+    width: 140px; /* Much wider to prevent ellipsis */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+  }
+  .app-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
 </style>
 <div class="container pb-md-5 pb-4 mt-3">
@@ -44,7 +53,7 @@ permalink: /lilucat-pro/
           <div class="display-4 text-indigo mb-3">
             <i class="fa-solid fa-layer-group"></i>
           </div>
-          <h3 class="h4 fw-bold">One Subscription, All Apps</h3>
+          <h3 class="h4 fw-bold">One Subscription</h3>
           <p class="text-muted px-lg-3">
             Unlock every feature across all our current and future applications.
             Simple and convenient.
@@ -74,8 +83,8 @@ permalink: /lilucat-pro/
 
       <p class="fs-4 text-body-secondary mb-md-5">{{ page.description }}</p>
       <div class="col-md-10 mx-auto text-center mb-5">
-        <div class="app-folder-container d-inline-block p-3 rounded-4">
-          <div class="row row-cols-2 g-3" style="width: 240px">
+        <div class="app-folder-container d-inline-block p-4 rounded-4 bg-white shadow-sm">
+          <div class="row row-cols-2 g-4" style="width: 420px">
             {% for app_entry in site.ios_apps %} {% assign app_key =
             app_entry[0] %} {% assign app_config = app_entry[1] %} {% if
             app_config.published != false and app_config.included_in_pro %}
@@ -87,14 +96,14 @@ permalink: /lilucat-pro/
                 class="d-flex flex-column align-items-center text-decoration-none"
               >
                 <img
-                  class="d-block rounded-3 shadow-sm"
+                  class="app-icon"
                   src="{{ app_config.icon }}"
                   alt="{{ app_config.name }} Icon"
                   width="60"
                   height="60"
                   loading="lazy"
                 />
-                <span class="small text-white mt-1 app-name"
+                <span class="small text-dark mt-2 app-name"
                   >{{ app_config.name }}</span
                 >
               </a>
