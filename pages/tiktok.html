@@ -92,7 +92,7 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
 
   <!-- Apply Modal -->
   <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 500px;">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="applyModalLabel">
@@ -102,16 +102,14 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
         </div>
         <div class="modal-body">
           <form action="https://formspree.io/f/xyzppkkd" method="POST" id="applyForm">
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="name" class="form-label">Name *</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Your full name" required>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="email" class="form-label">Email *</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="your@email.com" required>
-  </div>
-</div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name *</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email *</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="your@email.com" required>
+            </div>
 
             <div class="mb-3">
               <label for="tiktokUsername" class="form-label">TikTok Username *</label>
@@ -121,24 +119,13 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
               </div>
             </div>
             
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="followers" class="form-label">Followers Count *</label>
-                <input type="number" class="form-control" id="followers" name="followers" placeholder="2000" min="2000" required>
-                <div class="form-text">Minimum 2,000 followers required</div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="paypalEmail" class="form-label">PayPal Email *</label>
-                <input type="email" class="form-control" id="paypalEmail" name="paypalEmail" placeholder="your-paypal@email.com" required>
-                <div class="form-text">PayPal email for payments</div>
-              </div>
-            </div>
+
             
             <div class="mb-3">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
                 <label class="form-check-label" for="terms">
-                  I'm 18+ years old and agree to the terms *
+                  I'm 18+ years old.
                 </label>
               </div>
             </div>
@@ -239,7 +226,7 @@ keywords: tiktok money, tiktok cash, make money tiktok, tiktok followers, tiktok
   }
 
   .btn-promote:hover {
-    transform: translateY(-3px) scale(1.05);
+    transform: translateY(-1px) scale(1.02);
     box-shadow: 0 8px 25px rgba(56, 239, 125, 0.4);
   }
 
