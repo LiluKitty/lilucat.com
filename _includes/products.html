@@ -1,20 +1,20 @@
 <!-- Products Grid -->
 <div class="row align-items-md-stretch">
-  {% assign apps_by_date = '' | split: '' %}
+  {% assign apps_by_order = '' | split: '' %}
   {% for app_entry in site.ios_apps %}
     {% assign app_key = app_entry[0] %}
     {% assign app_config = app_entry[1] %}
     {% if app_config.published != false %}
-      {% assign app_data = app_key | append: '|' | append: app_config.release_date %}
-      {% assign apps_by_date = apps_by_date | push: app_data %}
+      {% assign order_padded = app_config.order | prepend: '000' | slice: -3, 3 %}
+      {% assign app_data = order_padded | append: '|' | append: app_key %}
+      {% assign apps_by_order = apps_by_order | push: app_data %}
     {% endif %}
   {% endfor %}
-  {% assign sorted_apps = apps_by_date | sort | reverse %}
+  {% assign sorted_apps = apps_by_order | sort %}
   {% for app_data in sorted_apps %}
     {% assign app_parts = app_data | split: '|' %}
-    {% assign app_key = app_parts[0] %}
+    {% assign app_key = app_parts[1] %}
     {% assign app_config = site.ios_apps[app_key] %}
-    {% if app_config.published != false %}
   <div class="col-md-6 mb-4">
     <div
       class="h-100 p-md-5 pb-md-3 p-4 bg-body-tertiary rounded-img position-relative product"
@@ -125,5 +125,5 @@
       {% endif %}
     </div>
   </div>
-  {% endif %} {% endfor %}
+  {% endfor %}
 </div>

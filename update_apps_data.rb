@@ -187,6 +187,14 @@ def update_config_with_apps(apps)
   puts "\n🔍 Checking for new apps in App Store..."
   new_apps_count = 0
   
+  # Calcular el siguiente número de orden
+  max_order = 0
+  ios_apps.each do |config_key, app_data|
+    if app_data['order'] && app_data['order'] > max_order
+      max_order = app_data['order']
+    end
+  end
+  
   apps.each do |app|
     app_id = app['trackId'].to_s
     app_name = app['trackName']
@@ -194,6 +202,7 @@ def update_config_with_apps(apps)
     unless configured_app_ids[app_id]
       # Esta es una app nueva que no está en la configuración
       new_apps_count += 1
+      max_order += 1
       
       # Generar key para la nueva app usando el ID (más confiable que el nombre)
       app_key = "app_#{app['trackId']}"
@@ -214,6 +223,7 @@ def update_config_with_apps(apps)
         'page' => app_key,
         'published' => true,
         'has_mac_version' => has_mac_version,
+        'order' => max_order,
         'last_updated' => app['currentVersionReleaseDate'],
         'release_date' => app['releaseDate']
       }

@@ -74,6 +74,7 @@ ios_apps:
     page: storage-cleaner
     published: true
     has_mac_version: false
+    order: 4
     last_updated: '2025-07-28T12:04:59Z'
     release_date: '2024-11-14T08:00:00Z'
     legal:
@@ -92,6 +93,7 @@ ios_apps:
     page: qr
     published: true
     has_mac_version: true
+    order: 2
     last_updated: '2025-07-25T22:51:14Z'
     release_date: '2025-06-22T07:00:00Z'
     legal:
@@ -110,6 +112,7 @@ ios_apps:
     page: phone-cleaner
     published: true
     has_mac_version: false
+    order: 3
     last_updated: '2025-07-03T07:23:15Z'
     release_date: '2025-03-17T07:00:00Z'
     legal:
@@ -128,6 +131,7 @@ ios_apps:
     page: app-lock
     published: true
     has_mac_version: false
+    order: 1
     last_updated: '2025-06-21T09:36:37Z'
     release_date: '2023-04-26T07:00:00Z'
     legal:
@@ -146,6 +150,7 @@ ios_apps:
     page: qr-code-reader
     published: true
     has_mac_version: true
+    order: 6
     last_updated: '2025-04-22T06:18:19Z'
     release_date: '2023-10-16T07:00:00Z'
     legal:
@@ -164,6 +169,7 @@ ios_apps:
     page: photo-vault-x
     published: true
     has_mac_version: false
+    order: 5
     last_updated: '2024-10-29T13:13:46Z'
     release_date: '2024-09-19T07:00:00Z'
     legal:
@@ -181,6 +187,7 @@ ios_apps:
     page: focus-app
     published: true
     has_mac_version: false
+    order: 7
     last_updated: '2024-09-07T13:44:19Z'
     release_date: '2023-10-12T07:00:00Z'
     legal:
