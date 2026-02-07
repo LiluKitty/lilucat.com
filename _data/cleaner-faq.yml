@@ -1,0 +1,18 @@
+data:
+  - question: How does the Cleaner app free up storage?
+    answer: "Cleaner uses AI to scan your iPhone and find unnecessary files, cached data from social apps, and other space-wasting content. It shows you exactly what's taking up space and lets you clean it up with one tap."
+
+  - question: Is it safe to clean cached data?
+    answer: "Yes! Cached data is temporary files that apps store for faster loading. Cleaning it is completely safe — the apps will simply re-download what they need. You won't lose any personal data, photos, or messages."
+
+  - question: What social app caches can it clean?
+    answer: "Cleaner can identify and help you clear cached data from popular social apps like Instagram, TikTok, Twitter/X, Facebook, and more. These apps often store large amounts of cached media that silently eat up your storage."
+
+  - question: How much storage can I expect to free up?
+    answer: "It varies by device, but most users free up 2-10 GB on their first cleanup. If you haven't cleaned your device in a while, you could recover even more. The app shows you a detailed breakdown before you clean."
+
+  - question: Does Cleaner access my personal data?
+    answer: "All processing happens on your device. Cleaner never uploads or shares your personal data. It only identifies files that are safe to remove and lets you decide what to clean."
+
+  - question: Does Cleaner work on Mac?
+    answer: "Yes! Cleaner is available on Mac with Apple Silicon (M1 or later). Keep both your iPhone and Mac running smooth and clutter-free."

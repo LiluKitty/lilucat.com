@@ -16,7 +16,17 @@
   loading="lazy"
 />
 <h1 class="display-5 fw-bold">{{ app_config.name }}</h1>
-<h2 class="fs-4 text-body-secondary pb-3">{{ app_config.subtitle }}</h2>
+<h2 class="fs-4 text-body-secondary pb-1">{{ app_config.subtitle }}</h2>
+{% if app_config.rating and app_config.rating != 0 %}
+<div class="pb-3">
+  <strong>{{ app_config.rating | round: 1 }}</strong>
+  <i class="text-warning bi-star-fill"></i>
+  <span class="px-1 text-body-secondary fw-bold">&middot;</span>
+  <span class="text-body-secondary">{{ app_config.ratings_count }} Ratings</span>
+</div>
+{% else %}
+<div class="pb-3"></div>
+{% endif %}
 <p class="col-lg-8 col-xl-6 d-flex mx-auto">{{ app_config.description }}</p>
 
 <div class="d-flex justify-content-center align-items-center flex-wrap">

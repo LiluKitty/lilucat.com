@@ -8,8 +8,8 @@ image:
   path: /assets/img/blog/breaking-free-with-focus-app-regain-control-ofyour-digital-life.jpg
   alt: "Breaking Free with Focus App: Regain Control of Your Digital Life"
 author: Lilucat Team
-app_id: 6449741551
-published: true
+app_id: 6469043032
+published: false
 ---
 
 In a world brimming with technology and connectivity, our digital devices have become an integral part of our lives. While they offer convenience, entertainment, and productivity, they can also wield an addictive power that steals our time and focus. The constant notifications, endless scrolling, and compulsive app-checking can leave us feeling overwhelmed, disconnected, and drained. But fear not, for a solution is at hand. Introducing <a class="fw-semibold" href="https://lilucat.com/focus-app/">Focus App</a> – your partner in regaining control over your digital life and embracing healthier tech habits.

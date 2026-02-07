@@ -1,5 +1,7 @@
 .DS_Store
 _site
+.cursorrules
+update_apps_data.rb
 .sass-cache
 .jekyll-cache
 .jekyll-metadata

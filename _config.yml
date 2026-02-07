@@ -1,7 +1,7 @@
 ---
 title: Lilucat
 description: We make simple, useful apps for your iPhone. Scan QR codes, lock your
-  private apps, stay focused, and more. Everything you need, nothing you don't.
+  private apps, clean up storage, and more. Everything you need, nothing you don't.
 url: https://lilucat.com
 support_mail: support@lilucat.com
 lang: en-US
@@ -45,6 +45,8 @@ exclude:
 # - pages/focus-app.html
 - pages/screenfree.html
 - google179db452624aa307.html
+- update_apps_data.rb
+- ".cursorrules"
 robots:
   sitemap_url: https://lilucat.com/sitemap.xml
   user_agents:
@@ -52,9 +54,6 @@ robots:
   allows:
   - "/"
   disallows:
-  - "/admin/"
-  - "/private/"
-  - "/.well-known/"
   - "/.git/"
   - "/_config.yml"
   - "/Gemfile"
@@ -70,9 +69,9 @@ ios_apps:
     rating: 4.44118
     ratings_count: 204
     icon: "/assets/img/app_6455376072/app-icon.webp"
-    included_in_pro: true
+    included_in_pro: false
     page: storage-cleaner
-    published: true
+    published: false
     has_mac_version: false
     order: 4
     last_updated: '2025-07-28T12:04:59Z'
@@ -86,8 +85,8 @@ ios_apps:
     description: Scan any QR code instantly and create your own custom codes. The
       fastest and most intuitive QR scanner you'll ever use.
     subtitle: Code Reader Scanner Generator
-    rating: 5
-    ratings_count: 7
+    rating: 4.8
+    ratings_count: 55
     icon: "/assets/img/app_6745213752/app-icon.webp"
     included_in_pro: false
     page: qr
@@ -110,7 +109,7 @@ ios_apps:
     icon: "/assets/img/app_6738309812/app-icon.webp"
     included_in_pro: false
     page: phone-cleaner
-    published: true
+    published: false
     has_mac_version: false
     order: 3
     last_updated: '2025-07-03T07:23:15Z'
@@ -123,9 +122,9 @@ ios_apps:
     name: App Lock
     description: Keep your private apps safe and hidden. Lock any app with a password
       and protect your sensitive information from prying eyes.
-    subtitle: Password for Apps, Hide, Block
-    rating: 4.60661
-    ratings_count: 3147
+    subtitle: Block and Hide Apps
+    rating: 4.8
+    ratings_count: 4367
     icon: "/assets/img/app_6448239603/app-icon.webp"
     included_in_pro: true
     page: app-lock
@@ -143,14 +142,14 @@ ios_apps:
     description: Scan QR codes, barcodes, and create your own. Works with WiFi, contacts,
       calendar events, and more. Your all-in-one QR solution.
     subtitle: Barcodes Scanner & Maker
-    rating: 4.5098
-    ratings_count: 51
+    rating: 4.8
+    ratings_count: 115
     icon: "/assets/img/app_6469319539/app-icon.webp"
     included_in_pro: true
     page: qr-code-reader
     published: true
     has_mac_version: true
-    order: 6
+    order: 3
     last_updated: '2025-04-22T06:18:19Z'
     release_date: '2023-10-16T07:00:00Z'
     legal:
@@ -158,18 +157,18 @@ ios_apps:
       terms: https://qrcode.lilucat.com/legal/terms
   app_6618155410:
     id: 6618155410
-    name: Photo Vault X
+    name: Security App for iPhone
     description: Keep your precious photos and videos safe with password protection.
       Hide sensitive memories and lock apps for ultimate privacy.
     subtitle: App Lock, hide videos & pic
-    rating: 4.43103
-    ratings_count: 58
+    rating: 4.8
+    ratings_count: 70
     icon: "/assets/img/app_6618155410/app-icon.webp"
     included_in_pro: true
     page: photo-vault-x
     published: true
     has_mac_version: false
-    order: 5
+    order: 4
     last_updated: '2024-10-29T13:13:46Z'
     release_date: '2024-09-19T07:00:00Z'
     legal:
@@ -185,7 +184,7 @@ ios_apps:
     icon: "/assets/img/app_6469043032/app-icon.webp"
     included_in_pro: false
     page: focus-app
-    published: true
+    published: false
     has_mac_version: false
     order: 7
     last_updated: '2024-09-07T13:44:19Z'
@@ -193,3 +192,60 @@ ios_apps:
     legal:
       terms: https://focus.lilucat.com/legal/terms
       privacy: https://focus.lilucat.com/legal/privacy
+  app_6758152591:
+    id: 6758152591
+    name: Screen Time Control App
+    description: Block distracting apps on iPhone with one tap. Schedule app blocking,
+      set daily limits, and stop endless scrolling on social media.
+    subtitle: App Lock, Limit for Focus
+    rating: 4.8
+    ratings_count: 872
+    icon: "/assets/img/app_6758152591/app-icon.png"
+    included_in_pro: false
+    page: screen-time-control
+    published: true
+    has_mac_version: false
+    order: 5
+    last_updated: '2026-02-05T00:00:00Z'
+    release_date: '2026-02-05T00:00:00Z'
+    legal:
+      terms: https://focus.lilucat.com/legal/terms
+      privacy: https://focus.lilucat.com/legal/privacy
+  app_6464665359:
+    id: 6464665359
+    name: Photo Cleaner
+    description: Remove duplicate photos and free up iPhone storage with AI. Scan your
+      camera roll, find duplicates, and clean up videos in one tap.
+    subtitle: Clean Up Phone Camera Roll
+    rating: 4.9
+    ratings_count: 645
+    icon: "/assets/img/app_6464665359/app-icon.png"
+    included_in_pro: false
+    page: photo-cleaner
+    published: true
+    has_mac_version: false
+    order: 6
+    last_updated: '2026-01-27T00:00:00Z'
+    release_date: '2026-01-21T00:00:00Z'
+    legal:
+      terms: https://photocleaner.lilucat.com/legal/terms
+      privacy: https://photocleaner.lilucat.com/legal/privacy
+  app_6754160510:
+    id: 6754160510
+    name: "Cleaner: Clean Up iPhone"
+    description: Free up iPhone storage and clear app cache instantly. Delete duplicate
+      photos, clean TikTok and Instagram cache, and optimize storage with AI.
+    subtitle: Free Up Storage Guru & Cache
+    rating: 4.8
+    ratings_count: 518
+    icon: "/assets/img/app_6754160510/app-icon.webp"
+    included_in_pro: false
+    page: cleaner
+    published: true
+    has_mac_version: false
+    order: 7
+    last_updated: '2025-11-25T00:00:00Z'
+    release_date: '2025-10-19T00:00:00Z'
+    legal:
+      terms: https://cleaner.lilucat.com/legal/terms
+      privacy: https://cleaner.lilucat.com/legal/privacy

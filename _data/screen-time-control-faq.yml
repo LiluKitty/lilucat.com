@@ -1,0 +1,18 @@
+data:
+  - question: How does Screen Time Control block apps?
+    answer: "Screen Time Control uses Apple's Screen Time API to block apps on your device. Simply select the apps or categories you want to block, set your schedule or limits, and the app handles the rest. When an app is blocked, you'll see a lock screen instead of the app."
+
+  - question: Can I block entire app categories at once?
+    answer: "Yes! You can block whole categories like Social Media, Games, or Entertainment with a single toggle. This is perfect when you need to focus and don't want to pick apps one by one."
+
+  - question: How do daily time limits work?
+    answer: "Set a daily time limit for any app — for example, 30 minutes on Instagram. The app tracks your usage, and when you hit the limit, it blocks the app for the rest of the day. You'll get a notification when you're close to your limit."
+
+  - question: Can I schedule automatic app blocking?
+    answer: "Absolutely! Create schedules to automatically block apps during specific times — like during work hours (9am-5pm) or bedtime (10pm-7am). You can set different schedules for different days of the week."
+
+  - question: Does Screen Time Control work on Mac?
+    answer: "Yes! Screen Time Control is available on Mac with Apple Silicon (M1 or later). Your settings sync across devices, so your focus habits follow you everywhere."
+
+  - question: Is my data private?
+    answer: "Completely. Screen Time Control doesn't collect any data from your device. All processing happens locally on your iPhone or Mac. Your usage data and settings never leave your device."

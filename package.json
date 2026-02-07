@@ -6,8 +6,7 @@
     "dev": "rm -rf Gemfile.lock && bundle exec jekyll serve --livereload --trace",
     "build": "rm -rf _site && bundle exec jekyll build --trace",
     "gulp": "gulp",
-    "deploy": "git add . -A && git commit -m 'update' && git push origin master",
-    "deploy-force": "git add . -A && git commit -m 'update' && git push origin master --force",
+    "deploy": "bundle exec jekyll build --trace && echo 'Build complete. Review and push manually.'",
     "clean": "bundle exec jekyll clean"
   },
   "devDependencies": {

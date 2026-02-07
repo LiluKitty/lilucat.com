@@ -1,0 +1,61 @@
+# Lilucat - iPhone Apps
+
+> Lilucat makes simple, useful apps for iPhone. We help users protect their privacy, scan QR codes, clean up storage, and control screen time.
+
+Website: https://lilucat.com
+Support: support@lilucat.com
+
+## Apps
+
+### App Lock
+- Lock and hide any iPhone app with a password
+- Protect privacy by blocking access to social media, photos, and sensitive apps
+- 4.8 stars, 4,367 ratings on the App Store
+- App Store: https://apps.apple.com/us/app/id6448239603
+- Learn more: https://lilucat.com/app-lock/
+
+### QR Code Scanner
+- Scan any QR code instantly and create custom codes
+- Supports WiFi sharing, contacts, links, and barcodes
+- 4.8 stars, 55 ratings on the App Store
+- App Store: https://apps.apple.com/us/app/id6745213752
+- Learn more: https://lilucat.com/qr/
+
+### QR Code Reader
+- Scan QR codes, barcodes, and create your own
+- Works with WiFi, contacts, calendar events, and more
+- 4.8 stars, 115 ratings on the App Store
+- App Store: https://apps.apple.com/us/app/id6469319539
+- Learn more: https://lilucat.com/qr-code-reader/
+
+### Security App for iPhone
+- Hide private photos and videos behind a password
+- Lock apps and protect sensitive content
+- 4.8 stars, 70 ratings on the App Store
+- App Store: https://apps.apple.com/us/app/id6618155410
+- Learn more: https://lilucat.com/photo-vault-x/
+
+### Screen Time Control App
+- Block distracting apps on iPhone with one tap
+- Schedule app blocking, set daily limits, stop endless scrolling
+- 4.8 stars, 872 ratings on the App Store
+- App Store: https://apps.apple.com/us/app/id6758152591
+- Learn more: https://lilucat.com/screen-time-control/
+
+### Photo Cleaner
+- Remove duplicate photos and free up iPhone storage with AI
+- Scan camera roll, find duplicates, clean up videos
+- 4.9 stars, 645 ratings on the App Store
+- App Store: https://apps.apple.com/us/app/id6464665359
+- Learn more: https://lilucat.com/photo-cleaner/
+
+### Cleaner: Clean Up iPhone
+- Free up iPhone storage and clear app cache instantly
+- Delete duplicate photos, clean TikTok and Instagram cache
+- 4.8 stars, 518 ratings on the App Store
+- App Store: https://apps.apple.com/us/app/id6754160510
+- Learn more: https://lilucat.com/cleaner/
+
+## Pricing
+
+All apps are free to download with optional in-app purchases. Lilucat Pro subscription unlocks premium features across App Lock, QR Code Reader, and Security App.

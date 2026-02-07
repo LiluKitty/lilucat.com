@@ -1,0 +1,18 @@
+data:
+  - name: Remove Duplicate Photos
+    description: AI finds and selects the best photo from your duplicates. Clean up 8+ GB of wasted space with one tap.
+    icon: "\U0001F50D"
+    color: "#6c5ce7, #a29bfe"
+    screenshot: "/assets/img/app_6464665359/iPhone 6.5 - 02.jpg"
+
+  - name: Free Up Storage Space
+    description: See exactly how much space you can recover. Delete duplicate videos and photos to free up storage instantly.
+    icon: "\U0001F4BE"
+    color: "#00b894, #55efc4"
+    screenshot: "/assets/img/app_6464665359/iPhone 6.5 - 03.jpg"
+
+  - name: AI Photo Scanner
+    description: Tap Scan and let AI analyze your entire camera roll. Find duplicates, blurry shots, and junk photos automatically.
+    icon: "\U0001F9E0"
+    color: "#0984e3, #74b9ff"
+    screenshot: "/assets/img/app_6464665359/iPhone 6.5 - 01.jpg"

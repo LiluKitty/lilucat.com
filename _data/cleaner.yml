@@ -1,0 +1,18 @@
+data:
+  - name: Free Up iPhone Storage
+    description: See exactly what's eating your storage. Smart dashboard shows photos, videos, and app data with one-tap cleanup.
+    icon: "\U0001F4CA"
+    color: "#6c5ce7, #a29bfe"
+    screenshot: "/assets/img/app_6754160510/iPhone - 04.jpg"
+
+  - name: Clear App Cache
+    description: Clean cached data from TikTok, Instagram, Safari, Snapchat, and more. Reclaim storage that apps silently fill up.
+    icon: "\U0001F9F9"
+    color: "#00b894, #55efc4"
+    screenshot: "/assets/img/app_6754160510/iPhone - 06.jpg"
+
+  - name: Delete Duplicate Photos
+    description: AI detects similar photos and picks the best one. Delete duplicates in bulk and save space instantly.
+    icon: "\U0001F5D1"
+    color: "#0984e3, #74b9ff"
+    screenshot: "/assets/img/app_6754160510/iPhone - 03.jpg"

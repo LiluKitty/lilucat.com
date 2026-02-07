@@ -3,12 +3,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" title="Lilucat Favicon 16x16">
 <link rel="manifest" href="/site.webmanifest" title="Lilucat Web App Manifest">
 <meta name="msapplication-TileColor" content="#da532c">
-<link rel="preload" href="/assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-</noscript>
-<link rel="stylesheet" href="/assets/css/bootstrap-icons.css">
-<link rel="stylesheet" href="/assets/css/local.css">
 {% if page.app_id %}
   <meta name="apple-itunes-app" content="app-id={{ page.app_id }}">
 {% elsif page.app_key %}
@@ -24,22 +18,19 @@
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta property="og:image" content="{% if page.image and page.image.path %}{{ page.image.path }}{% else %}{{ site.url }}/assets/img/lilucat_pet.webp{% endif %}">
+<meta property="og:image" content="{% if page.image and page.image.path %}{{ site.url }}{{ page.image.path }}{% else %}{{ site.url }}/assets/img/lilucat_pet.webp{% endif %}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="{% if page.image and page.image.alt %}{{ page.image.alt }}{% else %}Lilucat - iPhone Apps for Privacy and Productivity{% endif %}">
 <meta property="og:site_name" content="{{ site.title }}">
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
-<meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta property="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta property="twitter:image" content="{% if page.image and page.image.path %}{{ page.image.path }}{% else %}{{ site.url }}/assets/img/lilucat_pet.webp{% endif %}">
-<meta property="twitter:image:alt" content="{% if page.image and page.image.alt %}{{ page.image.alt }}{% else %}Lilucat - iPhone Apps for Privacy and Productivity{% endif %}">
-
-<!-- Canonical URL -->
-<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:image" content="{% if page.image and page.image.path %}{{ site.url }}{{ page.image.path }}{% else %}{{ site.url }}/assets/img/lilucat_pet.webp{% endif %}">
+<meta name="twitter:image:alt" content="{% if page.image and page.image.alt %}{{ page.image.alt }}{% else %}Lilucat - iPhone Apps for Privacy and Productivity{% endif %}">
 
 <meta name="robots" content="index, follow">
 <meta name="author" content="{{ site.title }}">
@@ -51,9 +42,8 @@
 <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 
-<!-- Preload critical resources for GitHub Pages -->
-<link rel="preload" href="/assets/css/bootstrap.min.css" as="style">
-<link rel="preload" href="/assets/css/local.css" as="style">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
 <link rel="dns-prefetch" href="//analytics.ahrefs.com">
 
@@ -72,13 +62,13 @@
 <!-- Organization Schema -->
 <script type="application/ld+json">
 {
-  "@context": "http://schema.org",
+  "@context": "https://schema.org",
   "@type": "Organization",
   "@id": "https://lilucat.com/#organization",
   "name": "Lilucat",
   "url": "https://lilucat.com",
   "logo": "https://lilucat.com/assets/img/lilucat_pet.webp",
-  "description": "We make simple, useful apps for your iPhone. Scan QR codes, lock your private apps, stay focused, and more.",
+  "description": "We make simple, useful apps for your iPhone. Scan QR codes, lock your private apps, clean up storage, and more.",
   "sameAs": [
     "https://www.youtube.com/@lilucatapps/"
   ],

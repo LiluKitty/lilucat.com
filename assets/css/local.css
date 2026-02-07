@@ -575,6 +575,31 @@ ul {
   }
 }
 
+/* Mobile responsiveness for app pages */
+@media (max-width: 575.98px) {
+  .display-5 {
+    font-size: 1.75rem;
+  }
+
+  .fs-4 {
+    font-size: 1.1rem !important;
+  }
+
+  .rounded-img {
+    border-radius: 0.75rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .bg-body-tertiary.rounded-img h2 {
+    font-size: 1.2rem;
+  }
+
+  .bg-body-tertiary.rounded-img .lead {
+    font-size: 0.95rem;
+  }
+}
+
 .text-indigo {
   color: #6610f2 !important;
 }

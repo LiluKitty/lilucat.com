@@ -1,0 +1,18 @@
+data:
+  - name: Block Apps Instantly
+    description: Lock distracting apps like Instagram, TikTok, and Snapchat with a single tap. Take back control of your screen time.
+    icon: "\U0001F512"
+    color: "#ff6b6b, #ee5a24"
+    screenshot: "/assets/img/app_6758152591/iPhone 6.5 - 04.jpg"
+
+  - name: Schedule App Blocking
+    description: Set start and end times to automatically block social media apps. Stay focused during work, study, or bedtime.
+    icon: "\U0001F4C5"
+    color: "#00b894, #55efc4"
+    screenshot: "/assets/img/app_6758152591/iPhone 6.5 - 03.jpg"
+
+  - name: Break Free from Scrolling
+    description: Stop endless scrolling on social media. When your limit is reached, apps are blocked and you get your time back.
+    icon: "\U0001F6AB"
+    color: "#6c5ce7, #a29bfe"
+    screenshot: "/assets/img/app_6758152591/iPhone 6.5 - 02.jpg"

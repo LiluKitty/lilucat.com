@@ -1,5 +1,10 @@
+{% if include.faq_data %}
+	{% assign faq_items = include.faq_data %}
+{% else %}
+	{% assign faq_items = site.data.questions.data %}
+{% endif %}
 <div class="accordion" id="faqAccordion">
-	{% for question in site.data.questions.data %}
+	{% for question in faq_items %}
 	<div class="accordion-item">
 		<h2 class="accordion-header" id="heading{{ forloop.index }}">
 			<button class="accordion-button {% unless forloop.first %}collapsed{% endunless %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ forloop.index }}" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="collapse{{ forloop.index }}">
@@ -14,3 +19,21 @@
 	</div>
 	{% endfor %}
 </div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for question in faq_items %}
+    {
+      "@type": "Question",
+      "name": {{ question.question | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ question.answer | strip_html | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>

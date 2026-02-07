@@ -15,6 +15,6 @@ function filterXXX() {
         } else {
             row.style.display = "none";
         }
-        results.innerHTML = "Results for: " + input;
+        results.textContent = "Results for: " + input;
     }
 }

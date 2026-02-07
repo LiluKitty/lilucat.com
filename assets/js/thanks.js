@@ -4,6 +4,6 @@ function thankYou() {
 }
 
 function needImprove() {
-    document.getElementById("helpful").innerHTML = '<div><p>How could it be better?</p><a href="mailto:support@2stable.com"><div class="btn btn-outline-primary"><i class="bi bi-envelope pe-2"></i>Send us an email</div></a></div>';
+    document.getElementById("helpful").innerHTML = '<div><p>How could it be better?</p><a href="mailto:support@lilucat.com"><div class="btn btn-outline-primary"><i class="bi bi-envelope pe-2"></i>Send us an email</div></a></div>';
     splitbee.track("helpful: No");
 }

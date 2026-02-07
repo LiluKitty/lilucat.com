@@ -32,4 +32,9 @@ app_id: 6469043032
     {% endfor %}
   </div>
 </div>
+{% else %}
+<meta http-equiv="refresh" content="0; url=/">
+<script>
+  window.location.href = '/';
+</script>
 {% endif %}
