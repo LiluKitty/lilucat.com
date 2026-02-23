@@ -42,11 +42,11 @@ Support: support@lilucat.com
 - App Store: https://apps.apple.com/us/app/id6758152591
 - Learn more: https://lilucat.com/screen-time-control/
 
-### Photo Cleaner
-- Remove duplicate photos and free up iPhone storage with AI
-- Scan camera roll, find duplicates, clean up videos
+### Cleanup: Clean Up iPhone Storage
+- Delete duplicate photos, clear cache, and free up iPhone storage instantly
+- AI-powered tool that removes junk files, blurry photos, and old screenshots
 - 4.9 stars, 645 ratings on the App Store
-- App Store: https://apps.apple.com/us/app/id6464665359
+- App Store: https://apps.apple.com/us/app/id6759287438
 - Learn more: https://lilucat.com/photo-cleaner/
 
 ### Cleaner: Clean Up iPhone

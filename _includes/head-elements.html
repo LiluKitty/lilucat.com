@@ -13,26 +13,18 @@
 {% endif %}
 <meta name="google-site-verification" content="VjZubRUuR6r3cVdFZD1MWYBfIKopUw4FTPFaCijdem8" />
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<!-- Open Graph / Facebook (extras not covered by jekyll-seo-tag) -->
 <meta property="og:image" content="{% if page.image and page.image.path %}{{ site.url }}{{ page.image.path }}{% else %}{{ site.url }}/assets/img/lilucat_pet.webp{% endif %}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="{% if page.image and page.image.alt %}{{ page.image.alt }}{% else %}Lilucat - iPhone Apps for Privacy and Productivity{% endif %}">
-<meta property="og:site_name" content="{{ site.title }}">
 
-<!-- Twitter -->
+<!-- Twitter (extras not covered by jekyll-seo-tag) -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta name="twitter:image" content="{% if page.image and page.image.path %}{{ site.url }}{{ page.image.path }}{% else %}{{ site.url }}/assets/img/lilucat_pet.webp{% endif %}">
 <meta name="twitter:image:alt" content="{% if page.image and page.image.alt %}{{ page.image.alt }}{% else %}Lilucat - iPhone Apps for Privacy and Productivity{% endif %}">
 
-<meta name="robots" content="index, follow">
+{% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% else %}<meta name="robots" content="index, follow">{% endif %}
 <meta name="author" content="{{ site.title }}">
 <meta name="language" content="en">
 <meta name="revisit-after" content="7 days">

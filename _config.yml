@@ -44,7 +44,7 @@ exclude:
 - tmp/
 # - pages/focus-app.html
 - pages/screenfree.html
-- google179db452624aa307.html
+# google179db452624aa307.html must NOT be excluded - needed for Google Search Console verification
 - update_apps_data.rb
 - ".cursorrules"
 robots:
@@ -58,7 +58,6 @@ robots:
   - "/_config.yml"
   - "/Gemfile"
   - "/Gemfile.lock"
-  crawl_delay: 1
 ios_apps:
   app_6455376072:
     id: 6455376072
@@ -211,12 +210,13 @@ ios_apps:
     legal:
       terms: https://focus.lilucat.com/legal/terms
       privacy: https://focus.lilucat.com/legal/privacy
-  app_6464665359:
-    id: 6464665359
-    name: Photo Cleaner
-    description: Remove duplicate photos and free up iPhone storage with AI. Scan your
-      camera roll, find duplicates, and clean up videos in one tap.
-    subtitle: Clean Up Phone Camera Roll
+  app_6759287438:
+    id: 6759287438
+    name: "Cleanup: Clean Up iPhone Storage"
+    description: Delete duplicate photos, clear cache, and free up iPhone storage instantly.
+      AI-powered cleanup tool that removes junk files, blurry photos, and old screenshots
+      in one tap.
+    subtitle: Delete Duplicates & Free Space
     rating: 4.9
     ratings_count: 645
     icon: "/assets/img/app_6464665359/app-icon.png"
@@ -225,7 +225,7 @@ ios_apps:
     published: true
     has_mac_version: false
     order: 6
-    last_updated: '2026-01-27T00:00:00Z'
+    last_updated: '2026-02-23T00:00:00Z'
     release_date: '2026-01-21T00:00:00Z'
     legal:
       terms: https://photocleaner.lilucat.com/legal/terms

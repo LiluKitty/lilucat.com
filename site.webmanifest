@@ -1,7 +1,7 @@
 {
-    "name": "Lilucat - High-quality iOS apps for productivity and privacy",
+    "name": "Lilucat - iPhone Apps for Privacy & Productivity",
     "short_name": "Lilucat",
-    "description": "Our team creates user-friendly apps optimized for Apple's ecosystem",
+    "description": "Simple, useful iPhone apps. Scan QR codes, lock apps, clean up storage, and more.",
     "icons": [
         {
             "src": "/assets/icons/apple-touch-icon.png",
@@ -25,46 +25,46 @@
     "start_url": "/",
     "shortcuts": [
         {
-            "name": "Screenfree - Screen Time Control",
-            "short_name": "Screenfree",
-            "description": "Control, block apps and focus",
-            "url": "/screenfree/",
-            "icons": [{ "src": "/assets/img/screenfree/Icon-1024.png", "sizes": "1024x1024" }]
-        },
-        {
-            "name": "App Lock for iPhone",
+            "name": "App Lock - Lock & Hide Apps",
             "short_name": "App Lock",
-            "description": "Secure your sensitive apps with Face ID",
+            "description": "Lock and hide any iPhone app with a password",
             "url": "/app-lock/",
-            "icons": [{ "src": "/assets/img/applock/Icon-1024.png", "sizes": "1024x1024" }]
+            "icons": [{ "src": "/assets/img/app_6448239603/app-icon.webp", "sizes": "512x512" }]
         },
         {
-            "name": "AI PDF Scanner",
-            "short_name": "AI Scanner",
-            "description": "Scan, edit, sign and fill documents",
-            "url": "/ai-pdf-scanner/",
-            "icons": [{ "src": "/assets/img/aipdfscanner/Icon-1024.png", "sizes": "1024x1024" }]
-        },
-        {
-            "name": "AI Math Solver",
-            "short_name": "AI Math",
-            "description": "Solve math problems with AI assistance",
-            "url": "/ai-math-solver/",
-            "icons": [{ "src": "/assets/img/aimath/Icon-1024.png", "sizes": "1024x1024" }]
+            "name": "QR Code Scanner",
+            "short_name": "QR Scanner",
+            "description": "Scan and create QR codes instantly",
+            "url": "/qr/",
+            "icons": [{ "src": "/assets/img/app_6745213752/app-icon.webp", "sizes": "512x512" }]
         },
         {
             "name": "QR Code Reader",
             "short_name": "QR Reader",
-            "description": "Scan QR codes and create barcodes",
+            "description": "Scan QR codes and barcodes on iPhone",
             "url": "/qr-code-reader/",
-            "icons": [{ "src": "/assets/img/qr-code-reader/qr-code-reader-app-icon.png", "sizes": "1024x1024" }]
+            "icons": [{ "src": "/assets/img/app_6469319539/app-icon.webp", "sizes": "512x512" }]
         },
         {
-            "name": "Focus App",
-            "short_name": "Focus",
-            "description": "Stay focused and productive",
-            "url": "/focus-app/",
-            "icons": [{ "src": "/assets/img/focus-app/Icon-1024.png", "sizes": "1024x1024" }]
+            "name": "Screen Time Control",
+            "short_name": "Screen Time",
+            "description": "Block distracting apps and limit screen time",
+            "url": "/screen-time-control/",
+            "icons": [{ "src": "/assets/img/app_6758152591/app-icon.png", "sizes": "512x512" }]
+        },
+        {
+            "name": "Cleanup - Clean Up iPhone Storage",
+            "short_name": "Cleanup",
+            "description": "Delete duplicate photos and free up iPhone storage",
+            "url": "/photo-cleaner/",
+            "icons": [{ "src": "/assets/img/app_6464665359/app-icon.png", "sizes": "512x512" }]
+        },
+        {
+            "name": "Cleaner - Clean Up iPhone",
+            "short_name": "Cleaner",
+            "description": "Free up iPhone storage and clear app cache",
+            "url": "/cleaner/",
+            "icons": [{ "src": "/assets/img/app_6754160510/app-icon.webp", "sizes": "512x512" }]
         }
     ]
 }

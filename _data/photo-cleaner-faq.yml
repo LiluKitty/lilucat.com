@@ -1,18 +1,18 @@
 data:
-  - question: How does Photo Cleaner find duplicate photos?
-    answer: "Photo Cleaner uses AI algorithms to scan your entire camera roll and identify photos that are identical or very similar. It groups duplicates together and suggests which ones to keep, so you can free up space without losing your best shots."
+  - question: How does Cleanup find duplicate photos?
+    answer: "Cleanup uses AI algorithms to scan your entire camera roll and identify photos that are identical or very similar. It groups duplicates together and suggests which ones to keep, so you can free up space without losing your best shots."
 
-  - question: Will Photo Cleaner delete my photos automatically?
-    answer: "No! Photo Cleaner only suggests photos for deletion — you always have the final say. Review the suggestions, select what you want to remove, and confirm. Deleted photos go to your Recently Deleted album first, so you have 30 days to recover them."
+  - question: Will Cleanup delete my photos automatically?
+    answer: "No! Cleanup only suggests photos for deletion — you always have the final say. Review the suggestions, select what you want to remove, and confirm. Deleted photos go to your Recently Deleted album first, so you have 30 days to recover them."
 
-  - question: Does Photo Cleaner upload my photos anywhere?
+  - question: Does Cleanup upload my photos anywhere?
     answer: "Never. All photo analysis happens entirely on your device. Your photos never leave your phone and are never sent to any server. Your privacy is fully protected."
 
   - question: What types of bad photos can it detect?
-    answer: "Photo Cleaner detects duplicates, near-duplicates, blurry photos, photos with poor lighting, low-resolution images, and photos with motion blur. It uses AI to evaluate photo quality and helps you keep only the best ones."
+    answer: "Cleanup detects duplicates, near-duplicates, blurry photos, photos with poor lighting, low-resolution images, and photos with motion blur. It uses AI to evaluate photo quality and helps you keep only the best ones."
 
-  - question: Does Photo Cleaner work with videos too?
-    answer: "Yes! Photo Cleaner can also find and suggest duplicate or similar videos for deletion. Since videos take up much more storage than photos, this can free up a significant amount of space."
+  - question: Does Cleanup work with videos too?
+    answer: "Yes! Cleanup can also find and suggest duplicate or similar videos for deletion. Since videos take up much more storage than photos, this can free up a significant amount of space."
 
-  - question: Does Photo Cleaner work on Mac?
-    answer: "Yes! Photo Cleaner is available on Mac with Apple Silicon (M1 or later). Clean up your photo library on the big screen for an even easier experience."
+  - question: Does Cleanup work on Mac?
+    answer: "Yes! Cleanup is available on Mac with Apple Silicon (M1 or later). Clean up your photo library on the big screen for an even easier experience."
