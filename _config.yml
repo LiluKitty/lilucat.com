@@ -46,7 +46,6 @@ exclude:
 - pages/screenfree.html
 # google179db452624aa307.html must NOT be excluded - needed for Google Search Console verification
 - update_apps_data.rb
-- ".cursorrules"
 robots:
   sitemap_url: https://lilucat.com/sitemap.xml
   user_agents:
