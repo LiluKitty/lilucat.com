@@ -40,3 +40,18 @@ data:
   
   - question: Is App Lock safe and private?
     answer: "Absolutely! App Lock is designed with your privacy in mind. Your passcode is stored securely on your device, and the app doesn't collect or share any of your personal data. Plus, it works completely offline - your app lock settings never leave your phone."
+
+  - question: How to block websites on iPhone?
+    answer: "App Lock now includes a Website Blocker that works across every browser on your iPhone - Safari, Chrome, Firefox, Edge, Brave, you name it. Open App Lock, go to the Website Block tab, add the sites you want to block, and tap Start. Those websites will be blocked everywhere until you decide to stop - no more 'just one more scroll' temptations!"
+
+  - question: How to add a website to the Website Blocker?
+    answer: "Super simple! Open App Lock, switch to the Website Block tab, and tap the + button in the top right. Type the website you want to block (like instagram.com, tiktok.com, or any site you want to avoid) and save it. It will appear in your list with a checkmark - tap Start and it's blocked. You can add as many websites as you need."
+
+  - question: Does Website Blocker work on Safari, Chrome, and other browsers?
+    answer: "Yes! That's the whole point. Website Blocker works across ALL browsers on your iPhone - Safari, Chrome, Firefox, Edge, Brave, DuckDuckGo, Arc, and any other browser you have installed. Block a site once in App Lock and it's blocked everywhere. No need to configure each browser separately."
+
+  - question: How to stop Website Blocker or unblock a website?
+    answer: "Since Website Blocker is designed to help you stay focused, stopping it is intentionally gated behind authentication. Open App Lock, unlock it with your PIN, Face ID, or Touch ID, then tap Stop. That's it - your websites are accessible again. This extra step helps you think twice before unblocking during a focus session."
+
+  - question: Does blocking a website also block its subdomains?
+    answer: "Yes! When you block a domain like instagram.com, Website Blocker automatically covers all its subdomains too - so m.instagram.com, help.instagram.com, or any other subdomain is blocked as well. One entry is all you need to fully shut down a site across your iPhone."

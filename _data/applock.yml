@@ -9,6 +9,11 @@ data:
     icon: /assets/img/applock/Confidentiality.svg
     screenshot: /assets/img/applock/App-Lock-Confidentiality-320x402.webp
 
+  - name: Website Blocker
+    description: Block any website across all browsers.
+    icon: /assets/img/applock/Website-Blocker.svg
+    screenshot: /assets/img/applock/App-Lock-Website-Blocker-320x402.webp
+
   - name: Widgets
     description: App Lock supports Widgets. Now, is easier to block any app you want.
     icon: /assets/img/applock/Widgets.svg
