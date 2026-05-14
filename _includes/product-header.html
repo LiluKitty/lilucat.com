@@ -34,5 +34,12 @@
   {% if app_config.has_mac_version %}
     {% include appstorebadge.html app_id=app_config.id platform="mac" src="https://one-badge.com/b/apple/mac.svg" alt="Download on the Mac App Store" height="40" rel="noopener" %}
   {% endif %}
+  {% if app_config.android_waitlist_url %}
+    <div class="pb-2 pe-2 p-md-2">
+      <a href="{{ app_config.android_waitlist_url | relative_url }}">
+        <img class="hover" src="{{ '/assets/img/badges/google-play.svg' | relative_url }}" alt="Get it on Google Play" height="40">
+      </a>
+    </div>
+  {% endif %}
 </div>
 {% endif %}
