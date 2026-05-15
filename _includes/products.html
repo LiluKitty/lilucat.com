@@ -93,6 +93,24 @@
           />
         </a>
         {% endif %}
+        {% if app_config.android_waitlist_url %}
+        <a
+          class="stretched-link"
+          href="{{ app_config.android_waitlist_url | relative_url }}"
+          style="position: relative"
+          data-splitbee-event="Internal Link..."
+          data-splitbee-event-android-waitlist="{{ app_config.name }}"
+          title="Join the {{ app_config.name }} Android Waitlist"
+        >
+          <img
+            class="mb-md-2"
+            src="{{ '/assets/img/badges/google-play.svg' | relative_url }}"
+            alt="Get it on Google Play"
+            height="48"
+            title="Join the {{ app_config.name }} Android Waitlist"
+          />
+        </a>
+        {% endif %}
       </p>
       {% if app_config.legal %}
       <div class="d-flex gap-2">

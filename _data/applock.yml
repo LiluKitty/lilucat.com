@@ -2,22 +2,22 @@ data:
   - name: Privacy
     description: Lock apps from unauthorized access.
     icon: /assets/img/applock/Privacy.svg
-    screenshot: /assets/img/applock/App-Lock-Privacy-320x402.webp
+    screenshot: /assets/img/applock/App-Lock-Privacy.png
 
   - name: Confidentiality
     description: Protect finance, credentials, and chat apps.
     icon: /assets/img/applock/Confidentiality.svg
-    screenshot: /assets/img/applock/App-Lock-Confidentiality-320x402.webp
+    screenshot: /assets/img/applock/App-Lock-Confidentiality.png
 
   - name: Website Blocker
     description: Block any website across all browsers.
     icon: /assets/img/applock/Website-Blocker.svg
-    screenshot: /assets/img/applock/App-Lock-Website-Blocker-320x402.webp
+    screenshot: /assets/img/applock/App-Lock-Website-Blocker.png
 
   - name: Widgets
     description: App Lock supports Widgets. Now, is easier to block any app you want.
     icon: /assets/img/applock/Widgets.svg
-    screenshot: /assets/img/applock/App-Lock-Widgets-320x402.webp
+    screenshot: /assets/img/applock/App-Lock-Widgets.png
 
 featured:
   - name: BGR

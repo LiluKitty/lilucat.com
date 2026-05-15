@@ -83,8 +83,8 @@ ios_apps:
     description: Scan any QR code instantly and create your own custom codes. The
       fastest and most intuitive QR scanner you'll ever use.
     subtitle: Code Reader Scanner Generator
-    rating: 4.8
-    ratings_count: 55
+    rating: 4.7
+    ratings_count: 80
     icon: "/assets/img/app_6745213752/app-icon.webp"
     included_in_pro: false
     page: qr
@@ -122,7 +122,7 @@ ios_apps:
       and protect your sensitive information from prying eyes.
     subtitle: Block and Hide Apps
     rating: 4.8
-    ratings_count: 4367
+    ratings_count: 4800
     icon: "/assets/img/app_6448239603/app-icon.webp"
     included_in_pro: true
     page: app-lock
