@@ -9,17 +9,27 @@ Support: support@lilucat.com
 
 ### App Lock
 - Lock and hide any iPhone app with a password
+- Block websites across Safari, Chrome and every browser on iPhone
 - Protect privacy by blocking access to social media, photos, and sensitive apps
-- 4.8 stars, 4,367 ratings on the App Store
+- Coming soon to Android: https://lilucat.com/app-lock/android/
+- 4.8 stars, 4,800 ratings on the App Store
 - App Store: https://apps.apple.com/us/app/id6448239603
 - Learn more: https://lilucat.com/app-lock/
 
 ### QR Code Scanner
 - Scan any QR code instantly and create custom codes
 - Supports WiFi sharing, contacts, links, and barcodes
-- 4.8 stars, 55 ratings on the App Store
+- 4.7 stars, 80 ratings on the App Store
 - App Store: https://apps.apple.com/us/app/id6745213752
 - Learn more: https://lilucat.com/qr/
+
+### Tape Measure
+- Measure anything with augmented reality: ruler, level, height, area, and 3D
+- Auto-saved measurement history, share via Messages, Mail, or AirDrop
+- Works offline; supports cm, m, inches, and feet
+- 4.9 stars, 300 ratings on the App Store
+- App Store: https://apps.apple.com/us/app/id6773773783
+- Learn more: https://lilucat.com/tape-measure/
 
 ### QR Code Reader
 - Scan QR codes, barcodes, and create your own

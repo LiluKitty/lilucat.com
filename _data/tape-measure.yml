@@ -1,0 +1,15 @@
+data:
+  - name: Measure Anything with AR
+    description: Ruler, level, height, area, and 3D measurements. Every AR tool you need to measure objects, rooms, and spaces, all in one app.
+    icon: "📏"
+    color: "#ff6b6b, #ee5a24"
+
+  - name: Auto-Save History
+    description: Every measurement is saved automatically. Pull up any past measurement in seconds, even days or weeks later.
+    icon: "🕒"
+    color: "#0984e3, #74b9ff"
+
+  - name: Share with Anyone
+    description: Send measurements to friends, clients, or coworkers in one tap, via Messages, Mail, or AirDrop.
+    icon: "📤"
+    color: "#00b894, #55efc4"

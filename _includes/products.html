@@ -44,12 +44,14 @@
         <div>
           <h3 class="pb-0 m-0 fw-bold">{{ app_config.name }}</h3>
           <p class="mb-0 text-body-secondary">{{ app_config.subtitle }}</p>
+          {% if app_config.rating and app_config.rating != 0 %}
           <strong class="">{{ app_config.rating | round: 1 }}</strong>
           <i class="text-warning h6 bi-star-fill"></i>
           <span class="px-1 text-body-secondary fw-bold">·</span
           ><span class="small text-body-secondary"
             >{{ app_config.ratings_count }} Ratings</span
           >
+          {% endif %}
         </div>
       </div>
       <p class="pb-2">{{ app_config.description }}</p>

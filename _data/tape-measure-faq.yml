@@ -1,0 +1,24 @@
+data:
+  - question: How accurate are AR measurements?
+    answer: "AR measurements are typically accurate to within 1 to 2 percent for objects under 3 meters, which is plenty for furniture, rooms, and most everyday tasks. For best results, move your iPhone slowly and make sure the surface is well lit. Highly reflective or transparent surfaces (glass, mirrors) can reduce accuracy."
+
+  - question: Which iPhone models support Tape Measure?
+    answer: "Tape Measure works on any iPhone with iOS 14 or later. iPhone Pro models with a LiDAR scanner (iPhone 12 Pro, 13 Pro, 14 Pro, 15 Pro, 16 Pro, and later) get extra accuracy and faster surface detection, but every supported iPhone can measure with AR."
+
+  - question: Can I switch between centimeters and inches?
+    answer: "Yes. Tape Measure supports centimeters, meters, inches, and feet. You can switch units from the settings or tap and hold on any measurement to convert it instantly."
+
+  - question: How do I measure area or 3D volume?
+    answer: "Tap the mode selector and choose Area for 2D surfaces (floors, walls, table tops) or 3D for boxes, furniture, and rooms. Walk slowly around the object so the camera can capture every side, then tap to confirm. Tape Measure calculates the total area or volume automatically."
+
+  - question: Where can I find my past measurements?
+    answer: "Every measurement is saved to the History tab automatically. Sort by date, search by name, or open any past measurement to see it again, edit the label, or share it."
+
+  - question: How do I share a measurement?
+    answer: "Open any measurement and tap the share icon. You can send it through Messages, Mail, AirDrop, or any sharing app on your iPhone. The recipient sees the value, the unit, and the date you measured it."
+
+  - question: Does Tape Measure work without internet?
+    answer: "Yes. All measurements happen on your device using your camera and Apple's ARKit framework. You can use Tape Measure anywhere, even in airplane mode. The only thing that needs internet is sharing a measurement to someone else."
+
+  - question: Is my measurement data private?
+    answer: "Your measurements never leave your iPhone unless you share them. Tape Measure does not upload, sell, or collect your measurement data. The app uses your camera only to detect surfaces and never records or saves photos or video."
