@@ -23,14 +23,6 @@ Support: support@lilucat.com
 - App Store: https://apps.apple.com/us/app/id6745213752
 - Learn more: https://lilucat.com/qr/
 
-### Tape Measure
-- Measure anything with augmented reality: ruler, level, height, area, and 3D
-- Auto-saved measurement history, share via Messages, Mail, or AirDrop
-- Works offline; supports cm, m, inches, and feet
-- 4.9 stars, 300 ratings on the App Store
-- App Store: https://apps.apple.com/us/app/id6773773783
-- Learn more: https://lilucat.com/tape-measure/
-
 ### QR Code Reader
 - Scan QR codes, barcodes, and create your own
 - Works with WiFi, contacts, calendar events, and more

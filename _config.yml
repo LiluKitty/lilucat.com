@@ -249,21 +249,3 @@ ios_apps:
     legal:
       terms: https://cleaner.lilucat.com/legal/terms
       privacy: https://cleaner.lilucat.com/legal/privacy
-  app_6773773783:
-    id: 6773773783
-    name: Tape Measure
-    description: Measure anything with AR. Ruler, level, height, area, and 3D measurements in one app for your iPhone.
-    subtitle: AR Ruler, Level & 3D Measure
-    rating: 4.9
-    ratings_count: 300
-    icon: "/assets/img/app_6773773783/app-icon.png"
-    included_in_pro: false
-    page: tape-measure
-    published: true
-    has_mac_version: false
-    order: 8
-    last_updated: '2026-06-04T00:00:00Z'
-    release_date: '2026-06-04T00:00:00Z'
-    legal:
-      terms: https://tapemeasure.lilucat.com/legal/terms
-      privacy: https://tapemeasure.lilucat.com/legal/privacy
